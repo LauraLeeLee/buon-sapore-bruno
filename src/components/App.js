@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
-import Header from './Header.js';
-import Nav from './Nav.js';
-import HomeSection from './Home_section.js'
+// import { Route } from 'react-router-dom';
+import HomePage from './Home_page.js';
+import AboutMe from './About_me.js';
+
+
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      view: 'aboutMe',
+    }
+  }
+
+
+
   render() {
     return (
       <div className="container" role="main">
-        <Header />
-        <Nav />
-        <HomeSection />
+        { this.state.view === 'home' && (
+          <HomePage />
+        )}
+
+        {this.state.view === 'aboutMe' && (
+          <AboutMe />
+        )}
+
       </div>
     );
   }

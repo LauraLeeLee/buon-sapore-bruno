@@ -1,0 +1,154 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
+.about-header {
+  /*box-sizing property specifies that padding and border are included in the total width and height of the border*/
+    box-sizing: border-box;
+    /* width: 99vw; */
+    background-color: #990000;
+    border:double 8px;
+    border-color: #006600;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px;
+}
+
+.bruno {
+  grid-column: 1 / 2;
+  width: 100%;
+  position: relative;
+  left: 5px;
+  top: 5px;
+  /* justify-self: center; */
+  /* width: 100%; */
+}
+
+.about_title {
+  font-family: Cambria, serif;
+  font-size: 60px;
+  color: #006600;
+  text-shadow: 1px 1px #f5f2df;
+  text-decoration: underline;
+  grid-column: 2 / 3;
+}
+
+.stemma {
+  width: 60%;
+  position: relative;
+  left: 85px;
+  top: 5px;
+  grid-column: 3 / 4;
+  /* justify-self: center; */
+}
+
+.about_main {
+  display: grid;
+  grid-template-areas: "photos about about"
+                        "photos about about";
+  grid-template-columns: 530px 1fr;
+}
+
+.about-me {
+  height: 350px;
+  overflow: auto;
+  font-family: "optima", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  background-color: #006600;
+  /*font cream color*/
+  color: rgb(245,242,223);
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  grid-row: 1 ;
+  grid-area: about;
+}
+
+.about-me p::first-letter{
+  font: italic 30px script;
+  color: #cc0000;
+  text-shadow: 1px 1px #f5f2df;
+}
+
+.photos_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  /* grid-template-rows: auto auto; */
+  /* grid-template-areas: "img img"
+                        "img img"; */
+  grid-area: photos;
+}
+
+/*contains photos of patrica on about page*/
+.photobox1, .photobox2{
+  display: grid;
+  /* grid-area: img; */
+  /* flex: 1; */
+  width: 100%;
+  margin-top: 50px;
+  /* width: 200px; */
+/*padding: 20;
+  float: left;
+  text-align: left;
+  margin-top: 80px;
+  margin-left: 175px;
+  margin-bottom: 30px; */
+}
+
+.small {
+  width: 250px;
+  margin-bottom: 20px;
+  /* margin:0;
+  width: 100%;
+  transition:transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.small.open {
+  flex: 5; /*with class of open, panel will take 5x the amount of extra space */
+}
+
+/*===media queries===*/
+@media (max-width: 800px) {
+  nav ul li ul {
+    width: 40%;
+    right: 37%;
+  }
+  nav ul li ul li {
+    font-size: 0.8em;
+  }
+
+    .about_main {
+      grid-template-areas: "about"
+                            "photos";
+                            grid-template-columns: 1fr;
+      margin: 15px;
+    }
+
+    .photos_section {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+     .photobox1, .photobox2{
+       justify-items: center;
+      /* order: 1; */
+      margin-top: 0;
+     }
+
+     .photobox1:first-child {
+       margin-top: 20px;
+     }
+
+     .small {
+       width: 400px;
+     }
+}
