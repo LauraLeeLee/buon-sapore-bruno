@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 
 class Nav extends Component {
+  static propTypes = {
+    onNavigate: PropTypes.func.isRequired,
+  }
+
+  clickHandler = (event) => {
+    this.onNavigate();
+    console.log("nav item selected");
+  }
+
   render(){
     return(
       <div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html"
+                 onClick={this.clickhandler}>Home</a></li>
           <li><span>Recipes</span>
             <ul>
               <li><a href="menu/beefpage.html" className = "category">Beef</a></li>
@@ -18,7 +29,8 @@ class Nav extends Component {
               <li><a href="menu/dessertspage.html" className = "category">Desserts</a></li>
             </ul>
           </li>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="about.html"
+                  onClick={this.clickhandler}>About Me</a></li>
         </ul>
       </nav>
       </div>

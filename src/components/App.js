@@ -9,17 +9,30 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      view: 'aboutMe',
+      view: 'home',
+    }
+
+    this.onNavigate = this.onNavigate.bind(this);
+  }
+
+  onNavigate  = (event, navCat) => {
+    switch(navCat) {
+      case 'home':
+        this.setState({view: 'home'})
+        break;
+      case 'aboutMe':
+        this.setState({view: 'aboutMe'})
+        break;
     }
   }
 
-
-
   render() {
+
     return (
       <div className="container" role="main">
         { this.state.view === 'home' && (
-          <HomePage />
+          <HomePage
+          onNavigate={this.onNavigate}/>
         )}
 
         {this.state.view === 'aboutMe' && (
