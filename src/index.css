@@ -1,8 +1,9 @@
-
-
-body {
+body, footer, header, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: sans-serif;
   background: url(./images/papertexture.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -12,19 +13,26 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.App {
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
   text-align: center;
 }
 
-#container {
-  display: grid;
+.main_header {
+  margin: 20px 10px 0;
+  border-style: double;
+  border-width: 15px;
+  border-color: #264626;
+  background: #f8dfa0;
 }
 
-.App-header {
-  background-color: ;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.page_title {
+  font: 59px Cambria, serif;
+  font-weight: bold;
+  color: #990000;
+  text-shadow: 2px 1px 0 #000;
+  padding: 25px;
+  margin: 0;
 }
