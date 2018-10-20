@@ -48,6 +48,11 @@ nav {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
+
+.home-view-nav{
+  grid-row: 2 / 3;
+  /* margin-top: 200px; */
+}
 /* ====nav bar styling===== */
 /* Top level menu bar   */
 nav ul{

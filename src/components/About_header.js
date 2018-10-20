@@ -7,7 +7,7 @@ class AboutHeader extends Component {
     return(
       <div>
       <header className="about-header">
-        <img className="bruno" src={Bruno} alt="Photo of Bruno"/>
+        <img className="bruno" src={Bruno} alt="Bruno"/>
         <h1 className="about_title">About Bruno</h1>
         <img className="stemma" src={Stemma} alt="stemma for Patrica" width="100px"/>
       </header>
