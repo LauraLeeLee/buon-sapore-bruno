@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import HomePage from './Home_page.js';
 import AboutMe from './About_me.js';
 import Nav from './Nav.js';
+import Footer from './Footer.js';
+import NavMenuItem from './NavMenuItem.js';
+import Recipes from '../data/recipes.json';
 
 
 
@@ -26,12 +29,30 @@ class App extends Component {
       case 'About Me':
         this.setState({view: 'about'});
         break;
+      case 'Beef':
+        this.setState({view: 'beef'});
+        break;
+      case 'Chicken':
+        this.setState({view: 'chicken'});
+        break;
+      case 'Pasta':
+        this.setState({view: 'pasta'});
+        break;
+      case 'Seafood':
+        this.setState({view: 'seafood'});
+        break;
+      case 'SaladSoup':
+        this.setState({view: 'saladsoup'});
+        break;
+      case 'Dessert':
+        this.setState({view: 'dessert'});
+        break;
       default: this.setState({view: 'home'});
     }
   }
 
   render() {
-    const { view, navCat } = this.state;
+    const { view } = this.state;
     console.log({view});
     return (
       <div className="container" role="main">
@@ -45,6 +66,7 @@ class App extends Component {
                view={ view }
                onNavigate={this.onNavigate}
           />
+          <Footer />
         </div>
         )}
 
@@ -53,6 +75,16 @@ class App extends Component {
           <Nav view={ view }
                onNavigate={this.onNavigate}/>
           <AboutMe />
+          <Footer />
+          </div>
+        )}
+
+        {this.state.view === 'beef' && (
+          <div>
+            <Nav view={ view }
+                 onNavigate={this.onNavigate}
+                 />
+            <NavMenuItem view={ view }/>
           </div>
         )}
 

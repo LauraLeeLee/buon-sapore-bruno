@@ -30,7 +30,7 @@ class Nav extends Component {
                  >Home</a></li>
           <li><span>Recipes</span>
             <ul>
-              <li><a href="menu/beefpage.html" className="category">Beef</a></li>
+              <li><a href="#beef" onClick={this.clickHandler} className="category">Beef</a></li>
               <li><a href="#chicken" className="category">Chicken</a></li>
               <li><a href="menu/pastapage.html" className="category">Pasta, Pizza and Sauces</a></li>
               <li><a href="menu/seafood.html" className="category">Seafood</a></li>

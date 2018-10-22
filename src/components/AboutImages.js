@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Cacume from '../images/patrica_montecacume.jpg';
 import Patrica1 from '../images/patrica1.jpg';
 import Patrica2 from '../images/patrica2.jpg';

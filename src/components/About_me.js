@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import AboutHeader from './About_header.js';
 import AboutImages from './AboutImages.js';
 import AboutText from './AboutText.js';

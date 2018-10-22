@@ -116,6 +116,13 @@
   flex: 5; /*with class of open, panel will take 5x the amount of extra space */
 }
 
+.footer {
+  /* width: 100vw; */
+  height: 30px;
+  background-color: #006600;
+}
+
+
 /*===media queries===*/
 @media (max-width: 800px) {
   nav ul li ul {

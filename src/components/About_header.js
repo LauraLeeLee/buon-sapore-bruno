@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Stemma from '../images/stemma-patrica.gif';
 import Bruno from '../images/bruno.jpg';
 
