@@ -11,15 +11,15 @@ class App extends Component {
     super(props);
     this.state = {
       view: 'home',
-      navCat: ''
     }
 
     this.onNavigate = this.onNavigate.bind(this);
   }
 
-  onNavigate  = (event, navCat) => {
+  onNavigate = (navCat) => {
     console.log(navCat);
-    switch({navCat}) {
+
+    switch(navCat) {
       case 'Home':
         this.setState({view: 'home'});
         break;
@@ -33,7 +33,6 @@ class App extends Component {
   render() {
     const { view, navCat } = this.state;
     console.log({view});
-    console.log({navCat});
     return (
       <div className="container" role="main">
 
@@ -41,11 +40,9 @@ class App extends Component {
           <div>
             <Nav
               view={ view }
-              navCat={ navCat }
               onNavigate={this.onNavigate}/>
             <HomePage
                view={ view }
-               navCat={ navCat }
                onNavigate={this.onNavigate}
           />
         </div>
@@ -54,8 +51,7 @@ class App extends Component {
         {this.state.view === 'about' && (
           <div>
           <Nav view={ view }
-               navCat={ navCat }
-              onNavigate={this.onNavigate}/>
+               onNavigate={this.onNavigate}/>
           <AboutMe />
           </div>
         )}

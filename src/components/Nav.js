@@ -6,7 +6,6 @@ class Nav extends Component {
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
     view: PropTypes.string.isRequired,
-    navCat: PropTypes.string.isRequired
   }
 
   constructor(props) {
@@ -15,8 +14,7 @@ class Nav extends Component {
  }
 
   clickHandler = (event) => {
-    let navCat = this.props.navItem;
-   navCat = event.target.innerText;
+  let navCat = event.target.innerText;
     this.props.onNavigate(navCat);
     console.log("nav item selected");
     console.log(navCat);

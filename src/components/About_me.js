@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-// import Nav from './Nav.js';
 import AboutHeader from './About_header.js';
+import AboutImages from './AboutImages.js';
+import AboutText from './AboutText.js';
 
-class AboutMe extends Component {
-  render(){
-    return(
-      <div className="">
-      
-        <AboutHeader />
-     </div>
-    );
-  }
+const AboutMe = props => {
+  return(
+    <div className="">
+      <AboutHeader />
+      <main className="about_main">
+        <AboutImages />
+        <AboutText />
+      </main>
+   </div>
+  );
 }
 
 export default AboutMe;
