@@ -16,8 +16,8 @@ class NavMenuItem extends Component {
     return(
       <div>
         <section className="beef_section">
-          <MenuInfo />
-          <RecipeList />
+          <MenuInfo view={ view }/>
+          <RecipeList view={ view }/>
         </section>
       </div>
     );

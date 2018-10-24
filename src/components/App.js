@@ -5,9 +5,8 @@ import AboutMe from './About_me.js';
 import Nav from './Nav.js';
 import Footer from './Footer.js';
 import NavMenuItem from './NavMenuItem.js';
-// import Recipes from '../data/recipes.json';
-// import  * as RecipeFiles from '../data/recipes.json';
 import Recipes2 from '../data/recipes2.js';
+import NavCategories from '../data/nav_items.js';
 
 
 
@@ -16,7 +15,8 @@ class App extends Component {
     super(props);
     this.state = {
       view: 'home',
-      recipes: []
+      recipes: [],
+      navbarItems: []
     }
     this.onNavigate = this.onNavigate.bind(this);
   }
@@ -69,7 +69,7 @@ class App extends Component {
 
     return (
       <div className="container" role="main">
-        { this.state.view === 'home' && (
+        { view === 'home' && (
           <div>
             <Nav
               view={ view }
@@ -89,16 +89,16 @@ class App extends Component {
         </div>
         )}
 
-        {this.state.view === 'about' && (
+        {view === 'about' && (
           <div>
           <Nav view={ view }
                onNavigate={this.onNavigate}/>
-          <AboutMe />
+          <AboutMe view={ view }/>
           <Footer />
           </div>
         )}
 
-        {this.state.view === 'beef' && (
+        {view === 'beef' && (
           <div>
             <Nav view={ view }
                  onNavigate={this.onNavigate}
