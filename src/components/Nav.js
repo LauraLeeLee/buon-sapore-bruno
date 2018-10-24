@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import NavCategories from '../data/nav_items.js';
 
 
 class Nav extends Component {
@@ -10,7 +11,19 @@ class Nav extends Component {
 
   constructor(props) {
    super(props);
+   this.state = {
+     navbarItems: []
+   }
    this.clickhandler = this.clickHandler.bind(this);
+ }
+
+
+ componentDidMount() {
+   const navNames = NavCategories.map((item) =>
+      item.name);
+   this.setState({
+     navbarItems: navNames
+   });
  }
 
   clickHandler = (event) => {
@@ -21,6 +34,10 @@ class Nav extends Component {
   }
 
   render(){
+    const {navbarItems} = this.state;
+    if(navbarItems.length>0){
+      console.log(navbarItems);
+    }
     return(
       <div>
       <nav className="home-view-nav">
@@ -30,13 +47,14 @@ class Nav extends Component {
                  >Home</a></li>
           <li><span>Recipes</span>
             <ul>
-              <li><a href="#beef" onClick={this.clickHandler} className="category">Beef</a></li>
-              <li><a href="#chicken" className="category">Chicken</a></li>
-              <li><a href="menu/pastapage.html" className="category">Pasta, Pizza and Sauces</a></li>
-              <li><a href="menu/seafood.html" className="category">Seafood</a></li>
-              <li><a href="menu/saladsouppage.html" className="category">Salads & Soups</a></li>
-              <li><a href="menu/dessertspage.html" className="category">Desserts</a></li>
-            </ul>
+            {navbarItems.map((item) =>(
+              <li key={item}
+                onClick={this.clickHandler}
+                className="category">
+              <a href={`#${item}`}>{item} </a>
+              </li>
+            ))}
+          </ul>
           </li>
           <li><a href="#about"
                   onClick={this.clickHandler}

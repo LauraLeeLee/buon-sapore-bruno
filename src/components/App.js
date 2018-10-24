@@ -5,7 +5,9 @@ import AboutMe from './About_me.js';
 import Nav from './Nav.js';
 import Footer from './Footer.js';
 import NavMenuItem from './NavMenuItem.js';
-import Recipes from '../data/recipes.json';
+// import Recipes from '../data/recipes.json';
+// import  * as RecipeFiles from '../data/recipes.json';
+import Recipes2 from '../data/recipes2.js';
 
 
 
@@ -14,9 +16,15 @@ class App extends Component {
     super(props);
     this.state = {
       view: 'home',
+      recipes: []
     }
-
     this.onNavigate = this.onNavigate.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({
+      recipes: Recipes2
+    });
   }
 
   onNavigate = (navCat) => {
@@ -52,11 +60,15 @@ class App extends Component {
   }
 
   render() {
-    const { view } = this.state;
+    const { view, recipes } = this.state;
     console.log({view});
+    console.log(Recipes2[0].name);
+    if (recipes.length > 0) {
+      console.log(recipes[0].name);
+    }
+
     return (
       <div className="container" role="main">
-
         { this.state.view === 'home' && (
           <div>
             <Nav
@@ -66,6 +78,13 @@ class App extends Component {
                view={ view }
                onNavigate={this.onNavigate}
           />
+          <ul>
+            {recipes.map((recipe) =>(
+              <li key={recipe.name}>
+                {recipe.name}
+                </li>
+            ))}
+          </ul>
           <Footer />
         </div>
         )}

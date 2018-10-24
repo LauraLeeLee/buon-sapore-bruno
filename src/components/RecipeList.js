@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RecipesFiles from '../data/recipes.json';
+import Recipes2 from '../data/recipes2.js';
 // import  * as RecipeFiles from '../data/recipes.json';
 
 class RecipeList extends Component {
@@ -7,7 +7,7 @@ class RecipeList extends Component {
     return(
       <div>
       <article className="recipebox">
-        <p> {RecipesFiles[0].name}</p>
+        <p> {Recipes2[0].name}</p>
         <ul className="recipe_ul">
           <li className="recipe_li"><a href="../recipes/bisteccapizzaiola.html">Bistecca Pizzaiola</a></li>
           <li className="recipe_li"><a href="../recipes/meatballs.html">Meatballs</a></li>

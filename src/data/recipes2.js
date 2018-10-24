@@ -1,8 +1,8 @@
- [
+const recipes2 = [
   {
-    "name": "Baccala alla Pizzaiola",
-    "img": "baccala-pizzaiola.jpg",
-    "ingredients": [
+    name: "Baccala alla Pizzaiola",
+    img: "baccala-pizzaiola.jpg",
+    ingredients: [
       "2 lb baccala ( salt cod )",
       "6 Tbsps olive oil",
       "2 large garlic cloves,very finely chopped",
@@ -11,7 +11,7 @@
       "Salt and pepper to taste",
       "6 fresh basil leaves, torn into bits"
     ],
-    "directions": [
+    directions: [
       "Place the baccala in a large bowl with cool water to cover and place the bowl in the refrigerator to soak for 24 hours",
       "changing the water every few hours, until the water no longer tastes salty",
       "Bring about 2 inch of water to simmer in a deep skillet.",
@@ -29,7 +29,7 @@
       "Spoon on the remaining sausage and drizzle with the remaining 2 tablespoons oil.",
       "Bake for 30 minutes, or until the sauce is bubbling. Serve hot."
     ],
-    "category": ["seafood"]
+    category: ["seafood"]
   },
   {
     "name": "Basic Tomato Sauce/ Sugo di Pomodoro alla Napoletana",
@@ -1108,4 +1108,6 @@
     "description": "",
     "category": ["seafood", "soup"]
   }
-]
+];
+
+export default recipes2

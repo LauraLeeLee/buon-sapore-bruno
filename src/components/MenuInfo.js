@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import RecipesFiles from '../data/recipes.json';
+import Recipes2 from '../data/recipes2.js';
 // import  * as RecipeFiles from '../data/recipes.json';
 import BeefCat from '../images/beefCategory.jpg';
-import NavItems from '../data/nav_items.json';
+import NavCategories from '../data/nav_items.js';
 
 class MenuInfo extends Component {
 
