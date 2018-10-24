@@ -1,3 +1,10 @@
+
+
+## View project live here [Thats nice Bruno](http://garrulous-tramp.surge.sh/)
+
+### Description
+This is a project I chose to do for fun and to continue to practice with React. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
