@@ -4,6 +4,8 @@ import Recipes2 from '../data/recipes2.js';
 import BeefCat from '../images/beefCategory.jpg';
 import NavCategories from '../data/nav_items.js';
 
+
+// first part of info for food category page selected from Recipes nav
 class MenuInfo extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,

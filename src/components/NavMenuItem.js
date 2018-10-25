@@ -5,7 +5,7 @@ import Recipes2 from '../data/recipes2.js';
 import RecipeList from './RecipeList.js';
 import MenuInfo from './MenuInfo.js';
 
-
+// main landing page for food category from Recipes nav selection
 class NavMenuItem extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Recipes2 from '../data/recipes2.js';
 // import  * as RecipeFiles from '../data/recipes.json';
 
+// second part of info for food category page selected from Recipes nav
+// will display the recipes list for chosen category 
 class RecipeList extends Component {
   render(){
     return(
