@@ -69,15 +69,16 @@ class App extends Component {
 
     return (
       <div className="container" role="main">
+        <Nav
+          view={ view }
+          onNavigate={this.onNavigate}
+          />
         { view === 'home' && (
           <div>
-            <Nav
-              view={ view }
-              onNavigate={this.onNavigate}/>
             <HomePage
                view={ view }
                onNavigate={this.onNavigate}
-          />
+            />
           <ul>
             {recipes.map((recipe) =>(
               <li key={recipe.name}>
@@ -85,28 +86,22 @@ class App extends Component {
                 </li>
             ))}
           </ul>
-          <Footer />
+
         </div>
         )}
 
         {view === 'about' && (
           <div>
-          <Nav view={ view }
-               onNavigate={this.onNavigate}/>
-          <AboutMe view={ view }/>
-          <Footer />
+            <AboutMe view={ view }/>
           </div>
         )}
 
         {view === 'beef' && (
           <div>
-            <Nav view={ view }
-                 onNavigate={this.onNavigate}
-                 />
             <NavMenuItem view={ view }/>
           </div>
         )}
-
+          <Footer />
       </div>
     );
   }
