@@ -1,30 +1,27 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import NavCategories from '../data/nav_items.js';
+
 
 
 class Nav extends Component {
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
     view: PropTypes.string.isRequired,
+    navbarItems: PropTypes.array.isRequired
   }
 
   constructor(props) {
    super(props);
-   this.state = {
-     navbarItems: []
-   }
    this.clickhandler = this.clickHandler.bind(this);
  }
 
-
- componentDidMount() {
-   const navNames = NavCategories.map((item) =>
-      item.name);
-   this.setState({
-     navbarItems: navNames
-   });
- }
+ // componentDidMount() {
+ //   const navNames = NavCategories.map((item) =>
+ //      item.name);
+ //   this.setState({
+ //     navbarItems: navNames
+ //   });
+ // }
 
   clickHandler = (event) => {
   let navCat = event.target.innerText;
@@ -34,10 +31,9 @@ class Nav extends Component {
   }
 
   render(){
-    const {navbarItems} = this.state;
-    if(navbarItems.length>0){
-      console.log(navbarItems);
-    }
+    const {view, navbarItems} = this.props;
+    if(navbarItems.length>0){console.log(navbarItems);}
+
     return(
       <div>
       <nav className="home-view-nav">

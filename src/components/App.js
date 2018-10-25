@@ -8,15 +8,14 @@ import NavMenuItem from './NavMenuItem.js';
 import Recipes2 from '../data/recipes2.js';
 import NavCategories from '../data/nav_items.js';
 
-
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       view: 'home',
       recipes: [],
-      navbarItems: []
+      navbarItems: [],
+      navCat: ''
     }
     this.onNavigate = this.onNavigate.bind(this);
   }
@@ -25,17 +24,28 @@ class App extends Component {
     this.setState({
       recipes: Recipes2
     });
+
+    const navNames = NavCategories.map((item) =>
+       item.name);
+    this.setState({
+      navbarItems: navNames
+    });
   }
 
   onNavigate = (navCat) => {
     console.log(navCat);
-
+    this.setState({
+      navCat: navCat
+    });
     switch(navCat) {
       case 'Home':
         this.setState({view: 'home'});
         break;
       case 'About Me':
         this.setState({view: 'about'});
+        break;
+      case 'Recipes':
+        this.setState({view: 'recipes'});
         break;
       case 'Beef':
         this.setState({view: 'beef'});
@@ -60,19 +70,18 @@ class App extends Component {
   }
 
   render() {
-    const { view, recipes } = this.state;
+    const { view, recipes, navbarItems, navCat } = this.state;
     console.log({view});
-    console.log(Recipes2[0].name);
-    if (recipes.length > 0) {
-      console.log(recipes[0].name);
-    }
+    console.log({navCat});
 
     return (
       <div className="container" role="main">
         <Nav
           view={ view }
+          navbarItems={navbarItems}
           onNavigate={this.onNavigate}
           />
+
         { view === 'home' && (
           <div>
             <HomePage
@@ -86,7 +95,6 @@ class App extends Component {
                 </li>
             ))}
           </ul>
-
         </div>
         )}
 
@@ -98,10 +106,14 @@ class App extends Component {
 
         {view === 'beef' && (
           <div>
-            <NavMenuItem view={ view }/>
+            <NavMenuItem view={ view }
+                         navbarItems={navbarItems}
+                         recipes={recipes}
+             />
           </div>
         )}
-          <Footer />
+
+        <Footer />
       </div>
     );
   }

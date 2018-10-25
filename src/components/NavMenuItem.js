@@ -9,15 +9,32 @@ import MenuInfo from './MenuInfo.js';
 class NavMenuItem extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,
+    navbarItems: PropTypes.array.isRequired,
+    recipes: PropTypes.array.isRequired
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      recipe: '',
+    }
   }
 
   render(){
-    const { view } = this.props;
+    const { view, navbarItems, recipes } = this.props;
+    console.log(view);
+    if(navbarItems.length>0){console.log({navbarItems});}
+
     return(
       <div>
         <section className="beef_section">
-          <MenuInfo view={ view }/>
-          <RecipeList view={ view }/>
+          <MenuInfo view={ view }
+                    navbarItems={navbarItems}
+                    recipes={recipes}/>
+
+          <RecipeList view={ view }
+                      navbarItems={navbarItems}
+                      recipes={recipes}/>
         </section>
       </div>
     );
