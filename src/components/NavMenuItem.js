@@ -10,7 +10,8 @@ class NavMenuItem extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,
     navbarItems: PropTypes.array.isRequired,
-    recipes: PropTypes.array.isRequired
+    recipes: PropTypes.array.isRequired,
+    navCat: PropTypes.string.isRequired
   }
 
   constructor(props) {
@@ -21,7 +22,7 @@ class NavMenuItem extends Component {
   }
 
   render(){
-    const { view, navbarItems, recipes } = this.props;
+    const { view, navbarItems, recipes, navCat } = this.props;
     console.log(view);
     if(navbarItems.length>0){console.log({navbarItems});}
 
@@ -30,11 +31,13 @@ class NavMenuItem extends Component {
         <section className="beef_section">
           <MenuInfo view={ view }
                     navbarItems={navbarItems}
-                    recipes={recipes}/>
+                    recipes={recipes}
+                    navCat={navCat}/>
 
           <RecipeList view={ view }
                       navbarItems={navbarItems}
-                      recipes={recipes}/>
+                      recipes={recipes}
+                      navCat={navCat}/>
         </section>
       </div>
     );

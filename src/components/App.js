@@ -109,6 +109,7 @@ class App extends Component {
             <NavMenuItem view={ view }
                          navbarItems={navbarItems}
                          recipes={recipes}
+                         navCat={navCat}
              />
           </div>
         )}

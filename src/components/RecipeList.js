@@ -9,14 +9,15 @@ class RecipeList extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,
     navbarItems: PropTypes.array.isRequired,
-    recipes: PropTypes.array.isRequired
+    recipes: PropTypes.array.isRequired,
+    navCat: PropTypes.string.isRequired
   }
 
   componentDidMount() {
   }
 
   render(){
-    const {navbarItems, view, recipes} = this.props;
+    const {navbarItems, view, recipes, navCat} = this.props;
     console.log(recipes);
     console.log({view});
     return(
