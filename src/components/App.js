@@ -104,6 +104,18 @@ class App extends Component {
           </div>
         )}
 
+        {/*This section having trouble to render view dynamically
+          based on which navCat is selected (as per switch statement above)
+          Since Home and About are more hard coded views, those are straight forward
+          but for the recipe category pages- depends on what is chosen.
+          I could code out 8 conditionals for that, but the JSX will all be exactly the same
+          Not sure how to refactor the switch statement.
+          I can't eliminate Home and About as they will be values of navCat from
+          whatever selection is made in the navigation bar.
+          Bright side- I did get the recipe list to render dynamically as per
+          the view. For now that is ok, hoping yes. Or can do something with
+          navCat state to make comparision in those components. But view and navCat should
+          be the same for those components. */}
         {view === 'beef' && (
           <div>
             <NavMenuItem view={ view }
