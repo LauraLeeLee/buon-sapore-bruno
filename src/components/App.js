@@ -115,8 +115,9 @@ class App extends Component {
           Bright side- I did get the recipe list to render dynamically as per
           the view. For now that is ok, hoping yes. Or can do something with
           navCat state to make comparision in those components. But view and navCat should
-          be the same for those components. */}
-        {view === 'beef' && (
+          be the same for those components.
+          used the following conditional..for now. */}
+        {(view === 'beef' || view === 'chicken' || view === 'seafood' || view === 'pasta' || view === 'saladsoup' || view === 'dessert')  && (
           <div>
             <NavMenuItem view={ view }
                          navbarItems={navbarItems}
