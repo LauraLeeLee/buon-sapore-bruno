@@ -24,11 +24,10 @@ class MenuInfo extends Component {
       <article className="menu_info">
       {view && (
         <div>
-        
           <h2>{`${view} Recipes`}</h2>
           <img className="food_image" src={ BeefCat } alt="image of beef"/>
-          </div>
-        )}
+        </div>
+      )}
       </article>
       </div>
     );

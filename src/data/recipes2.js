@@ -125,7 +125,7 @@ const recipes2 = [
       "Cut the garlic clove in half and rub the cut edge over both sides of each bread slice.",
       "Drizzle a little olive oil over each brad slice."
     ],
-    "category": ["bread"]
+    "category": ["antipasti"]
   },
   {
     "name": "Cannoli",

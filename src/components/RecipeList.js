@@ -21,14 +21,13 @@ class RecipeList extends Component {
     console.log({view});
     const navCategory = navbarItems.map((item) =>
          item.category);
-
     console.log(navCategory);
     return(
       <div>
       <article className="recipebox">
         <ul className="recipe_ul">
         {recipes.map((recipe) => (
-          (recipe.category.includes(view.toLowerCase().split(" "))) &&
+          (recipe.category.includes(view.toLowerCase())) &&
           <li key={recipe.name}
               className="recipe_li">
               <a href={`#${recipe.name}`}>{recipe.name}</a>
