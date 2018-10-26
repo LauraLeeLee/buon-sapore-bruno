@@ -15,7 +15,6 @@ class MenuInfo extends Component {
   }
 
 
-
   render(){
     const { view, navbarItems, navCat } = this.props;
     console.log(view);
@@ -25,6 +24,8 @@ class MenuInfo extends Component {
       {view && (
         <div>
           <h2>{`${view} Recipes`}</h2>
+    {/*What/how to compare to render the correct category image*/}
+          {/*<img className="food_image" src={ `${navbarItems.src} `} alt={`${navbarTiems.alt}`}/>*/}
           <img className="food_image" src={ BeefCat } alt="image of beef"/>
         </div>
       )}
