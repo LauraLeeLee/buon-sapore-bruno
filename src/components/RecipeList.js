@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Recipes2 from '../data/recipes2.js';
-// import  * as RecipeFiles from '../data/recipes.json';
+
 
 // second part of info for food category page selected from Recipes nav
 // will display the recipes list for chosen category
@@ -20,12 +19,16 @@ class RecipeList extends Component {
     const {navbarItems, view, recipes, navCat} = this.props;
     console.log(recipes);
     console.log({view});
+    const navCategory = navbarItems.map((item) =>
+         item.category);
+
+    console.log(navCategory);
     return(
       <div>
       <article className="recipebox">
         <ul className="recipe_ul">
         {recipes.map((recipe) => (
-          (recipe.category.indexOf(view) > -1) &&
+          (recipe.category.includes(view.toLowerCase().split(" "))) &&
           <li key={recipe.name}
               className="recipe_li">
               <a href={`#${recipe.name}`}>{recipe.name}</a>

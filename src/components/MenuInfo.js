@@ -10,19 +10,21 @@ class MenuInfo extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,
     navbarItems: PropTypes.array.isRequired,
-    recipes: PropTypes.array.isRequired
+    recipes: PropTypes.array.isRequired,
+    navCat: PropTypes.string.isRequired
   }
 
 
 
   render(){
-    const { view, navbarItems } = this.props;
+    const { view, navbarItems, navCat } = this.props;
     console.log(view);
     return(
       <div>
       <article className="menu_info">
       {view && (
         <div>
+        
           <h2>{`${view} Recipes`}</h2>
           <img className="food_image" src={ BeefCat } alt="image of beef"/>
           </div>

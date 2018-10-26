@@ -255,7 +255,7 @@ const recipes2 = [
       "Close up the sandwiches, slice in half.",
       "Serve with a glass of red Italian wine."
     ],
-    "category": ["Veggie"]
+    "category": ["veggie"]
   },
   {
     "name": "Insalata di Mare/Seafood Salad",
@@ -299,13 +299,6 @@ const recipes2 = [
   {
     "name": "Marinara Sauce",
     "img": "marinara-sauce.jpg",
-    "ingredients": [],
-    "directions": [],
-    "category": []
-  },
-  {
-    "name": "",
-    "img": "",
     "ingredients": [
       "2 large garlic cloves, lightly smashed",
       "1/4  cup olive oil",
@@ -406,7 +399,7 @@ const recipes2 = [
       "Add it to to the pan with the oil and garlic, and cook together for 2 to 3 minutes, stirring well to coat the spaghetti with the sauce.",
       "Serve immediately in warmed serving bowl, with Parmigiano and red pepper, if desired."
     ],
-    "category": []
+    "category": ["beef"]
   },
   {
     "name": "Panzanella Insalata",

@@ -44,10 +44,10 @@ class Nav extends Component {
           <li><span>Recipes</span>
             <ul>
             {navbarItems.map((item) =>(
-              <li key={item}
+              <li key={item.name}
                 onClick={this.clickHandler}
                 className="category">
-              <a href={`#${item}`}>{item} </a>
+              <a href={`#${item.name}`}>{item.name} </a>
               </li>
             ))}
           </ul>

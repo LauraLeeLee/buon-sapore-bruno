@@ -22,13 +22,8 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({
-      recipes: Recipes2
-    });
-
-    const navNames = NavCategories.map((item) =>
-       item.name);
-    this.setState({
-      navbarItems: navNames
+      recipes: Recipes2,
+      navbarItems: NavCategories
     });
   }
 
@@ -42,29 +37,32 @@ class App extends Component {
         this.setState({view: 'home'});
         break;
       case 'About Me':
-        this.setState({view: 'about'});
+        this.setState({view: 'About Me'});
         break;
       case 'Recipes':
-        this.setState({view: 'recipes'});
+        this.setState({view: 'Recipes'});
         break;
       case 'Beef':
-        this.setState({view: 'beef'});
+        this.setState({view: 'Beef'});
         break;
       case 'Chicken':
-        this.setState({view: 'chicken'});
+        this.setState({view: 'Chicken'});
         break;
-      case 'Pasta':
-        this.setState({view: 'pasta'});
+      case 'Pasta Pizza & Sauce':
+        this.setState({view: 'Pasta Pizza & Sauce'});
         break;
       case 'Seafood':
-        this.setState({view: 'seafood'});
+        this.setState({view: 'Seafood'});
         break;
-      case 'SaladSoup':
-        this.setState({view: 'saladsoup'});
+      case 'Salads & Soups':
+        this.setState({view: 'Salads & Soups'});
         break;
       case 'Dessert':
-        this.setState({view: 'dessert'});
+        this.setState({view: 'Dessert'});
         break;
+        case 'Antipasti':
+          this.setState({view: 'Antipasti'});
+          break;
       default: this.setState({view: 'home'});
     }
   }
@@ -88,17 +86,10 @@ class App extends Component {
                view={ view }
                onNavigate={this.onNavigate}
             />
-          <ul>
-            {recipes.map((recipe) =>(
-              <li key={recipe.name}>
-                {recipe.name}
-                </li>
-            ))}
-          </ul>
         </div>
         )}
 
-        {view === 'about' && (
+        {view === 'About Me' && (
           <div>
             <AboutMe view={ view }/>
           </div>
@@ -117,7 +108,7 @@ class App extends Component {
           navCat state to make comparision in those components. But view and navCat should
           be the same for those components.
           used the following conditional..for now. */}
-        {(view === 'beef' || view === 'chicken' || view === 'seafood' || view === 'pasta' || view === 'saladsoup' || view === 'dessert')  && (
+        {(view === 'Beef' || view === 'Chicken' || view === 'Seafood' || view === 'Pasta Pizza & Sauce' || view === 'Salads & Soups' || view === 'Dessert')  && (
           <div>
             <NavMenuItem view={ view }
                          navbarItems={navbarItems}
