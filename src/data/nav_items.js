@@ -25,7 +25,7 @@ const navCategories = [
         category: ["antipasti"]
     },
     {
-        name: "Salads & Soups",
+        name: "Salad & Soup",
         src: "../images/soups.jpg",
         category: ["salad", "soup"]
     },

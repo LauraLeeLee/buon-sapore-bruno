@@ -54,8 +54,8 @@ class App extends Component {
       case 'Seafood':
         this.setState({view: 'Seafood'});
         break;
-      case 'Salads & Soups':
-        this.setState({view: 'Salads & Soups'});
+      case 'Salad & Soup':
+        this.setState({view: 'Salad & Soup'});
         break;
       case 'Dessert':
         this.setState({view: 'Dessert'});
@@ -108,7 +108,7 @@ class App extends Component {
           navCat state to make comparision in those components. But view and navCat should
           be the same for those components.
           used the following conditional..for now. */}
-        {(view === 'Beef' || view === 'Chicken' || view === 'Seafood' || view === 'Pasta Pizza & Sauce' || view === 'Antipasti' || view === 'Salads & Soups' || view === 'Dessert')  && (
+        {(view === 'Beef' || view === 'Chicken' || view === 'Seafood' || view === 'Pasta Pizza & Sauce' || view === 'Antipasti' || view === 'Salad & Soup' || view === 'Dessert')  && (
           <div>
             <NavMenuItem view={ view }
                          navbarItems={navbarItems}
