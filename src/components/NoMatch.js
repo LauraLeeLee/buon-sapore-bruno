@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //page to render any given recipe chosen
-class Recipe extends Component {
+class NoMatch extends Component {
   render(){
     return(
       <div>
@@ -10,4 +10,4 @@ class Recipe extends Component {
   }
 }
 
-export default Recipe
+export default NoMatch

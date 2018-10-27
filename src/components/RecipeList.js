@@ -24,7 +24,7 @@ class RecipeList extends Component {
     console.log({navCategory});
     const recipeCat = recipes.map((item) => item.category);
     console.log({recipeCat});
-    const viewSplit = view.toLowerCase().split();
+    const viewSplit = view.toLowerCase().split(" ");
     console.log({viewSplit});
     return(
       <div>

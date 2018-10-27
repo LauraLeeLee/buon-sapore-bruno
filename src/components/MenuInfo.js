@@ -11,24 +11,29 @@ class MenuInfo extends Component {
     view: PropTypes.string.isRequired,
     navbarItems: PropTypes.array.isRequired,
     recipes: PropTypes.array.isRequired,
-    navCat: PropTypes.string.isRequired
+    navCat: PropTypes.string.isRequired,
+    navImg: PropTypes.string.isRequired
   }
 
 
   render(){
-    const { view, navbarItems, navCat } = this.props;
+    const { view, navbarItems, navCat, navImg } = this.props;
     console.log(view);
+    const navbarItemsCat = navbarItems.map(item =>item.category);
+    console.log({navbarItemsCat});
+
+    const viewSplit = view.toLowerCase().split(" ");
+    console.log({viewSplit});
     return(
       <div>
       <article className="menu_info">
       {view && (
-        <div>
           <h2>{`${view} Recipes`}</h2>
-    {/*What/how to compare to render the correct category image*/}
-          {/*<img className="food_image" src={ `${navbarItems.src} `} alt={`${navbarTiems.alt}`}/>*/}
-          <img className="food_image" src={ BeefCat } alt="image of beef"/>
-        </div>
       )}
+    {/*What/how to compare to render the correct category image*/}
+    {( viewSplit === navbarItemsCat) && (
+          <img className="food_image" src={ `${navbarItems.src} `} alt={`${navbarItems.alt}`}/>
+    )}
       </article>
       </div>
     );

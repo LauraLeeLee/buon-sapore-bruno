@@ -4,12 +4,13 @@ import RecipeList from './RecipeList.js';
 import MenuInfo from './MenuInfo.js';
 
 // main landing page for food category from Recipes nav selection
-class NavMenuItem extends Component {
+class Category extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,
     navbarItems: PropTypes.array.isRequired,
     recipes: PropTypes.array.isRequired,
-    navCat: PropTypes.string.isRequired
+    navCat: PropTypes.string.isRequired,
+    navImg: PropTypes.string.isRequired
   }
 
   constructor(props) {
@@ -20,7 +21,7 @@ class NavMenuItem extends Component {
   }
 
   render(){
-    const { view, navbarItems, recipes, navCat } = this.props;
+    const { view, navbarItems, recipes, navCat, navImg } = this.props;
     console.log(view);
     if(navbarItems.length>0){console.log({navbarItems});}
 
@@ -30,7 +31,8 @@ class NavMenuItem extends Component {
           <MenuInfo view={ view }
                     navbarItems={navbarItems}
                     recipes={recipes}
-                    navCat={navCat}/>
+                    navCat={navCat}
+                    navImg={navImg}/>
 
           <RecipeList view={ view }
                       navbarItems={navbarItems}
@@ -42,4 +44,4 @@ class NavMenuItem extends Component {
   }
 }
 
-export default NavMenuItem
+export default Category

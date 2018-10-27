@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-// import { Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import HomePage from './Home_page.js';
 import AboutMe from './About_me.js';
+import Category from './Category';
+import Recipe from './Recipepage.js';
+import NoMatch from './NoMatch.js';
 import Nav from './Nav.js';
 import Footer from './Footer.js';
-import NavMenuItem from './NavMenuItem.js';
 import Recipes2 from '../data/recipes2.js';
 import NavCategories from '../data/nav_items.js';
 
@@ -15,7 +17,8 @@ class App extends Component {
       view: 'home',
       recipes: [],
       navbarItems: [],
-      navCat: ''
+      navCat: '',
+      navImg: ''
     }
     this.onNavigate = this.onNavigate.bind(this);
   }
@@ -68,58 +71,32 @@ class App extends Component {
   }
 
   render() {
-    const { view, recipes, navbarItems, navCat } = this.state;
+    const { view, recipes, navbarItems, navCat, navImg } = this.state;
     console.log({view});
     console.log({navCat});
 
     return (
-      <div className="container" role="main">
-        <Nav
-          view={ view }
-          navbarItems={navbarItems}
-          onNavigate={this.onNavigate}
-          />
-
-        { view === 'home' && (
-          <div>
-            <HomePage
-               view={ view }
-               onNavigate={this.onNavigate}
+      <Router>
+        <div className="container" role="main">
+          <Nav
+            view={ view }
+            navbarItems={navbarItems}
+            onNavigate={this.onNavigate}
             />
+          <Switch>
+            <Route exact path="/" component={HomePage}/>
+            <Route path="/About Me" component={AboutMe}/>
+            <Route path="/:category/:recipeId"
+                  render={props => <Recipe {...props} />}
+            />
+            <Route path="/:category" render={props => <Category {...props} />} />
+          {/* for a 404 page  */}
+          <Route component={NoMatch} />
+          </Switch>
+
+          <Footer />
         </div>
-        )}
-
-        {view === 'About Me' && (
-          <div>
-            <AboutMe view={ view }/>
-          </div>
-        )}
-
-        {/*This section having trouble to render view dynamically
-          based on which navCat is selected (as per switch statement above)
-          Since Home and About are more hard coded views, those are straight forward
-          but for the recipe category pages- depends on what is chosen.
-          I could code out 8 conditionals for that, but the JSX will all be exactly the same
-          Not sure how to refactor the switch statement.
-          I can't eliminate Home and About as they will be values of navCat from
-          whatever selection is made in the navigation bar.
-          Bright side- I did get the recipe list to render dynamically as per
-          the view. For now that is ok, hoping yes. Or can do something with
-          navCat state to make comparision in those components. But view and navCat should
-          be the same for those components.
-          used the following conditional..for now. */}
-        {(view === 'Beef' || view === 'Chicken' || view === 'Seafood' || view === 'Pasta Pizza & Sauce' || view === 'Antipasti' || view === 'Salad & Soup' || view === 'Dessert')  && (
-          <div>
-            <NavMenuItem view={ view }
-                         navbarItems={navbarItems}
-                         recipes={recipes}
-                         navCat={navCat}
-             />
-          </div>
-        )}
-
-        <Footer />
-      </div>
+      </Router>
     );
   }
 }
