@@ -9,7 +9,7 @@ import NavCategories from '../data/nav_items.js';
 class MenuInfo extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,
-    navbarItems: PropTypes.array.isRequired,
+    // navbarItems: PropTypes.array.isRequired,
     recipes: PropTypes.array.isRequired,
     navCat: PropTypes.string.isRequired,
     navImg: PropTypes.string.isRequired
@@ -17,13 +17,13 @@ class MenuInfo extends Component {
 
 
   render(){
-    const { view, navbarItems, navCat, navImg } = this.props;
+    const { view, navCat, navImg } = this.props;
     console.log(view);
-    const navbarItemsCat = navbarItems.map(item =>item.category);
-    console.log({navbarItemsCat});
+    // const navbarItemsCat = navbarItems.map(item =>item.category);
+    // console.log({navbarItemsCat});
 
-    const viewSplit = view.toLowerCase().split(" ");
-    console.log({viewSplit});
+    // const viewSplit = view.toLowerCase().split(" ");
+    // console.log({viewSplit});
     return(
       <div>
       <article className="menu_info">
@@ -31,9 +31,9 @@ class MenuInfo extends Component {
           <h2>{`${view} Recipes`}</h2>
       )}
     {/*What/how to compare to render the correct category image*/}
-    {( viewSplit === navbarItemsCat) && (
+    {/*}{( viewSplit === navbarItemsCat) && (
           <img className="food_image" src={ `${navbarItems.src} `} alt={`${navbarItems.alt}`}/>
-    )}
+    )}*/}
       </article>
       </div>
     );

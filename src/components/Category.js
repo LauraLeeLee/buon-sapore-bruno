@@ -7,7 +7,7 @@ import MenuInfo from './MenuInfo.js';
 class Category extends Component {
   static propTypes = {
     view: PropTypes.string.isRequired,
-    navbarItems: PropTypes.array.isRequired,
+    // navbarItems: PropTypes.array.isRequired,
     recipes: PropTypes.array.isRequired,
     navCat: PropTypes.string.isRequired,
     navImg: PropTypes.string.isRequired
@@ -21,21 +21,21 @@ class Category extends Component {
   }
 
   render(){
-    const { view, navbarItems, recipes, navCat, navImg } = this.props;
+    const { view, recipes, navCat, navImg } = this.props;
     console.log(view);
-    if(navbarItems.length>0){console.log({navbarItems});}
+    // if(navbarItems.length>0){console.log({navbarItems});}
 
     return(
       <div>
         <section className="beef_section">
           <MenuInfo view={ view }
-                    navbarItems={navbarItems}
+
                     recipes={recipes}
                     navCat={navCat}
                     navImg={navImg}/>
 
           <RecipeList view={ view }
-                      navbarItems={navbarItems}
+                      
                       recipes={recipes}
                       navCat={navCat}/>
         </section>

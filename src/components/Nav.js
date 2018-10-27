@@ -39,9 +39,12 @@ class Nav extends Component {
       <div>
       <nav className="home-view-nav">
         <ul>
-          <li><a href="#home"
-                  onClick={this.clickHandler}
-                 >Home</a></li>
+          <li>
+           <Link to="/" onClick={this.clickHandler}>
+           Home
+           </Link>
+          </li>
+
           <li><span>Recipes</span>
             <ul>
             {navbarItems.map((item) =>(
@@ -51,11 +54,14 @@ class Nav extends Component {
               <a href={`#${item.name}`}>{item.name} </a>
               </li>
             ))}
-          </ul>
+            </ul>
           </li>
-          <li><a href="#about"
-                  onClick={this.clickHandler}
-                  >About Me</a></li>
+
+          <li>
+           <Link to="/About Me" onClick={this.clickHandler}>
+           About Me
+           </Link>
+          </li>
         </ul>
       </nav>
       </div>
