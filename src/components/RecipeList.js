@@ -6,26 +6,21 @@ import PropTypes from 'prop-types';
 // will display the recipes list for chosen category
 class RecipeList extends Component {
   static propTypes = {
-    view: PropTypes.string.isRequired,
+    // view: PropTypes.string.isRequired,
     // navbarItems: PropTypes.array.isRequired,
+    categoryCat: PropTypes.string.isRequired,
     recipes: PropTypes.array.isRequired,
-    navCat: PropTypes.string.isRequired
+    // navCat: PropTypes.string.isRequired
   }
 
   componentDidMount() {
   }
 
   render(){
-    const { view, recipes, navCat} = this.props;
+    const { categoryCat, recipes } = this.props;
     console.log(recipes);
-    console.log({view});
-    // const navCategory = navbarItems.map((item) =>
-    //      item.category);
-    // console.log({navCategory});
-    // const recipeCat = recipes.map((item) => item.category);
-    // console.log({recipeCat});
-    // const viewSplit = view.toLowerCase().split(" ");
-    // console.log({viewSplit});
+    console.log({categoryCat });
+
     return(
       <div>
       <article className="recipebox">
@@ -33,7 +28,7 @@ class RecipeList extends Component {
         {/*need to figure out how to compare the values in the
           two arrays- thus far not finding the correct way to do this */}
       {/*}{recipes.map((recipe) => (
-          (recipe.category.includes(view.toLowerCase())) &&
+          (recipe.category.includes(categoryCat.toLowerCase())) &&
           <li key={recipe.name}
               className="recipe_li">
               <a href={`#${recipe.name}`}>{recipe.name}</a>

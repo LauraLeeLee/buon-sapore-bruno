@@ -9,7 +9,7 @@ const navCategories = [
         name: "Chicken",
         src: "../images/chicken.jpg",
         category: ["chicken"],
-          alt: "chicken"
+        alt: "chicken"
     },
     {
         name: "Seafood",

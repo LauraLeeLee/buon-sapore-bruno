@@ -16,19 +16,20 @@ class Nav extends Component {
    this.clickhandler = this.clickHandler.bind(this);
  }
 
- // componentDidMount() {
- //   const navNames = NavCategories.map((item) =>
+ componentDidMount() {
+ //   const {navbarItems} = this.props.navbarItems;
+ //   const navNames = navbarItems.map((item) =>
  //      item.name);
  //   this.setState({
  //     navbarItems: navNames
  //   });
- // }
+ }
 
   clickHandler = (event) => {
   let navCat = event.target.innerText;
     this.props.onNavigate(navCat);
     console.log("nav item selected");
-    console.log(navCat);
+    console.log({navCat});
   }
 
   render(){
@@ -51,7 +52,7 @@ class Nav extends Component {
               <li key={item.name}
                 onClick={this.clickHandler}
                 className="category">
-              <a href={`#${item.name}`}>{item.name} </a>
+              <Link to ={`/${item.name}`}>{item.name} </Link>
               </li>
             ))}
             </ul>

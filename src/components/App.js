@@ -87,9 +87,12 @@ class App extends Component {
             <Route exact path="/" component={HomePage}/>
             <Route path="/About Me" component={AboutMe}/>
             <Route path="/:category/:recipeId"
-                  render={props => <Recipe {...props} />}
+                  render={props => <Recipe {...props} recipes={recipes}/>}
             />
-            <Route path="/:category" render={props => <Category {...props} />} />
+            <Route path="/:category" render={props => <Category {...props}
+                                                       recipes={recipes}
+                                                       navbarItems={navbarItems}
+                                                       navCat={navCat}/>} />
           {/* for a 404 page  */}
           <Route component={NoMatch} />
           </Switch>
