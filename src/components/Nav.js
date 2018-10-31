@@ -7,8 +7,7 @@ import {  Link } from "react-router-dom";
 class Nav extends Component {
   static propTypes = {
     onNavigate: PropTypes.func.isRequired,
-    view: PropTypes.string.isRequired,
-    navbarItems: PropTypes.array.isRequired
+    allCategories: PropTypes.array.isRequired
   }
 
   constructor(props) {
@@ -33,8 +32,8 @@ class Nav extends Component {
   }
 
   render(){
-    const {view, navbarItems} = this.props;
-    if(navbarItems.length>0){console.log(navbarItems);}
+    const {allCategories} = this.props;
+    // if(catName.length>0){console.log(catName);}
 
     return(
       <div>
@@ -45,11 +44,10 @@ class Nav extends Component {
            Home
            </Link>
           </li>
-
           <li><span>Recipes</span>
             <ul>
-            {navbarItems.map((item) =>(
-              <li key={item.name}
+            {allCategories.map((item) =>(
+              <li key={item.id}
                 onClick={this.clickHandler}
                 className="category">
               <Link to ={`/${item.name}`}>{item.name} </Link>
@@ -68,7 +66,6 @@ class Nav extends Component {
       </div>
     );
   }
-
 }
 
 export default Nav;

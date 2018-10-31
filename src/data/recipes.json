@@ -1,6 +1,7 @@
  [
   {
     "name": "Baccala alla Pizzaiola",
+    "id": "baccala-pizzaiola",
     "img": "baccala-pizzaiola.jpg",
     "ingredients": [
       "2 lb baccala ( salt cod )",
@@ -33,6 +34,7 @@
   },
   {
     "name": "Basic Tomato Sauce/ Sugo di Pomodoro alla Napoletana",
+    "id": "basic-sauce",
     "img": "basic_tomato_sauce.jpg",
     "ingredients": [
       "4 Tbsps olive oil",
@@ -56,6 +58,7 @@
   },
   {
     "name": "Bistecca Pizzaiola",
+    "id": "bistecca-pizzaiola",
     "img": "bisteccapizzaiola.jpg",
     "ingredients": [
       "2 Tbsp olive oil",
@@ -80,6 +83,7 @@
   },
   {
     "name": "Braciole",
+    "id": "braciole",
     "img": "braciole.jpg",
     "ingredients": [
       "4 thin slices boneless beef round (about 1 lb",
@@ -114,6 +118,7 @@
   },
   {
     "name": "Bruschetta",
+    "id": "bruschetta",
     "img": "bruschetta.jpg",
     "ingredients": [
       "4 large slices of bread, such as ciabatta, baguettes",
@@ -129,6 +134,7 @@
   },
   {
     "name": "Cannoli",
+    "id": "cannoli",
     "img": "",
     "ingredients": [
       "For the Ricotta Cream",
@@ -204,6 +210,7 @@
   },
   {
     "name": "Gelato Alla Panna",
+    "id": "gelato-panna",
     "img": "gelato-alla-panna.jpg",
     "ingredients": [
       "6 eggs",
@@ -235,6 +242,7 @@
   },
   {
     "name": "Grilled Eggplant,Tomatoes,Provolone and Pesto Sandwiches",
+    "id": "grilled-eggplant",
     "img": "eggplant-sandwich.jpg",
     "ingredients": [
       "4 Large slices eggplant",
@@ -259,6 +267,7 @@
   },
   {
     "name": "Insalata di Mare/Seafood Salad",
+    "id": "insalata-di-mare",
     "img": "insalata-mare.jpg",
     "ingredients": [
       "2 lbs  mussels",
@@ -298,14 +307,16 @@
   },
   {
     "name": "Marinara Sauce",
+    "id": "marinara-sauce",
     "img": "marinara-sauce.jpg",
     "ingredients": [],
     "directions": [],
     "category": []
   },
   {
-    "name": "",
-    "img": "",
+    "name": "Marinara Sauce",
+    "id": "marinara-sauce",
+    "img": "marinara-sauce.jpg",
     "ingredients": [
       "2 large garlic cloves, lightly smashed",
       "1/4  cup olive oil",
@@ -324,6 +335,7 @@
   },
   {
     "name": "Meatballs/Polpette",
+    "id": "meatballs",
     "img": "meatballs.jpg",
     "ingredients": [
       "2 lbs ground beef",
@@ -348,6 +360,7 @@
   },
   {
     "name": "Minestrone",
+    "id": "minestrone",
     "img": "minestrone.jpg",
     "ingredients": [
       "1 Tbsp olive oil",
@@ -377,6 +390,7 @@
   },
   {
     "name": "Osso Buco",
+    "id": "osso-buco",
     "img": "osso-buco.jpg",
     "ingredients": [
       "1/4 cup all purpose flour",
@@ -410,6 +424,7 @@
   },
   {
     "name": "Panzanella Insalata",
+    "id": "panzanella-insalata",
     "img": "panzanella.jpg",
     "ingredients": [
       "3 1/2 cups stale bread white or brow or rolls",
@@ -438,6 +453,7 @@
   },
   {
     "name": "Pasta e Fagioli",
+    "id": "pasta-fagioli",
     "img": "pasta-e-fagioli.jpg",
     "ingredients": [
       "1 cup dried cannellini or Great Northern beans or 3 cups canned beans, rinsed and drained",
@@ -471,6 +487,7 @@
   },
   {
     "name": "Pasta Arrabbiata",
+    "id": "pasta-arrabbiata",
     "img": "pasta-arrabbiata.jpg",
     "ingredients": [
       "1 lb chopped tomatoes",
@@ -497,6 +514,7 @@
   },
   {
     "name": "Pasta di Mare",
+    "id": "pasta-di-mare",
     "img": "",
     "ingredients": [
       "1 lb spaghetti # 4",
@@ -527,6 +545,7 @@
   },
   {
     "name": "Pizza Dough",
+    "id": "pizza-dough",
     "img": "pizza_dough.jpg",
     "ingredients": [
       "5 cups unbleached flour",
@@ -561,6 +580,7 @@
   },
   {
     "name": "Polenta",
+    "id": "polenta",
     "img": "polenta.jpg",
     "ingredients": [
       "6 cups water",
@@ -583,6 +603,7 @@
   },
   {
     "name": "Polpetti in Salsa di Pomodoro",
+    "id": "polpetti-salsa-pomodoro",
     "img": "polpetti.jpg",
     "ingredients": [
       "2 lb baby octopus",
@@ -610,6 +631,7 @@
   },
   {
     "name": "Potato Gnocchi",
+    "id": "potato-gnocchi",
     "img": "potatognocchi.jpg",
     "ingredients": [
       " 2 lb potatoes, scrubbed ",
@@ -639,6 +661,7 @@
   },
   {
     "name": "Ricotta Cheesecake",
+    "id": "ricotta-cheesecake",
     "img": "ricottacheesecake.jpg",
     "ingredients": [
       "2 cups low fat ricotta cheese",
@@ -679,6 +702,7 @@
   },
   {
     "name": "Roasted Pepper Salad",
+    "id": "roasted-pepper-salad",
     "img": "peppersalad.jpg",
     "ingredients": [
       "8 large red, yellow, and green bell peppers",
@@ -700,6 +724,7 @@
   },
   {
     "name": "Roast Lamb with Rosemary / Agnello al Rosmarino",
+    "id": "roast-lamb-rosemary",
     "img": "rosemary_agnello1.jpg",
     "ingredients": [
       "1/2 leg of lamb",
@@ -724,6 +749,7 @@
   },
   {
     "name": "Sauce/Sugo",
+    "id": "sauce",
     "img": "sauce.jpg",
     "ingredients": [
       "1 1/2 Tbsps olive oil",
@@ -746,6 +772,7 @@
   },
   {
     "name": "Spaghetti con aglio e olio/ Garlic Spaghetti",
+    "id": "spaghetti-aglio-oglio",
     "img": "spaghetti-aglio-oglio.jpg",
     "ingredients": [
         "14 oz spaghetti",
@@ -772,6 +799,7 @@
   },
   {
     "name": "Spaghetti alle Vongole",
+    "id": "spaghetti-vongole",
     "img": "spaghetti-vongole.jpg",
     "ingredients": [
       "2 Tbsp  Olive Oil",
@@ -809,6 +837,7 @@
   },
   {
     "name": "Spaghetti with Tuna Sauce",
+    "id": "spaghetti-tuna-sauce",
     "img": "spaghetti-tunasauce.jpg",
     "ingredients": [
       "8 oz spaghetti",
@@ -832,6 +861,7 @@
   },
   {
     "name": "Spaghetti alla Puttanesca",
+    "id": "spaghetti-puttanesa",
     "img": "spaghetti-alla-puttanesca.jpg",
     "ingredients": [
       "4 Tbsps olive oil",
@@ -865,6 +895,7 @@
   },
   {
     "name": "Fried Rice Balls/Suppli",
+    "id": "suppli",
     "img": "suppli.jpg",
     "ingredients": [
       "1 recipe Risotto with Parmigiano cheese",
@@ -895,6 +926,7 @@
   },
   {
     "name": "Tiramisu",
+    "id": "tiramisu",
     "img": "",
     "ingredients": [
       "1 pound mascarpone",
@@ -923,6 +955,7 @@
   },
   {
     "name": "Tomato and Basil Bruschetta",
+    "id": "tomato-basil-bruschetta",
     "img": "tomatobruschetta.jpg",
     "ingredients": [
       "4 ripe tomatoes",
@@ -942,6 +975,7 @@
   },
   {
     "name": "Tortellini in Brodo",
+    "id": "tortellini-brodo",
     "img": "tortellini-in-brodo.jpg",
     "ingredients": [
       "For Filling:",
@@ -1001,6 +1035,7 @@
   },
   {
     "name": "Tuna and Bean Salad/ Tonno e Fagioli",
+    "id": "tuna-bean-salad",
     "img": "tunaandbeansalad.jpg",
     "ingredients": [
       "2- 14 oz cans Cannellini or Bordoli beans",
@@ -1026,6 +1061,7 @@
   },
   {
     "name": "Vermicelli with Puttanesca Sauce",
+    "id": "vermicelli-puttanesca",
     "img": "",
     "ingredients": [
       "2 lb. ripe tomatoes",
@@ -1053,6 +1089,7 @@
   },
   {
     "name": "Zuppa di Cozze/Mussels in Spicy Sauce",
+    "id": "zuppa-cozze",
     "img": "mussels-spicy-sauce.jpg",
     "ingredients": [
       "4 lbs mussels",
@@ -1084,6 +1121,7 @@
   },
   {
     "name": "Zuppa du Baccala",
+    "id": "zuppa-baccala",
     "img": "zuppadibaccala.jpg",
     "ingredients": [
       "2 Tbsps olive oil",

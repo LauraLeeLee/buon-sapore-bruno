@@ -1,6 +1,7 @@
 const recipes2 = [
   {
     name: "Baccala alla Pizzaiola",
+    id: "baccala-pizzaiola",
     img: "baccala-pizzaiola.jpg",
     ingredients: [
       "2 lb baccala ( salt cod )",
@@ -32,9 +33,10 @@ const recipes2 = [
     category: ["seafood"]
   },
   {
-    "name": "Basic Tomato Sauce/ Sugo di Pomodoro alla Napoletana",
-    "img": "basic_tomato_sauce.jpg",
-    "ingredients": [
+    name: "Basic Tomato Sauce/ Sugo di Pomodoro alla Napoletana",
+    id: "basic-sauce",
+    img: "basic_tomato_sauce.jpg",
+    ingredients: [
       "4 Tbsps olive oil",
       "1 medium onion, very finely chopped",
       "1 clove garlic, finely chopped",
@@ -42,7 +44,7 @@ const recipes2 = [
       "salt and pepper to taste",
       "few leaves of fresh basil"
     ],
-    "directions": [
+    directions: [
       "Heat the oil in a medium pan.",
       "Add the chopped onion, and cook over a moderate heat until translucent-5 to 10 minutes..",
       "Stir in the garlic and the tomatoes with their juice",
@@ -52,12 +54,13 @@ const recipes2 = [
       "Pass the sauce through a food mill or puree’ in a food processor.",
       "To serve reheat gently, correct the seasoning and pour over the drained pasta."
     ],
-    "category": ["sauce"]
+    category: ["sauce"]
   },
   {
-    "name": "Bistecca Pizzaiola",
-    "img": "bisteccapizzaiola.jpg",
-    "ingredients": [
+    name: "Bistecca Pizzaiola",
+    id: "bistecca-pizzaiola",
+    img: "bisteccapizzaiola.jpg",
+    ingredients: [
       "2 Tbsp olive oil",
       "4 small tender steaks",
       "2 garlic cloves, finely shopped or sliced",
@@ -66,7 +69,7 @@ const recipes2 = [
       "1 tsp dried oregano",
       "Pinch red pepper"
     ],
-    "directions": [
+    directions: [
       "In a large skillet, heat the oil over medium heat",
 			"Pat the steaks dry. Add to the pan and cook, turning once,until browned on both sides.",
 			"Sprinkle with salt and pepper.",
@@ -76,12 +79,13 @@ const recipes2 = [
 			"Bring the sauce to  simmer. Cook for 20 minutes, or until the sauce is thickened.",
 			"Return the steaks to the sauce. Cook briefly, turning the steaks once or twice, until they are warm and cooked to taste. Serve hot."
     ],
-    "category": ["beef"]
+    category: ["beef"]
   },
   {
-    "name": "Braciole",
-    "img": "braciole.jpg",
-    "ingredients": [
+    name: "Braciole",
+    id: "braciole",
+    img: "braciole.jpg",
+    ingredient: [
       "4 thin slices boneless beef round (about 1 lb",
       "1 garlic clove, finely chopped",
       "2 Tbsps freshly grated Pecorino Romano",
@@ -95,7 +99,7 @@ const recipes2 = [
       "4 fresh basil leaves,torn into small pieces",
       "1 lb ziti or penne, cooked and still hot"
     ],
-    "directions": [
+    directions: [
       "Place the beef between two pieces of plastic wrap and pound gently with a meat pounder or rubber mallet to 1/4 to 1/8 inch thickness.",
       "Sprinkle  the beef with the garlic, cheese, parsley, and salt and pepper.",
       "Cover with the prosciutto slices.",
@@ -110,27 +114,29 @@ const recipes2 = [
       "Add a little water if the sauce becomes too thick.",
       "Serve the sauce over the hot cooked ziti as a first course, followed by the braciole."
     ],
-    "category": ["beef"]
+    category: ["beef"]
   },
   {
-    "name": "Bruschetta",
-    "img": "bruschetta.jpg",
-    "ingredients": [
+    name: "Bruschetta",
+    id: "bruschetta",
+    img: "bruschetta.jpg",
+    ingredients: [
       "4 large slices of bread, such as ciabatta, baguettes",
       "1 garlic clove",
       "drizzle of extra virgin olive oil"
     ],
-    "directions": [
+    directions: [
       "Grill, broil chargrill or toast the bread until it is crisp.",
       "Cut the garlic clove in half and rub the cut edge over both sides of each bread slice.",
       "Drizzle a little olive oil over each brad slice."
     ],
-    "category": ["antipasti"]
+    category: ["antipasti"]
   },
   {
-    "name": "Cannoli",
-    "img": "",
-    "ingredients": [
+    name: "Cannoli",
+    id: "cannoli",
+    img: "",
+    ingredients: [
       "For the Ricotta Cream",
       "2 lb. whole or part skim milk ricotta",
       "1 1/2 cup confectioners sugar",
@@ -151,7 +157,7 @@ const recipes2 = [
       "Candied cherries or candied orange peel (optional)",
       "Confectioners sugar"
     ],
-    "directions": [
+    directions: [
       "Line a large strainer white cheesecloth.",
       "Place the strainer over a bowl. Scrape the ricotta into the strainer and cover with a piece of plastic wrap and a small plate.",
       "Weight the plate with a heavy can.",
@@ -200,12 +206,13 @@ const recipes2 = [
       "Place the cannoli on a serving platter and sprinkle with confectioners’ sugar.",
       "Serve within 1 hour."
     ],
-    "category": ["dessert"]
+    category: ["dessert"]
   },
   {
-    "name": "Gelato Alla Panna",
-    "img": "gelato-alla-panna.jpg",
-    "ingredients": [
+    name: "Gelato Alla Panna",
+    id: "gelato-panna",
+    img: "gelato-alla-panna.jpg",
+    ingredients: [
       "6 eggs",
       "2 cups whole milk",
       "2 cups heavy cream",
@@ -214,7 +221,7 @@ const recipes2 = [
       "3 slices day old Italian bread",
       "1 Tbsp lemon juice"
     ],
-    "directions": [
+    directions: [
     	"Combine milk, cream, and sugar in top of a double boiler;",
 		  "heat until small bubbles form around sides of the pan. ",
   		"Add small amount of cream mixture to eggs yolks,",
@@ -231,12 +238,13 @@ const recipes2 = [
 		  "Freeze until firm but not hard.",
 		  "Repeat, freeze until firm for 2 hours."
     ],
-    "category": ["dessert"]
+    category: ["dessert"]
   },
   {
-    "name": "Grilled Eggplant,Tomatoes,Provolone and Pesto Sandwiches",
-    "img": "eggplant-sandwich.jpg",
-    "ingredients": [
+    name: "Grilled Eggplant,Tomatoes,Provolone and Pesto Sandwiches",
+    id: "grilled-eggplant",
+    img: "eggplant-sandwich.jpg",
+    ingredients: [
       "4 Large slices eggplant",
       "Salt and Pepper to taste",
       "Extra  virgin olive oil",
@@ -246,7 +254,7 @@ const recipes2 = [
       "4 slices Provolone cheese ( 3 oz.)",
       "2 small handful fresh arugula"
     ],
-    "directions": [
+    directions: [
       "To grill or roast eggplant, slice into 1/2 inch pieces, salt lightly and let stand for 10 minutes.",
       "Brush with olive oil and grill or broil until brown and softened.",
       "Spread pesto evenly on both sides of the baguette.",
@@ -255,12 +263,13 @@ const recipes2 = [
       "Close up the sandwiches, slice in half.",
       "Serve with a glass of red Italian wine."
     ],
-    "category": ["veggie"]
+    category: ["veggie"]
   },
   {
-    "name": "Insalata di Mare/Seafood Salad",
-    "img": "insalata-mare.jpg",
-    "ingredients": [
+    name: "Insalata di Mare/Seafood Salad",
+    id: "insalata-di-mare",
+    img: "insalata-mare.jpg",
+    ingredients: [
       "2 lbs  mussels",
       "Salt to taste",
       "1 lb. medium shrimp,shelled and deveined",
@@ -275,7 +284,7 @@ const recipes2 = [
       "pinch of crushed red pepper",
       "1 lemon, cut into wedges"
     ],
-    "directions": [
+    directions: [
       "Place the mussels in cold water to cover for 30 minutes.",
       "Scrub the mussels with a stiff brush and scrape off any barnacles or seaweed, discarding any mussels with creaked shells or do not shut tightly when tapped.",
       "Remove the beard by pulling them toward the narrow end of the shells.",
@@ -294,31 +303,33 @@ const recipes2 = [
       "Season to taste.",
       "Garnish with the lemon wedges."
     ],
-    "category": ["seafood", "salad"]
+    category: ["seafood", "salad"]
   },
   {
-    "name": "Marinara Sauce",
-    "img": "marinara-sauce.jpg",
-    "ingredients": [
+    name: "Marinara Sauce",
+    id: "marinara-sauce",
+    img: "marinara-sauce.jpg",
+    ingredients: [
       "2 large garlic cloves, lightly smashed",
       "1/4  cup olive oil",
       "2 lb very ripe plum tomatoes, peeled,seeded, and chopped, or 2(two) 28 oz cans Italian peeled tomatoes, drained and chopped",
       "salt to taste",
       "8 to 10 fresh basil leaves, torn into pieces"
     ],
-    "directions": [
+    directions: [
       "In a large skillet, cook the garlic in the olive oil over medium heat, pressing it occasionally with the back of a spoon, until golden, about 4 minutes.",
       "Add the tomatoes and salt to taste.",
       "Bring to simmer and cook, stirring often, until the sauce is thick, 15 to 20 minutes, depending on the tomatoes.",
       "Stir in the basil leaves.",
       "Serve over hot cooked spaghetti or other pasta"
     ],
-    "category": ["sauce"]
+    category: ["sauce"]
   },
   {
-    "name": "Meatballs/Polpette",
-    "img": "meatballs.jpg",
-    "ingredients": [
+    name: "Meatballs/Polpette",
+    id: "meatballs",
+    img: "meatballs.jpg",
+    ingredients: [
       "2 lbs ground beef",
       "2 eggs",
       "3 Tbs chopped fresh parsley",
@@ -327,7 +338,7 @@ const recipes2 = [
       "3 slices day old Italian bread",
       "1 Tbsp lemon juice"
     ],
-    "directions": [
+    directions: [
       "Put the ground beef in a large bowl",
       "Add eggs, parsley, salt and pepper, cheese and lemon juice",
       "Wet the bread, squeeze out the water and shred it into the meat mixture.",
@@ -337,12 +348,13 @@ const recipes2 = [
       "Remove them and drain on a paper towel",
       "You can serve with wedges of lemon or simmer in a tomato sauce for about 15 to 20 minutes more."
     ],
-    "category": ["beef"]
+    category: ["beef"]
   },
   {
-    "name": "Minestrone",
-    "img": "minestrone.jpg",
-    "ingredients": [
+    name: "Minestrone",
+    id: "minestrone",
+    img: "minestrone.jpg",
+    ingredients: [
       "1 Tbsp olive oil",
       "2 onions,chopped",
       "2 garlic,crushed",
@@ -357,7 +369,7 @@ const recipes2 = [
       "salt and pepper to taste",
       "freshly grated Parmigiano cheese, to serve"
     ],
-    "directions": [
+    directions: [
       "Heat the olive oil in a large saucepan.",
       "Add the chopped onions, and garlic and fry about 5 minutes, stirring, or until the onions are soft and golden.",
       "Add the prepared potato, carrot, leek, cabbage, and celery to the saucepan.",
@@ -366,12 +378,13 @@ const recipes2 = [
       "Leave the soup to simmer, covered, for 15 to 20 minutes, or until all of the vegetables are just tender.",
       "Remove the bouquet garmi, season with salt and pepper to taste, and serve with plenty of freshly frated Parmigiano cheese."
     ],
-    "category": ["soup"]
+    category: ["soup"]
   },
   {
-    "name": "Osso Buco",
-    "img": "osso-buco.jpg",
-    "ingredients": [
+    name: "Osso Buco",
+    id: "osso-buco",
+    img: "osso-buco.jpg",
+    ingredients: [
       "1/4 cup all purpose flour",
       "4 meaty slices veal shank, about  1 1/2 inch thik",
       "2 Tbsps unsalted butter",
@@ -388,7 +401,7 @@ const recipes2 = [
       "2  stacks of celery, diced in cubes",
       "1 tsp grated lemon zest"
     ],
-    "directions": [
+    directions: [
       "Cook spaghetti in a large pan of rapidly boiling water",
       "I a large frying pan heat the oil and garlic gently saute’ the garlic until it is barely golden.",
       "Do not let it brown or it will taste bitter.",
@@ -399,12 +412,13 @@ const recipes2 = [
       "Add it to to the pan with the oil and garlic, and cook together for 2 to 3 minutes, stirring well to coat the spaghetti with the sauce.",
       "Serve immediately in warmed serving bowl, with Parmigiano and red pepper, if desired."
     ],
-    "category": ["beef"]
+    category: ["beef"]
   },
   {
-    "name": "Panzanella Insalata",
-    "img": "panzanella.jpg",
-    "ingredients": [
+    name: "Panzanella Insalata",
+    id: "panzanella-insalata",
+    img: "panzanella.jpg",
+    ingredients: [
       "3 1/2 cups stale bread white or brow or rolls",
       "1 clove garlic, peeled and mince",
       "4 large tomatoes",
@@ -415,7 +429,7 @@ const recipes2 = [
       "2 Tbsps white wine vinegar",
       "Salt and pepper to taste"
     ],
-    "directions": [
+    directions: [
       "Cut the bread or rolls into thick slices.",
       "Place in a shallow bowl, and soak with cold water.",
       "Leave for at least 30 minutes",
@@ -427,12 +441,13 @@ const recipes2 = [
       "Pour it over the salad and mix well.",
       "decorate with the basil leaves, Allow to stand in a cool place for at least 2 hours before serving"
     ],
-    "category": ["salad"]
+    category: ["salad"]
   },
   {
-    "name": "Pasta e Fagioli",
-    "img": "pasta-e-fagioli.jpg",
-    "ingredients": [
+    name: "Pasta e Fagioli",
+    id: "pasta-fagioli",
+    img: "pasta-e-fagioli.jpg",
+    ingredients: [
       "1 cup dried cannellini or Great Northern beans or 3 cups canned beans, rinsed and drained",
       "1 celery rib, chopped",
       "12 garlic cloves, lightly crushed",
@@ -444,7 +459,7 @@ const recipes2 = [
       "Salt to taste",
       "8 oz ditalini or spaghetti or other pasta broken into 1 inch pieces."
     ],
-    "directions": [
+    directions: [
       "Note: If using dried beans, put them in a bowl with cold water to cover by 1 inch, and let stand for at least 4 hours, or overnight.",
       "Add more water if necessary to keep the beans covered.",
       "Drain the beans and place them in a pot with fresh water to cover by 1/2 inch.",
@@ -460,12 +475,13 @@ const recipes2 = [
       "The mixture shold be very thick, but add boiling water if it seems too thick.",
       "Turn off the heat and let stand for 10 minutes before serving."
     ],
-    "category": ["soup"]
+    category: ["soup"]
   },
   {
-    "name": "Pasta Arrabbiata",
-    "img": "pasta-arrabbiata.jpg",
-    "ingredients": [
+    name: "Pasta Arrabbiata",
+    id: "pasta-arrabbiata",
+    img: "pasta-arrabbiata.jpg",
+    ingredients: [
       "1 lb chopped tomatoes",
       "2 garlic cloves, crushed",
       "2/3 cup dry white wine",
@@ -476,7 +492,7 @@ const recipes2 = [
       "salt and pepper to taste",
       "Pecorino cheese to serve"
     ],
-    "directions": [
+    directions: [
       "Put the tomatoes, garlic, wine,tomato puree and hot pepper",
       "in a saucepan and bring to the boil.",
       "Cover and simmer gently. Add parsley.",
@@ -486,12 +502,13 @@ const recipes2 = [
       "Pour the sauce over the pasta and toss to mix.",
       "Serve at once, sprinkled with grated Pecorino and the remaining parsley."
     ],
-    "category": ["pasta"]
+    category: ["pasta"]
   },
   {
-    "name": "Pasta di Mare",
-    "img": "",
-    "ingredients": [
+    name: "Pasta di Mare",
+    id: "pasta-di-mare",
+    img: "",
+    ingredients: [
       "1 lb spaghetti # 4",
       "1 6 oz Tomato Paste",
       "1 28 oz Tomato Sanmarzano (Italian Peeled Tomatoes)",
@@ -508,7 +525,7 @@ const recipes2 = [
       ".5o lb Baby Scallops",
       ".50 lb Shrimp (peeled)"
     ],
-    "directions": [
+    directions: [
       "In a saucepan, heat the olive oil and sauté the onions and garlic, stir until the ingredients are translucent.",
       "Add water, tomato paste, Sanmarzano tomatoes, sugar, salt, pepper, bay leaves and crushed pepper.",
       "Simmer for 20 minutes. Add basil, simmer for 30 minutes.",
@@ -516,18 +533,19 @@ const recipes2 = [
       "After the sauce has cooked for 30 minutes add shrimp, scallops and mussels, cook for 10 to 15 minutes. ",
       "Pour sauce over the pasta and mix. "
     ],
-    "category": ["pasta", "seafood"]
+    category: ["pasta", "seafood"]
   },
   {
-    "name": "Pizza Dough",
-    "img": "pizza_dough.jpg",
-    "ingredients": [
+    name: "Pizza Dough",
+    id: "pizza-dough",
+    img: "pizza_dough.jpg",
+    ingredients: [
       "5 cups unbleached flour",
       "2 packets active dry yeast",
       "2 cups warm water",
       "olive oil"
     ],
-    "directions": [
+    directions: [
       "Add just a bit of warm water to the yeast and start stirring it with a fork.",
       "As it gathers flour and a paste start to form, add more water.",
       "Keep on stirring and adding water to the paste until all the water is used.",
@@ -550,17 +568,18 @@ const recipes2 = [
       "Usually it take about 20 minutes total timing to get a well baked pizza,",
       "once that's toasty and crispy on the bottom and edges."
     ],
-    "category": ["pizza"]
+    category: ["pizza"]
   },
   {
-    "name": "Polenta",
-    "img": "polenta.jpg",
-    "ingredients": [
+    name: "Polenta",
+    id: "polenta",
+    img: "polenta.jpg",
+    ingredients: [
       "6 cups water",
       "1 tbsp salt",
       "2 1/2 polenta flour"
     ],
-    "directions": [
+    directions: [
       "Bring the water to boil in a large saucepan.",
       "Add the salt.",
       "Reduce the heat to simmer, and begin to add the polenta flour in a fine rain. ",
@@ -572,12 +591,13 @@ const recipes2 = [
       "When the polenta is cooked, spoon it in a large slightly wet bowl, wait 5 minutes, and turn it out onto a serving platter.",
       "Serve it with a meat or tomato sauce."
     ],
-    "category": ["pasta"]
+    category: ["pasta"]
   },
   {
-    "name": "Polpetti in Salsa di Pomodoro",
-    "img": "polpetti.jpg",
-    "ingredients": [
+    name: "Polpetti in Salsa di Pomodoro",
+    id: "polpetti-salsa-pomodoro",
+    img: "polpetti.jpg",
+    ingredients: [
       "2 lb baby octopus",
       "2 cups peeled, seeded, and chopped fresh tomatoes or chopped canned Italian peeled tomatoes",
       "1/4 cup olive oil",
@@ -587,7 +607,7 @@ const recipes2 = [
       "Salt to taste",
       "6 to 12 slices toasted Italian bread"
     ],
-    "directions": [
+    directions: [
       "Rinse the octopus and drain well. ",
       "Remove the hard round beak at the base of the tentacles of each octopus.",
       "In a large heavy saucepan, combine the octopus,tomatoes,oil, 3 Tbsps of the parsley, garlic,red pepper, and salt to taste.",
@@ -599,19 +619,20 @@ const recipes2 = [
       "Top with the octopus and sauce.",
       "Sprinkle with the renaming parsley and serve."
     ],
-    "category": ["beef"]
+    category: ["beef"]
   },
   {
-    "name": "Potato Gnocchi",
-    "img": "potatognocchi.jpg",
-    "ingredients": [
+    name: "Potato Gnocchi",
+    id: "potato-gnocchi",
+    img: "potatognocchi.jpg",
+    ingredients: [
       " 2 lb potatoes, scrubbed ",
       "salt and pepper to taste",
       "2 1/2 cups flour",
       "1 egg",
       "Freshly grated Parmigiano cheese, to serve"
     ],
-    "directions": [
+    directions: [
       "Place the unpeeled potatoes in a large pan of salted water.",
       "Bring to a boil, and cook until the potatoes are tender but not falling apart.",
       "Drain. Peel as soon as possible, while the potatoes are still hot.",
@@ -628,12 +649,13 @@ const recipes2 = [
       "Scoop them out of the water, allow to drain, and place in a warmed serving bowl.",
       "Dot with Sauce, sprinkle with grated Parmigiano and serve."
     ],
-    "category": ["pasta"]
+    category: ["pasta"]
   },
   {
-    "name": "Ricotta Cheesecake",
-    "img": "ricottacheesecake.jpg",
-    "ingredients": [
+    name: "Ricotta Cheesecake",
+    id: "ricotta-cheesecake",
+    img: "ricottacheesecake.jpg",
+    ingredients: [
       "2 cups low fat ricotta cheese",
       "1/2 cup double cream",
       "2 eggs",
@@ -648,7 +670,7 @@ const recipes2 = [
       "8 Tbsps chilled butter, diced",
       "1 egg yolk"
     ],
-    "directions": [
+    directions: [
       "Make the pastry:",
       "Sift the flour, sugar and salt on to a work surface.",
       "Make a well in the center and put in the diced butter and eggs yolk.",
@@ -668,19 +690,20 @@ const recipes2 = [
       "Bake for 30/35 minutes until golden and set.",
       "Transfer to a wire rack and leave to cool, then carefully remove the side of the tin, leving the cheesecake on the tin base."
     ],
-    "category": ["dessert"]
+    category: ["dessert"]
   },
   {
-    "name": "Roasted Pepper Salad",
-    "img": "peppersalad.jpg",
-    "ingredients": [
+    name: "Roasted Pepper Salad",
+    id: "roasted-pepper-salad",
+    img: "peppersalad.jpg",
+    ingredients: [
       "8 large red, yellow, and green bell peppers",
       "1/3 cup extra virgin olive oil",
       "6 fresh basil leaves, torn into pices",
       "2 garlic cloves, thinly sliced",
       "Salt and pepper to taste"
     ],
-    "directions": [
+    directions: [
       "Cover the broiler par with foil.",
       "Place the peppers on the pan and place in the broiler so that the peppers are about 3 inches from the heat.",
       "Turn the broiler on high. Broil the peppers, turning them frequently, until the skin blisters and they are charred all over.",
@@ -689,12 +712,13 @@ const recipes2 = [
       "Strain the juices over the peppers. Add the olive oil, basil, garlic, and salt and pepper to taste.",
       "Let marinate for a least  30 minutes before serving."
     ],
-    "category": ["salad"]
+    category: ["salad"]
   },
   {
-    "name": "Roast Lamb with Rosemary / Agnello al Rosmarino",
-    "img": "rosemary_agnello1.jpg",
-    "ingredients": [
+    name: "Roast Lamb with Rosemary / Agnello al Rosmarino",
+    id: "roast-lamb-rosemary",
+    img: "rosemary_agnello1.jpg",
+    ingredients: [
       "1/2 leg of lamb",
       "2 to 3 garlic cloves, cut lengthways into thin slivers",
       "4 springs of fresh rosemary, finely chopped",
@@ -702,7 +726,7 @@ const recipes2 = [
       "salt and pepper to taste",
       "2 fresh leaves of sage, chopped"
     ],
-    "directions": [
+    directions: [
       "Preheat the oven to 400°F",
       "Using the point of a sharp knife make deep incisions in the lamb,especially near the bone and insert the slivers of garlic.",
       "Put the lamb in a roasting pan rub it over with 3 Tbsps of olive oil",
@@ -713,12 +737,13 @@ const recipes2 = [
       "Transfer the lamb to a carving board, tent with foil and leave in a warm place for 10 minutes so that the flesh firms for easier carving.",
       "Serve whole or carved into thin slices"
     ],
-    "category": ["beef"]
+    category: ["beef"]
   },
   {
-    "name": "Sauce/Sugo",
-    "img": "sauce.jpg",
-    "ingredients": [
+    name: "Sauce/Sugo",
+    id: "sauce",
+    img: "sauce.jpg",
+    ingredients: [
       "1 1/2 Tbsps olive oil",
       "1 onion,chopped very finely",
       "1 garlic clove, chopped very finely",
@@ -726,7 +751,7 @@ const recipes2 = [
       "1/4 cup fresh basil leaves",
       "salt and pepper to taste"
     ],
-    "directions": [
+    directions: [
       "Heat the oil in a large frying pan.",
       "Add the onion and cook over medium heat until softened.",
       "Stir in chopped tomato and simmer for 5 to 7 minutes, or until the sauce has reduced slightly and thickened.",
@@ -735,12 +760,13 @@ const recipes2 = [
       "Serve immediately.",
       "This is a sauce suitable for serving with freshly grate Parmigiano cheese."
     ],
-    "category": ["sauce"]
+    category: ["sauce"]
   },
   {
-    "name": "Spaghetti con aglio e olio/ Garlic Spaghetti",
-    "img": "spaghetti-aglio-oglio.jpg",
-    "ingredients": [
+    name: "Spaghetti con aglio e olio/ Garlic Spaghetti",
+    id: "spaghetti-aglio-oglio",
+    img: "spaghetti-aglio-oglio.jpg",
+    ingredients: [
         "14 oz spaghetti",
         "6 Tbsp extra virgin olive oil",
         "3 cloves garlic, chopped",
@@ -749,7 +775,7 @@ const recipes2 = [
         "Fresh grated Parmigiano cheese, to serve",
         "red pepper flakes (optional)"
     ],
-    "directions": [
+    directions: [
       "Cook spaghetti in a large pan of rapidly boiling water",
       "I a large frying pan heat the oil and garlic gently saute’ the garlic until it is barely golden.",
       "Do not let it brown or it will taste bitter.",
@@ -760,13 +786,14 @@ const recipes2 = [
       "Add it to to the pan with the oil and garlic, and cook together for 2 to 3 minutes, stirring well to coat the spaghetti with the sauce.",
       "Serve immediately in warmed serving bowl, with Parmigiano and red pepper, if desired."
     ],
-    "description":"This is one of the simplest and most satisfying pasta dishes of all. It is very popular throughout Italy. Use the best quality available for this dish.",
-    "category": ["pasta"]
+    description:"This is one of the simplest and most satisfying pasta dishes of all. It is very popular throughout Italy. Use the best quality available for this dish.",
+    category: ["pasta"]
   },
   {
-    "name": "Spaghetti alle Vongole",
-    "img": "spaghetti-vongole.jpg",
-    "ingredients": [
+    name: "Spaghetti alle Vongole",
+    id: "spaghetti-vongole",
+    img: "spaghetti-vongole.jpg",
+    ingredients: [
       "2 Tbsp  Olive Oil",
       "3 Cloves garlic, crushed",
       "Pinches of peperoncino flakes",
@@ -780,7 +807,7 @@ const recipes2 = [
       "lemon wedges",
       "Salt and pepper to taste"
     ],
-    "directions": [
+    directions: [
       "Heat the oil in a large deep frying pan.",
       "Add the garlic and chilli and cook over low heat for 30 seconds.",
       "Add the parsley, wine and tomatoes.",
@@ -797,13 +824,14 @@ const recipes2 = [
       "Drain and stir through the sauce. Add the lemon zest, reserved clams and clams meat and toss well.",
       "Serve with the lemon wedges."
     ],
-    "description": "",
-    "category": ["pasta", "seafood"]
+    description: "",
+    category: ["pasta", "seafood"]
   },
   {
-    "name": "Spaghetti with Tuna Sauce",
-    "img": "spaghetti-tunasauce.jpg",
-    "ingredients": [
+    name: "Spaghetti with Tuna Sauce",
+    id: "spaghetti-tuna-sauce",
+    img: "spaghetti-tunasauce.jpg",
+    ingredients: [
       "8 oz spaghetti",
       "1 garlic clove,crushed",
       "14 oz can chopped tomatoes",
@@ -812,7 +840,7 @@ const recipes2 = [
       "4 black olives, stoned and chopped",
       "Salt and pepper to taste"
     ],
-    "directions": [
+    directions: [
       "Cook the spaghetti in lightly salted boiling water for about 10 minutes or until al dente.",
       "Drain well and keep hot.",
       "Add the garlic and tomatoes to the pan and bring to the boil.",
@@ -820,13 +848,14 @@ const recipes2 = [
       "Add the tuna, chilli sauce,olives and spaghetti to the pan.",
       "Heat well, season to taste with salt and plenty of black pepper and serve hot."
     ],
-    "description": "",
-    "category": ["pasta", "seafood"]
+    description: "",
+    category: ["pasta", "seafood"]
   },
   {
-    "name": "Spaghetti alla Puttanesca",
-    "img": "spaghetti-alla-puttanesca.jpg",
-    "ingredients": [
+    name: "Spaghetti alla Puttanesca",
+    id: "spaghetti-puttanesa",
+    img: "spaghetti-alla-puttanesca.jpg",
+    ingredients: [
       "4 Tbsps olive oil",
       "2 cloves garlic,finely chopped",
       "12 oz tomatoes, fresh or canned, chopped",
@@ -839,7 +868,7 @@ const recipes2 = [
       "2 Tbsps chopped fresh parsley to serve",
       "salt and pepper to taste"
     ],
-    "directions": [
+    directions: [
       "Bring a large pan  of water to the boil.",
       "Heat the oil in a large pan.",
       "Add the garlic and the dried hot pepper, and cook for 2 to 3 minutes until the garlic is golden.",
@@ -853,13 +882,14 @@ const recipes2 = [
       "Sprinkle with parsley if desired and serve.",
       "Traditionally no cheese is served with this sauce."
     ],
-    "description": "",
-    "category": ["pasta"]
+    description: "",
+    category: ["pasta"]
   },
   {
-    "name": "Fried Rice Balls/Suppli",
-    "img": "suppli.jpg",
-    "ingredients": [
+    name: "Fried Rice Balls/Suppli",
+    id: "suppli",
+    img: "suppli.jpg",
+    ingredients: [
       "1 recipe Risotto with Parmigiano cheese",
       "3 eggs",
       "2/3 cup mozzarella cheese, cut into small dices",
@@ -867,7 +897,7 @@ const recipes2 = [
       "as required oil, for deep frying",
       "flour, to coat"
     ],
-    "directions": [
+    directions: [
       "Allow the risotto to cool completely",
       "(better if the risotto made the day before ).",
       "Beat 2 eggs, and mix them well into the cold risotto.",
@@ -883,13 +913,14 @@ const recipes2 = [
       "Drain on paper towels while the remaining ball are frying.",
       "Serve hot "
     ],
-    "description": "",
-    "category": ["pasta"]
+    description: "",
+    category: ["pasta"]
   },
   {
-    "name": "Tiramisu",
-    "img": "",
-    "ingredients": [
+    name: "Tiramisu",
+    id: "tiramisu",
+    img: "",
+    ingredients: [
       "1 pound mascarpone",
       "¼ cup sugar",
       "2 tablespoon amaretto or Cognac",
@@ -898,7 +929,7 @@ const recipes2 = [
       "1 cup brewed espresso at room temperature",
       "½ cup chopped bittersweet chocolate"
     ],
-    "directions": [
+    directions: [
       "In a large bowl, whisk together the mascarpone, sugar and amaretto until smooth.",
       "In a chilled bowl with chilled beaters whip the cream until soft.",
       "Fold the cream into the mascarpone mixture.",
@@ -911,13 +942,14 @@ const recipes2 = [
       "Cover with wrap.",
       "Refrigerate for several hours or overnight before serving."
     ],
-    "description": "",
-    "category": ["dessert"]
+    description: "",
+    category: ["dessert"]
   },
   {
-    "name": "Tomato and Basil Bruschetta",
-    "img": "tomatobruschetta.jpg",
-    "ingredients": [
+    name: "Tomato and Basil Bruschetta",
+    id: "tomato-basil-bruschetta",
+    img: "tomatobruschetta.jpg",
+    ingredients: [
       "4 ripe tomatoes",
       "1 Tbsp shredded basil",
       "salt and pepper to taste",
@@ -925,18 +957,18 @@ const recipes2 = [
       "1 garlic clove, chopped",
       "4 pieces bread, ciabatta, baguette"
     ],
-    "directions": [
+    directions: [
       "Grill, broil or toast the bread until crisp.",
       "Roughly chop the tomatoes and mix with the basil, olive oil and garlic.",
       "Season well and pile onto toasted bread"
     ],
-    "description": "",
-    "category": ["antipasti"]
+    category: ["antipasti"]
   },
   {
-    "name": "Tortellini in Brodo",
-    "img": "tortellini-in-brodo.jpg",
-    "ingredients": [
+    name: "Tortellini in Brodo",
+    id: "tortellini-brodo",
+    img: "tortellini-in-brodo.jpg",
+    ingredients: [
       "For Filling:",
       "2 Tbsp butter",
       "4 oz boneless pork loin, cut into 1 inch cubes",
@@ -956,7 +988,7 @@ const recipes2 = [
       "8 cups chicken broth, preferably homemade",
       "Fresh grated Parmigiano Reggiano"
     ],
-    "directions": [
+    directions: [
       "To make the filling:",
       "Melt the butter in a small skillet over medium heat.",
       "Add the pork and cook, steering  occasionally, until cooked through, about 20 minutes.",
@@ -989,13 +1021,14 @@ const recipes2 = [
       "Add the tortellini and cook, 3 to 5 minutes or until the pasta is cooked through- stirring occasionally.",
       "Serve with Parmigiano Reggiano."
     ],
-    "description": "",
-    "category": ["soup"]
+    description: "",
+    category: ["soup"]
   },
   {
-    "name": "Tuna and Bean Salad/ Tonno e Fagioli",
-    "img": "tunaandbeansalad.jpg",
-    "ingredients": [
+    name: "Tuna and Bean Salad/ Tonno e Fagioli",
+    id: "tuna-bean-salad",
+    img: "tunaandbeansalad.jpg",
+    ingredients: [
       "2- 14 oz cans Cannellini or Bordoli beans",
       "2- 7 oz cans tuna fish, drained",
       "4- Tbsps extra virgin olive oil",
@@ -1004,7 +1037,7 @@ const recipes2 = [
       "1 Tbsp fresh chopped parsley",
       "3 spring onions, thinkly sliced"
     ],
-    "directions": [
+    directions: [
       "Pour the beans into a large strainer and rinse under cold water. Drain well.",
       "Place in a serving dish.",
       "Break the tuna into fairly large flakes and arrange over the beans.",
@@ -1014,13 +1047,14 @@ const recipes2 = [
       "Sprinkle with the spring onions.",
       "Toss well before serving."
     ],
-    "description": "",
-    "category": ["salad"]
+    description: "",
+    category: ["salad"]
   },
   {
-    "name": "Vermicelli with Puttanesca Sauce",
-    "img": "",
-    "ingredients": [
+    name: "Vermicelli with Puttanesca Sauce",
+    id: "vermicelli-puttanesca",
+    img: "",
+    ingredients: [
       "2 lb. ripe tomatoes",
       "4 cloves garlic, finely chopped",
       "1/2 tsp crush red pepper",
@@ -1032,7 +1066,7 @@ const recipes2 = [
       "2 to 3 Tbsps capers, drained",
       "16 oz vermicelli or thin spaghetti or any thin pasta"
     ],
-    "directions": [
+    directions: [
       "Peel, seed and chop the tomatoes, reserving any liquid for later use in thinning the sauce.",
       "In a large. skillet, saute the garlic, tomatoes and crush red pepper in olive oil over medium heat.",
       "Add remaining ingredients, lower heat and simmer for 10 minute.",
@@ -1041,13 +1075,14 @@ const recipes2 = [
       "Drain pasta and toss with a few teaspoons of olive oil.",
       "Put pasta on plates and top with a generous amount of sauce."
     ],
-    "description": "",
-    "category": ["pasta"]
+    description: "",
+    category: ["pasta"]
   },
   {
-    "name": "Zuppa di Cozze/Mussels in Spicy Sauce",
-    "img": "mussels-spicy-sauce.jpg",
-    "ingredients": [
+    name: "Zuppa di Cozze/Mussels in Spicy Sauce",
+    id: "zuppa-cozze",
+    img: "mussels-spicy-sauce.jpg",
+    ingredients: [
       "4 lbs mussels",
       "4 garlic, very finely chopped, plus 1 whole garlic clove",
       "2 Tbsp chopped fresh flat leaf parsley",
@@ -1057,7 +1092,7 @@ const recipes2 = [
       "3 lbs ripe tomatoes, peeled, seeded, and chopped or two 28 oz can Italian peeled tomatoes, drain and chopped.",
       "8 slices Italian bread, toasted"
     ],
-    "directions": [
+    directions: [
       "Places the mussel in cold water to cover for 30 minutes.",
       "Drain and scrub them with a stiff brush.",
       "Scrape off any barnacles or seaweed.",
@@ -1072,13 +1107,14 @@ const recipes2 = [
       "Rub the toast with the garlic clove.",
       "Serve the mussels."
     ],
-    "description": "",
-    "category": ["seafood"]
+    description: "",
+    category: ["seafood"]
   },
   {
-    "name": "Zuppa du Baccala",
-    "img": "zuppadibaccala.jpg",
-    "ingredients": [
+    name: "Zuppa du Baccala",
+    id: "zuppa-baccala",
+    img: "zuppadibaccala.jpg",
+    ingredients: [
       "2 Tbsps olive oil",
       "2 medium onion, chopped",
       "1 glove garlic, minced",
@@ -1091,15 +1127,15 @@ const recipes2 = [
       "salt and pepper to taste",
       "1 1/2 pounds cod fish, cut in 2″ pieces."
     ],
-    "directions": [
+    directions: [
       "In a large saucepan add the olive oil.",
       "Saute the onions,garlic and celery until onions are transparent.",
       "Cook over high heat, stirring constantly.",
       "Add remaining ingredients.",
       "Cook over medium heat about 25 to 30 minutes or until fish is cooked."
     ],
-    "description": "",
-    "category": ["seafood", "soup"]
+    description: "",
+    category: ["seafood", "soup"]
   }
 ];
 

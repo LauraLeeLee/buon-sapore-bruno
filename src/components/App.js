@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from './Home_page.js';
 import AboutMe from './About_me.js';
 import Category from './Category';
@@ -8,7 +8,8 @@ import NoMatch from './NoMatch.js';
 import Nav from './Nav.js';
 import Footer from './Footer.js';
 import Recipes2 from '../data/recipes2.js';
-import NavCategories from '../data/nav_items.js';
+// import NavCategories from '../data/nav_items.js';
+import allCategories from '../data/allCategories.json';
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class App extends Component {
     this.state = {
       view: 'home',
       recipes: [],
-      navbarItems: [],
+      allCategories: [],
       navCat: '',
       navImg: ''
     }
@@ -26,7 +27,7 @@ class App extends Component {
   componentDidMount() {
     this.setState({
       recipes: Recipes2,
-      navbarItems: NavCategories
+      allCategories: allCategories
     });
   }
 
@@ -71,7 +72,7 @@ class App extends Component {
   }
 
   render() {
-    const { view, recipes, navbarItems, navCat, navImg } = this.state;
+    const { view, recipes, allCategories, navCat, navImg } = this.state;
     console.log({view});
     console.log({navCat});
 
@@ -80,19 +81,17 @@ class App extends Component {
         <div className="container" role="main">
           <Nav
             view={ view }
-            navbarItems={navbarItems}
+            allCategories={allCategories}
             onNavigate={this.onNavigate}
             />
           <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route path="/About Me" component={AboutMe}/>
-            <Route path="/:category/:recipeId"
+            <Route path="/:categoryId/:recipeId"
                   render={props => <Recipe {...props} recipes={recipes}/>}
             />
-            <Route path="/:category" render={props => <Category {...props}
-                                                       recipes={recipes}
-                                                       navbarItems={navbarItems}
-                                                       navCat={navCat}/>} />
+            <Route path="/:categoryId" render={props => <Category {...props}
+                                                       allCategories={allCategories} />} />
           {/* for a 404 page  */}
           <Route component={NoMatch} />
           </Switch>
