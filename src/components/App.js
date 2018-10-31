@@ -7,9 +7,8 @@ import Recipe from './Recipepage.js';
 import NoMatch from './NoMatch.js';
 import Nav from './Nav.js';
 import Footer from './Footer.js';
-import Recipes2 from '../data/recipes2.js';
-// import NavCategories from '../data/nav_items.js';
 import allCategories from '../data/allCategories.json';
+import Recipes from '../data/recipes.json';
 
 class App extends Component {
   constructor(props) {
@@ -21,55 +20,55 @@ class App extends Component {
       navCat: '',
       navImg: ''
     }
-    this.onNavigate = this.onNavigate.bind(this);
+    // this.onNavigate = this.onNavigate.bind(this);
   }
 
   componentDidMount() {
     this.setState({
-      recipes: Recipes2,
+      recipes: Recipes,
       allCategories: allCategories
     });
   }
 
-  onNavigate = (navCat) => {
-    console.log(navCat);
-    this.setState({
-      navCat: navCat
-    });
-    switch(navCat) {
-      case 'Home':
-        this.setState({view: 'home'});
-        break;
-      case 'About Me':
-        this.setState({view: 'About Me'});
-        break;
-      case 'Recipes':
-        this.setState({view: 'Recipes'});
-        break;
-      case 'Beef':
-        this.setState({view: 'Beef'});
-        break;
-      case 'Chicken':
-        this.setState({view: 'Chicken'});
-        break;
-      case 'Pasta Pizza & Sauce':
-        this.setState({view: 'Pasta Pizza & Sauce'});
-        break;
-      case 'Seafood':
-        this.setState({view: 'Seafood'});
-        break;
-      case 'Salad & Soup':
-        this.setState({view: 'Salad & Soup'});
-        break;
-      case 'Dessert':
-        this.setState({view: 'Dessert'});
-        break;
-        case 'Antipasti':
-          this.setState({view: 'Antipasti'});
-          break;
-      default: this.setState({view: 'home'});
-    }
-  }
+  // onNavigate = (navCat) => {
+  //   console.log(navCat);
+  //   this.setState({
+  //     navCat: navCat
+  //   });
+  //   switch(navCat) {
+  //     case 'Home':
+  //       this.setState({view: 'home'});
+  //       break;
+  //     case 'About Me':
+  //       this.setState({view: 'About Me'});
+  //       break;
+  //     case 'Recipes':
+  //       this.setState({view: 'Recipes'});
+  //       break;
+  //     case 'Beef':
+  //       this.setState({view: 'beef'});
+  //       break;
+  //     case 'Chicken':
+  //       this.setState({view: 'Chicken'});
+  //       break;
+  //     case 'Pasta Pizza & Sauce':
+  //       this.setState({view: 'Pasta Pizza & Sauce'});
+  //       break;
+  //     case 'Seafood':
+  //       this.setState({view: 'Seafood'});
+  //       break;
+  //     case 'Salad & Soup':
+  //       this.setState({view: 'Salad & Soup'});
+  //       break;
+  //     case 'Dessert':
+  //       this.setState({view: 'Dessert'});
+  //       break;
+  //       case 'Antipasti':
+  //         this.setState({view: 'Antipasti'});
+  //         break;
+  //     default: this.setState({view: 'home'});
+  //   }
+  // }
 
   render() {
     const { view, recipes, allCategories, navCat, navImg } = this.state;
@@ -82,15 +81,15 @@ class App extends Component {
           <Nav
             view={ view }
             allCategories={allCategories}
-            onNavigate={this.onNavigate}
             />
           <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route path="/About Me" component={AboutMe}/>
-            <Route path="/:categoryId/:recipeId"
+            <Route path="/:category/:recipeId"
                   render={props => <Recipe {...props} recipes={recipes}/>}
             />
-            <Route path="/:categoryId" render={props => <Category {...props}
+            <Route path="/:category" render={props => <Category {...props}
+                                                       recipes={recipes}
                                                        allCategories={allCategories} />} />
           {/* for a 404 page  */}
           <Route component={NoMatch} />

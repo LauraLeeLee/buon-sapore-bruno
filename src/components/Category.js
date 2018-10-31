@@ -4,13 +4,16 @@ import RecipeList from './RecipeList.js';
 import MenuInfo from './MenuInfo.js';
 
 function Category (props) {
-  const {allCategories, match} = props;
+  const {allCategories, recipes, match} = props;
+  const categoryCat = match.params.category;
   console.log({allCategories});
   console.log({match});
+  console.log({categoryCat});
   return(
     <div>
      <section className="beef_section">
        <MenuInfo  allCategories={allCategories}
+                  categoryCat={categoryCat}
                     match={match}/>
        <RecipeList />
      </section>

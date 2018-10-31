@@ -6,13 +6,13 @@ import {  Link } from "react-router-dom";
 
 class Nav extends Component {
   static propTypes = {
-    onNavigate: PropTypes.func.isRequired,
+    // onNavigate: PropTypes.func.isRequired,
     allCategories: PropTypes.array.isRequired
   }
 
   constructor(props) {
    super(props);
-   this.clickhandler = this.clickHandler.bind(this);
+   // this.clickhandler = this.clickHandler.bind(this);
  }
 
  componentDidMount() {
@@ -24,12 +24,12 @@ class Nav extends Component {
  //   });
  }
 
-  clickHandler = (event) => {
-  let navCat = event.target.innerText;
-    this.props.onNavigate(navCat);
-    console.log("nav item selected");
-    console.log({navCat});
-  }
+  // clickHandler = (event) => {
+  // let navCat = event.target.innerText;
+  //   this.props.onNavigate(navCat);
+  //   console.log("nav item selected");
+  //   console.log({navCat});
+  // }
 
   render(){
     const {allCategories} = this.props;
@@ -40,7 +40,7 @@ class Nav extends Component {
       <nav className="home-view-nav">
         <ul>
           <li>
-           <Link to="/" onClick={this.clickHandler}>
+           <Link to="/" >
            Home
            </Link>
           </li>
@@ -48,7 +48,7 @@ class Nav extends Component {
             <ul>
             {allCategories.map((item) =>(
               <li key={item.id}
-                onClick={this.clickHandler}
+
                 className="category">
               <Link to ={`/${item.name}`}>{item.name} </Link>
               </li>

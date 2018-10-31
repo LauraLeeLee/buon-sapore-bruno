@@ -20,39 +20,37 @@ return (
 
 function MenuInfo(props) {
   const {allCategories, match} = props;
+  const paramsCat = match.params.category;
+  const navbarName = allCategories.map(item => item.name);
+  const categoriesSrc = allCategories.map(item => item.src);
+  const categoriesAlt = allCategories.map(item => item.alt);
+
+  const item = allCategories.find(({name}) => name === match.params.category);
+
   console.log({match});
+  {/*<ul>
+        {topics.map(({ name, id }) => (
+          <li key={id}>
+            <Link to={`/topics/${id}`}>{name}</Link>
+          </li>
+        ))}
+      </ul>
+*/}
+
+// {(navbarItemsName.includes(catCategory)) &&
 
   return(
     <div>
      <article className="menu_info">
-       <h2></h2>
-       <img className="food_image" src='' alt=''/>
+     {paramsCat && (
+       <h2>{`${paramsCat} Recipes`}</h2>
+     )}
+     {allCategories.map(({ src, alt }) => (
+       <img className="food_image" src={ `${src} `} alt={`${alt}`}/>
+     ))}
     </article>
     </div>
   );
 }
-
-// // first part of info for food category page selected from Recipes nav
-// class MenuInfo extends Component {
-//   static propTypes = {
-//     // categoryCat: PropTypes.string.isRequired,
-//     // navbarItems: PropTypes.array.isRequired,
-//     // recipes: PropTypes.array.isRequired,
-//     // navCat: PropTypes.string.isRequired,
-//     // navImg: PropTypes.string.isRequired
-//   }
-//
-//
-//   render(){
-//     return(
-//       <div>
-//       <article className="menu_info">
-//           <h2>Category Recipe</h2>
-//           <img className="food_image" src='' alt=''/>
-//       </article>
-//       </div>
-//     );
-//   }
-// }
 
 export default MenuInfo
