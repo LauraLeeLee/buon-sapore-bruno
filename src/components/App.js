@@ -88,7 +88,7 @@ class App extends Component {
             <Route path="/:category/:recipeId"
                   render={props => <Recipe {...props} recipes={recipes}/>}
             />
-            <Route path="/:category" render={props => <Category {...props}
+            <Route path="/:categoryId" render={props => <Category {...props}
                                                        recipes={recipes}
                                                        allCategories={allCategories} />} />
           {/* for a 404 page  */}
