@@ -6,13 +6,14 @@ import MenuInfo from './MenuInfo.js';
 function Category (props) {
   const {allCategories, recipes, match} = props;
   console.log({allCategories});
-  
+
   return(
     <div>
      <section className="beef_section">
        <MenuInfo  allCategories={allCategories}
                     match={match}/>
-       <RecipeList />
+       <RecipeList match={match}
+                   recipes={recipes}/>
      </section>
    </div>
   );

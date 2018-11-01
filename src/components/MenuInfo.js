@@ -9,15 +9,16 @@ function MenuInfo(props) {
   //   item.name === paramsCat)
 
 const paramsCatArray = paramsCat.toLowerCase().split(" ");
-console.log({paramsCatArray});
+// console.log({paramsCatArray});
 
 const item = allCategories.find(item =>
-  item.category.some(cat => paramsCatArray.includes(cat)));
+  item.category.some(cat =>
+    paramsCatArray.includes(cat)));
 
   console.log({item});
-  console.log({paramsCat});
+  // console.log({paramsCat});
   if(item){console.log(item.name)}
-  console.log({match});
+  // console.log({match});
 
   return(
     <div>

@@ -72,3 +72,7 @@ h2 {
   line-height: 150%;
   color: #fff;
 }
+
+.recipe_li a:hover{
+  color: #000;
+}
