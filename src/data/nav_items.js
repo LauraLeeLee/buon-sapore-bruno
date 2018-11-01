@@ -2,42 +2,42 @@ const navCategories = [
     {
         name: "Beef",
         id: "beef",
-        src: "../images/beefCategory.jpg",
+        src: "beefCategory.jpg",
         category: ["beef"],
         alt: "beef"
     },
     {
         name: "Chicken",
         id: "chicken",
-        src: "../images/chicken.jpg",
+        src: "chicken.jpg",
         category: ["chicken"],
         alt: "chicken"
     },
     {
         name: "Seafood",
         id: "seafood",
-        src: "../images/seafood.jpg",
+        src: ".seafood.jpg",
         category: ["seafood"],
         alt: "seafood"
     },
     {
         name: "Pasta Pizza & Sauce",
         id: "pasta-pizza-sauce",
-        src: "../images/pasta2.jpg",
+        src: "pasta2.jpg",
         category: ["pasta", "pizza", "sauce"],
         alt: "pasta pizza sauce"
     },
     {
         name: "Antipasti",
         id: "antipasti",
-        src: "../images/antipasti.jpg",
+        src: "antipasti.jpg",
         category: ["antipasti"],
         alt: "antipasto"
     },
     {
         name: "Salad & Soup",
         id: "salad-soup",
-        src: "../images/soups.jpg",
+        src: "soups.jpg",
         category: ["salad", "soup"],
         alt: "soup"
     },
