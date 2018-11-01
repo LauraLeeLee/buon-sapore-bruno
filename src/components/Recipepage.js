@@ -17,15 +17,17 @@ function Recipe (props) {
     recipe.id === paramsRecipeId);
 
   console.log({recipe});
+  // console.log(recipe.ingredients);
 
   return (
-    <div>
+    <div className="recipe_container">
+    <article className="recipecard">
       { recipe && (
         <h3>{`${recipe.name}`}</h3>
       )}
         <p>Description</p>
         <h4>Ingredients</h4>
-        <ul>
+        <ul className="recipe_ul">
         {recipe && (
           <li key={recipe.ingredients}
               className="recipe_li">
@@ -34,7 +36,7 @@ function Recipe (props) {
         )}
         </ul>
         <h4>Directions</h4>
-        <ul>
+        <ul className="recipe_ul">
         {recipe && (
           <li key={recipe.directions}
               className="recipe_li">
@@ -43,7 +45,7 @@ function Recipe (props) {
         )}
         </ul>
 
-
+      </article>
     </div>
   );
 }
