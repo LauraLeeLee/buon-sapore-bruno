@@ -28,9 +28,10 @@ function RecipeList (props) {
        { items && items.map((item) => (
         <li key={item.id}
             className="recipe_li">
-            <Link to="{`/${item.name}`}">{`${item.name}`}</Link>
+            <Link to={`${match.url}/${item.id}`}>{item.name}</Link>
         </li>
-      ))}
+      ))
+     }
       </ul>
     </article>
     </div>
