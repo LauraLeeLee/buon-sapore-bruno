@@ -24,10 +24,10 @@ function RecipeList (props) {
   return(
     <div>
     <article className="recipebox">
-      <ul className="recipe_ul">
+      <ul className="recipe_list_ul">
        { items && items.map((item) => (
         <li key={item.id}
-            className="recipe_li">
+            className="recipe_list_li">
             <Link to={`${match.url}/${item.id}`}>{item.name}</Link>
         </li>
       ))

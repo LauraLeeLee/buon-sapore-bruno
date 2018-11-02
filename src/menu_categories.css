@@ -60,12 +60,12 @@ h2 {
 }
 
 /* remove bullets for the recipe list*/
-.recipe_ul {
+.recipe_list_ul {
   padding: 20px 8px 20px;
   list-style-type: none;
 }
 /* remove underline and style font of recipes link text */
-.recipe_li a {
+.recipe_list_li a {
   text-decoration: none;
   font-family: Palatino,serif;
   font-size: 20px;

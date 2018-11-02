@@ -15,34 +15,43 @@ function Recipe (props) {
 
   const recipe = recipes.find( recipe =>
     recipe.id === paramsRecipeId);
+  if(recipe) {console.log({recipe});}
 
-  console.log({recipe});
-  // console.log(recipe.ingredients);
+ //  if(recipe) {const ingredients = recipe.ingredients;}
+ // if(ingredients) {console.log({ingredients});}
+ //
+ //  if(recipe) {console.log(recipe.ingredients);}
 
   return (
     <div className="recipe_container">
     <article className="recipecard">
-      { recipe && (
+      { recipe && recipe.name && (
         <h3>{`${recipe.name}`}</h3>
       )}
-        <p>Description</p>
+      { recipe && recipe.description && (
+        <p>{`${recipe.description}`}</p>
+      )}
+
+
         <h4>Ingredients</h4>
         <ul className="recipe_ul">
-        {recipe && (
-          <li key={recipe.ingredients}
-              className="recipe_li">
-          {recipe.ingredients}
-          </li>
-        )}
+        {recipe && recipe.ingredients && recipe.ingredients.map(ingredient => (
+               <li key ={ingredient}
+                   className="recipe_li">
+                   {ingredient}
+               </li>
+           ))
+           }
         </ul>
         <h4>Directions</h4>
         <ul className="recipe_ul">
-        {recipe && (
-          <li key={recipe.directions}
+        {recipe && recipe.directions && recipe.directions.map(direction => (
+          <li key={direction}
               className="recipe_li">
-          {recipe.directions}
+          {direction}
           </li>
-        )}
+        ))
+       }
         </ul>
 
       </article>

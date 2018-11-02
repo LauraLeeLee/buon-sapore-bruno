@@ -48,14 +48,12 @@ class Nav extends Component {
             <ul>
             {allCategories.map((item) =>(
               <li key={item.id}
-
                 className="category">
               <Link to ={`/${item.name}`}>{item.name} </Link>
               </li>
             ))}
             </ul>
           </li>
-
           <li>
            <Link to="/About Me" onClick={this.clickHandler}>
            About Me
