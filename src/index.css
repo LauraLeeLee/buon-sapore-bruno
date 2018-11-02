@@ -194,3 +194,32 @@ nav ul li ul li a:active {
   margin-bottom: 0px;
   padding-top: 30px;
 }
+
+/*===media queries===*/
+@media (max-width: 800px) {
+  .page_title  {
+    font-size: 2.5em;
+    padding: 2px;
+  }
+
+  .greeting-section {
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .about-header {
+    /* width: 80%; */
+  }
+
+  .about_title {
+    font-size: 3.2em;
+  }
+
+  .bruno {
+    display: none;
+  }
+
+  .stemma {
+    display: none;
+  }
+}

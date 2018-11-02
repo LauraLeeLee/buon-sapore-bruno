@@ -30,6 +30,7 @@
       "Spoon on the remaining sausage and drizzle with the remaining 2 tablespoons oil.",
       "Bake for 30 minutes, or until the sauce is bubbling. Serve hot."
     ],
+    "description":"",
     "category": ["seafood"]
   },
   {
@@ -80,6 +81,7 @@
 			"Bring the sauce to  simmer. Cook for 20 minutes, or until the sauce is thickened.",
 			"Return the steaks to the sauce. Cook briefly, turning the steaks once or twice, until they are warm and cooked to taste. Serve hot."
     ],
+    "description":"",
     "category": ["beef"]
   },
   {

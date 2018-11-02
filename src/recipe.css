@@ -29,6 +29,11 @@
   margin-top: 80px;
 }
 
+.recipecard p {
+  font-style: italic;
+  margin: 5px 10px 0 10px;
+}
+
 .recipe_ul {
   padding-bottom: 20px;
   list-style-type: square;
@@ -43,4 +48,20 @@
   color: #000;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+/*===media queries===*/
+@media (max-width: 800px) {
+  .recipecard {
+    width: 90%;
+  }
+
+  .recipecard h3 {
+    font-size: 1.6em;
+    margin: 30px 10px 0 10px;
+  }
+
+  .recipecard h4:first-of-type {
+    margin-top: 20px;
+  }
 }

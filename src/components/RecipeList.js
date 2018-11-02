@@ -21,22 +21,23 @@ function RecipeList (props) {
     console.log({paramsCat});
     console.log({match});
 
+const Li = <ul className="recipe_list_ul">
+          {  items.map((item) => (
+             <li key={item.id}
+                 className="recipe_list_li">
+                 <Link to={`${match.url}/${item.id}`}>{item.name}</Link>
+             </li>
+             ))}
+           </ul>
+const NoRecipes = <p>No recipes yet! Check back soon!</p>
+
   return(
     <div>
     <article className="recipebox">
-      <ul className="recipe_list_ul">
-       { items && items.map((item) => (
-        <li key={item.id}
-            className="recipe_list_li">
-            <Link to={`${match.url}/${item.id}`}>{item.name}</Link>
-        </li>
-      ))
-     }
-      </ul>
+       { items ? Li  : NoRecipes }
     </article>
     </div>
   );
 }
-
 
 export default RecipeList

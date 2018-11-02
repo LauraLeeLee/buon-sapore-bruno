@@ -21,7 +21,7 @@
   margin: 0;
 } */
 
-.beef_section {
+.category_section {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
@@ -39,9 +39,11 @@ h2 {
   font-family: Cambria,serif;
   font-size: 50px;
   color: #990000;
+  margin-top: 25px;
 }
+
 .food_image {
-  width: 100%;
+  width: 90%;
   border-style: inset;
   border-width: 10px;
   border-color: #F7C914;
@@ -64,15 +66,32 @@ h2 {
   padding: 20px 8px 20px;
   list-style-type: none;
 }
+
+.recipe_list_li {
+  margin-bottom: 8px;
+}
 /* remove underline and style font of recipes link text */
 .recipe_list_li a {
   text-decoration: none;
   font-family: Palatino,serif;
   font-size: 20px;
-  line-height: 150%;
+  /* line-height: 150%; */
   color: #fff;
 }
 
 .recipe_li a:hover{
   color: #000;
+}
+
+
+/*===media queries===*/
+@media (max-width: 800px) {
+
+  h2 {
+    font-size: 40px;
+    margin-top: 1px;
+  }
+  .food_image {
+    margin: 2px;
+  }
 }

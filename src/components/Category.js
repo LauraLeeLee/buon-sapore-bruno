@@ -9,7 +9,7 @@ function Category (props) {
 
   return(
     <div>
-     <section className="beef_section">
+     <section className="category_section">
        <MenuInfo  allCategories={allCategories}
                     match={match}/>
        <RecipeList match={match}
