@@ -1,9 +1,9 @@
 
 
-## View project live here [Thats nice Bruno](http://garrulous-tramp.surge.sh/)
+## View project live here [Thats nice Bruno](http://misty-angle.surge.sh)
 
 ### Description
-This is a project I chose to do for fun and to continue to practice with React. 
+This is a project I chose to do for fun and to continue to practice with React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

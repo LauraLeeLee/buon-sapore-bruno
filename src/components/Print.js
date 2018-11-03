@@ -7,7 +7,6 @@ function Print () {
             onClick={() => window.print()}>
      Print
      </button>
-
   );
 }
 
