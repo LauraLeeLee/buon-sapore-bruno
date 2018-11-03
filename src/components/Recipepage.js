@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Print from './Print.js';
 
 
 function Recipe (props) {
@@ -24,6 +25,7 @@ function Recipe (props) {
 
   return (
     <div className="recipe_container">
+    <Print />
     <article className="recipecard">
       { recipe && recipe.name && (
         <h3>{`${recipe.name}`}</h3>
@@ -31,8 +33,6 @@ function Recipe (props) {
       { recipe && recipe.description && (
         <p>{`${recipe.description}`}</p>
       )}
-
-
         <h4>Ingredients</h4>
         <ul className="recipe_ul">
         {recipe && recipe.ingredients && recipe.ingredients.map(ingredient => (
@@ -53,7 +53,6 @@ function Recipe (props) {
         ))
        }
         </ul>
-
       </article>
     </div>
   );

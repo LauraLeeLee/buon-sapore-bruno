@@ -50,6 +50,21 @@
   margin-right: 10%;
 }
 
+
+/*print button styling  */
+.print {
+  background: var(--main-font);
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  left: 15px;
+  top: 60px;
+  color: var(--list-section);
+  font-size: 14px;
+  font-weight:  bold;
+}
+
+
 /*===media queries===*/
 @media (max-width: 800px) {
   .recipecard {

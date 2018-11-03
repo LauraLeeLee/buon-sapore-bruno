@@ -223,3 +223,17 @@ nav ul li ul li a:active {
     display: none;
   }
 }
+
+@media print {
+  header, nav, footer {
+    display: none;
+  }
+
+  img {
+    display: none;
+  }
+
+  body {
+    background: none;
+  }
+}
