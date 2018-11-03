@@ -79,4 +79,8 @@
   .recipecard h4:first-of-type {
     margin-top: 20px;
   }
+
+  .print {
+    display: none;
+  }
 }
