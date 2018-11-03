@@ -29,12 +29,14 @@ const Li = <ul className="recipe_list_ul">
              </li>
              ))}
            </ul>
-const NoRecipes = <p>No recipes yet! Check back soon!</p>
+const NoRecipes = (<p>No recipes yet! Check back soon!</p>)
 
   return(
     <div>
     <article className="recipebox">
-       { items ? Li  : NoRecipes }
+       { items && Li }
+       { items.length === 0 &&  NoRecipes}
+
     </article>
     </div>
   );
