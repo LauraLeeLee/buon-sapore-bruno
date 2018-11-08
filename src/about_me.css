@@ -1,59 +1,32 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
-}
-
 .about-header {
   /*box-sizing property specifies that padding and border are included in the total width and height of the border*/
+    margin-top: 30px;
     box-sizing: border-box;
-    /* width: 99vw; */
     background-color: #990000;
     border:double 8px;
     border-color: #006600;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 200px;
-}
-
-.bruno {
-  grid-column: 1 / 2;
-  width: 100%;
-  position: relative;
-  left: 5px;
-  top: 5px;
-  /* justify-self: center; */
-  /* width: 100%; */
+    width: 79vw;
 }
 
 .about_title {
   font-family: Cambria, serif;
   font-size: 60px;
   color: #006600;
-  text-shadow: 1px 1px #f5f2df;
-  text-decoration: underline;
-  grid-column: 2 / 3;
-}
-
-.stemma {
-  width: 60%;
-  position: relative;
-  left: 85px;
-  top: 5px;
-  grid-column: 3 / 4;
-  /* justify-self: center; */
+  text-shadow: 1px .5px #f5f2df;
+  padding-bottom: 15px;
+  padding-top: 5px;
 }
 
 .about_main {
   display: grid;
-  grid-template-areas: "photos about about"
-                        "photos about about";
-  grid-template-columns: 530px 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .about-me {
-  height: 350px;
-  overflow: auto;
+  /* height: 350px; */
+  /* overflow: auto; */
+  width: 75vw;
   font-family: "optima", sans-serif;
   font-size: 18px;
   text-align: justify;
@@ -62,10 +35,8 @@
   color: rgb(245,242,223);
   padding: 20px;
   margin-top: 50px;
-  margin-bottom: 15px;
-  margin-right: 5px;
-  grid-row: 1 ;
-  grid-area: about;
+  margin-bottom: 30px;
+  justify-self: center;
 }
 
 .about-me p::first-letter{
@@ -74,52 +45,39 @@
   text-shadow: 1px 1px #f5f2df;
 }
 
-.photos_section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  /* grid-template-rows: auto auto; */
-  /* grid-template-areas: "img img"
-                        "img img"; */
-  grid-area: photos;
+
+img {
+  border: solid 1px;
 }
 
-/*contains photos of patrica on about page*/
-.photobox1, .photobox2{
-  display: grid;
-  /* grid-area: img; */
-  /* flex: 1; */
-  width: 100%;
-  margin-top: 50px;
-  /* width: 200px; */
-/*padding: 20;
+.bruno {
+  /* grid-column: 1 / 2; */
+  width: 40%;
   float: left;
-  text-align: left;
-  margin-top: 80px;
-  margin-left: 175px;
-  margin-bottom: 30px; */
+  margin: 25px 20px 2px 0;
 }
 
-.small {
-  width: 250px;
-  margin-bottom: 20px;
-  /* margin:0;
-  width: 100%;
-  transition:transform 0.5s;
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
+.img_left {
+  width: 40%;
+  float: left;
+  margin: 8px 20px 0 0;
 }
 
-.small.open {
-  flex: 5; /*with class of open, panel will take 5x the amount of extra space */
+/* .img_left.last {
+  width: 25%;
+  float: left;
+  margin: 8px 20px 0 0;
+} */
+
+.img_right {
+  width: 40%;
+  float: right;
+  margin: 8px 0 0 20px;
 }
 
 .footer {
   /* width: 100vw; */
-  height: 30px;
-  background-color: #006600;
+
 }
 
 
@@ -133,29 +91,4 @@
     font-size: 0.8em;
   }
 
-    .about_main {
-      grid-template-areas: "about"
-                            "photos";
-                            grid-template-columns: 1fr;
-      margin: 15px;
-    }
-
-    .photos_section {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-     .photobox1, .photobox2{
-       justify-items: center;
-      /* order: 1; */
-      margin-top: 0;
-     }
-
-     .photobox1:first-child {
-       margin-top: 20px;
-     }
-
-     .small {
-       width: 400px;
-     }
 }

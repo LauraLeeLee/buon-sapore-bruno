@@ -45,13 +45,13 @@ class Search extends Component {
       const (recipesFound, noResults, query, ) = this.state;
       const { recipes } = this.props;
       return(
-        <div>
+
           <input type="text"
                  placeholder="Seach category or ingredient"
                  ref={input => this.search = input }
                  onChange= {this.handleInput}
-        </div>
-        
+      
+
         {recipesFound.length > 0 && (
           <SearchResult recipes={recipes} />
         )}

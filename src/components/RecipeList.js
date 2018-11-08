@@ -32,13 +32,11 @@ const Li = <ul className="recipe_list_ul">
 const NoRecipes = (<p>No recipes yet! Check back soon!</p>)
 
   return(
-    <div>
-    <article className="recipebox">
-       { items && Li }
-       { items.length === 0 &&  NoRecipes}
-
-    </article>
-    </div>
+    <React.Fragment>
+      <article className="recipebox">
+        {items && items.length ? Li : NoRecipes }
+      </article>
+    </React.Fragment>
   );
 }
 

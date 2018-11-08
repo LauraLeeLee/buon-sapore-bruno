@@ -41,7 +41,7 @@
 }
 /* remove underline and style font of recipes link text */
 .recipe_li {
-  text-decoration: none;
+  /* text-decoration: none; */
   font-family: Palatino,serif;
   font-size: 20px;
   line-height: 150%;

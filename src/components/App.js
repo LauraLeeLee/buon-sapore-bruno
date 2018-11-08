@@ -77,11 +77,11 @@ class App extends Component {
 
     return (
       <Router>
-        <div className="container" role="main">
+        <div>
           <Nav
-            view={ view }
             allCategories={allCategories}
             />
+          <div  className="container" role="main">
           <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route path="/About Me" component={AboutMe}/>
@@ -95,7 +95,8 @@ class App extends Component {
           <Route component={NoMatch} />
           </Switch>
 
-          <Footer />
+          </div>
+          <Footer className="footer"/>
         </div>
       </Router>
     );

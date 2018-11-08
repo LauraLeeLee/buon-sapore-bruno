@@ -6,12 +6,12 @@ import HomeImage from './Home_image.js';
 class HomeSection extends Component {
   render(){
     return(
-      <div>
+      <React.Fragment>
         <section className="home_section">
           <HomeImage />
           <HomeGreeting />
         </section>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Stemma from '../images/stemma-patrica.gif';
 import Bruno from '../images/bruno.jpg';
 
+
 // class AboutHeader extends Component {
 //   render(){
 //     return(
@@ -18,13 +19,11 @@ import Bruno from '../images/bruno.jpg';
 
 const AboutHeader = props => {
   return(
-    <div>
+    <React.Fragment>
       <header className="about-header">
-        <img className="bruno" src={Bruno} alt="Bruno"/>
         <h1 className="about_title">About Bruno</h1>
-        <img className="stemma" src={Stemma} alt="stemma for Patrica" width="100px"/>
       </header>
-    </div>
+    </React.Fragment>
   );
 }
 

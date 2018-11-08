@@ -43,7 +43,7 @@ h2 {
 }
 
 .food_image {
-  width: 90%;
+  width: 55%;
   border-style: inset;
   border-width: 10px;
   border-color: #F7C914;
@@ -65,14 +65,15 @@ h2 {
 .recipe_list_ul {
   padding: 20px 8px 20px;
   list-style-type: none;
+  text-align: left;
 }
 
 .recipe_list_li {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 /* remove underline and style font of recipes link text */
 .recipe_list_li a {
-  text-decoration: none;
+  /* text-decoration: none; */
   font-family: Palatino,serif;
   font-size: 20px;
   /* line-height: 150%; */

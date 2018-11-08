@@ -6,12 +6,14 @@ function Recipe (props) {
   const { recipes } = this.props;
 
   return(
-    <div className="search-results">
+    <React.Fragment>
+    <article className="search-results">
       {recipesFound.length > 0 && (
         <RecipeList />
       )}
 
-    </div>
+    </article>
+    </React.Fragment>
   );
 
 }

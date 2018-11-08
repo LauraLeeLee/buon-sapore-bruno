@@ -8,14 +8,14 @@ function Category (props) {
   console.log({allCategories});
 
   return(
-    <div>
+    <React.Fragment>
      <section className="category_section">
        <MenuInfo  allCategories={allCategories}
                     match={match}/>
        <RecipeList match={match}
                    recipes={recipes}/>
      </section>
-   </div>
+   </React.Fragment>
   );
 }
 

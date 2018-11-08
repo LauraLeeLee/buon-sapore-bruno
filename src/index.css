@@ -19,19 +19,20 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-#container {
+.container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
-  text-align: center;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
 }
 
 .main_header {
-  margin: 20px 10px 0;
+  margin: 50px 10px 50px;
   border-style: double;
   border-width: 15px;
   border-color: #264626;
   background: #f8dfa0;
+  width: 90vw;
 }
 
 .page_title {
@@ -43,16 +44,12 @@ body {
   margin: 0;
 }
 
-nav {
+/* nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-}
+} */
 
-.home-view-nav{
-  grid-row: 2 / 3;
-  /* margin-top: 200px; */
-}
 /* ====nav bar styling===== */
 /* Top level menu bar   */
 nav ul{
@@ -64,7 +61,7 @@ nav ul{
 }
 /* Each list item inside horizontal menu bar */
 nav ul li {
-  width: 33.3%;
+  width: 33.72%;
   display: inline-block;
   margin-right: -4.5px;
 }
@@ -74,7 +71,7 @@ nav a, nav span {
 /* Preload two background images, padding added to make the hover-clickable area bigger
 for the user */
   background-color: #006600;
-  box-shadow: 0 25px 25px -20px silver inset;
+  /* box-shadow: 0 25px 25px -20px silver inset; */
   text-decoration: none;
   outline: none;
   display: block;
@@ -83,7 +80,6 @@ for the user */
   line-height: 50px;
   text-align: center;
   padding: 2px, 2px, 2px, 2px;
-  border-right: solid 1.25px grey;
 }
 
 /* Unvisited/visited links in horizontal bar */
@@ -100,7 +96,7 @@ nav ul li a:hover, nav ul li span:hover  {
 /* Drop-down menu for each item in menu bar */
 nav ul li ul {
   background-color: #990000;
-  box-shadow: 0 40px 40px -20px black inset;
+  /* box-shadow: 0 40px 40px -20px black inset; */
   position: absolute;
   z-index: 11;
   /*set width to match the main nav tabs, inherit from parent*/
@@ -123,6 +119,7 @@ nav ul li ul li {
   left: -.25px;
   height: 44px;
   line-height: 44px;
+  border-top: solid 1.25px grey;
 }
 /* Links in drop-down menus */
 nav ul li ul li a,
@@ -195,6 +192,13 @@ nav ul li ul li a:active {
   padding-top: 30px;
 }
 
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 30px;
+  background-color: #006600;
+}
+
 /*===media queries===*/
 @media (max-width: 800px) {
   .page_title  {
@@ -207,22 +211,21 @@ nav ul li ul li a:active {
     margin-bottom: 0;
   }
 
-  .about-header {
-    /* width: 80%; */
-  }
-
   .about_title {
     font-size: 3.2em;
   }
 
-  .bruno {
-    display: none;
+  nav ul li ul {
+    width: 40%;
+    right: 37%;
+  }
+  nav ul li ul li {
+    font-size: 0.8em;
   }
 
-  .stemma {
-    display: none;
-  }
 }
+
+
 
 @media print {
   header, nav, footer {

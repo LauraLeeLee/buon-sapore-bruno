@@ -21,7 +21,7 @@ const item = allCategories.find(item =>
   // console.log({match});
 
   return(
-    <div>
+    <React.Fragment>
      <article className="menu_info">
        { item && (
        <h2>{`${item.name} Recipes`}</h2>
@@ -32,7 +32,7 @@ const item = allCategories.find(item =>
              alt={`${item.alt}`}/>
       )}
      </article>
-  </div>
+  </React.Fragment>
  );
 }
 
