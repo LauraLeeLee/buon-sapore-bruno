@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SearchResult from './SearchResult.js';
+import PropTypes from 'prop-types';
+// import SearchResult from './SearchResult.js';
 
 
 class Search extends Component {
@@ -28,10 +29,11 @@ class Search extends Component {
    }
 
    searchRecipes(query) {
+     const { recipes } = this.props;
      if(query !== '') {
        recipes.search(this.state.query)
         .then((response) => {
-          response.length > 0 ? this.setState({recipesFound: resonse, noResults: false}) : this.setState({recipesFound: [], noResults: true});
+          response.length > 0 ? this.setState({recipesFound: response, noResults: false}) : this.setState({recipesFound: [], noResults: true});
           console.log(response);
         });
      } else {
@@ -42,20 +44,17 @@ class Search extends Component {
    }
 
     render() {
-      const (recipesFound, noResults, query, ) = this.state;
+      const { recipesFound, noResults, query } = this.state;
       const { recipes } = this.props;
+
       return(
 
           <input type="text"
                  placeholder="Seach category or ingredient"
                  ref={input => this.search = input }
                  onChange= {this.handleInput}
-      
-
-        {recipesFound.length > 0 && (
-          <SearchResult recipes={recipes} />
-        )}
-      );
+          />
+      )
   }
 }
 

@@ -7,8 +7,10 @@ import Recipe from './Recipepage.js';
 import NoMatch from './NoMatch.js';
 import Nav from './Nav.js';
 import Footer from './Footer.js';
+import Search from './Search.js';
 import allCategories from '../data/allCategories.json';
 import Recipes from '../data/recipes.json';
+
 
 class App extends Component {
   constructor(props) {
@@ -77,27 +79,30 @@ class App extends Component {
 
     return (
       <Router>
-        <div>
+          <div className="container" role="main">
           <Nav
             allCategories={allCategories}
             />
-          <div  className="container" role="main">
           <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route path="/About Me" component={AboutMe}/>
+            <Route path="/Search" render={props => <Search {...props}
+                                                       recipes={recipes}
+                                                       />} />
             <Route path="/:category/:recipeId"
                   render={props => <Recipe {...props} recipes={recipes}/>}
             />
             <Route path="/:categoryId" render={props => <Category {...props}
                                                        recipes={recipes}
                                                        allCategories={allCategories} />} />
-          {/* for a 404 page  */}
-          <Route component={NoMatch} />
-          </Switch>
 
-          </div>
-          <Footer className="footer"/>
+          {/* for a 404 page  */}
+            <Route component={NoMatch} />
+
+          </Switch>
+          <Footer />
         </div>
+
       </Router>
     );
   }

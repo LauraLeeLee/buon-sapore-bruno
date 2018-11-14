@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {  Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 
 
@@ -36,32 +36,37 @@ class Nav extends Component {
     // if(catName.length>0){console.log(catName);}
 
     return(
-      <div>
+      <React.Fragment>
       <nav className="home-view-nav">
         <ul>
           <li>
-           <Link to="/" >
-           Home
-           </Link>
+           <NavLink activeClassName="active-link" exact to="/" >
+              Home
+           </NavLink>
           </li>
           <li><span>Recipes</span>
             <ul>
             {allCategories.map((item) =>(
               <li key={item.id}
                 className="category">
-              <Link to ={`/${item.name}`}>{item.name} </Link>
+              <NavLink activeClassName="active-link" to ={`/${item.name}`}>{item.name} </NavLink>
               </li>
             ))}
+             <li>
+             <NavLink activeClassName="active-link" to = "/Search">
+                 Search All Recipes
+             </NavLink>
+             </li>
             </ul>
           </li>
           <li>
-           <Link to="/About Me" onClick={this.clickHandler}>
-           About Me
-           </Link>
+           <NavLink activeClassName="active-link" to="/About Me">
+              About Me
+           </NavLink>
           </li>
         </ul>
       </nav>
-      </div>
+      </React.Fragment>
     );
   }
 }
