@@ -46,22 +46,18 @@ class RecipeFilter extends Component {
      console.log({paramsCat});
      console.log({match});
 
-     const filteredItems= recipes.filter(item =>
+     let filteredItems= recipes.filter(item =>
           item.category.every(cat =>
             paramsCatArray.includes(cat)));
+      console.log(this.state);
+     if ( filteredItems.length !== filteredList.length ) {
+       this.setState({filteredList : filteredItems});
+       console.log("state was set");
+     }
      console.log({filteredItems});
-
-    if (prevState.data !== this.state.data) {
-     this.setState({filteredList : filteredItems});
-
-      }
-   }
-
-   // componentWillMount() {
-   //    const { filteredList } = this.state;
-   //    this.setState({filteredList : filteredItems});
-   // }
-
+     console.log({prevState});
+     console.log({prevProps});
+ }
 
    render() {
      const {recipes, match, filterRecipes } = this.props;
