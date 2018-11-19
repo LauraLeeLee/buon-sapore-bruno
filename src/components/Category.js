@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import RecipeList from './RecipeList.js';
+import RecipeFilter from './RecipeFilter.js';
 import MenuInfo from './MenuInfo.js';
 
 function Category (props) {
@@ -12,7 +12,7 @@ function Category (props) {
      <section className="category_section">
        <MenuInfo  allCategories={allCategories}
                     match={match}/>
-       <RecipeList match={match}
+       <RecipeFilter match={match}
                    recipes={recipes}/>
      </section>
    </React.Fragment>
