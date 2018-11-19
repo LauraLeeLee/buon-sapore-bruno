@@ -19,38 +19,54 @@ class RecipeFilter extends Component {
    }
 
    componentDidMount(){
-     // filterRecipes() {
-     //
-     // }
-
      const { match, recipes } = this.props;
      const { filteredList } = this.state;
      const paramsCat = match.params.categoryId;
      const paramsCatArray = paramsCat.toLowerCase().split(" ");
+
      console.log({paramsCatArray});
-
-      const filteredItems= recipes.filter(item =>
-         item.category.every(cat =>
-           paramsCatArray.includes(cat)));
-
-      this.setState({filteredList : filteredItems});
-
-     console.log({filteredItems});
      console.log({paramsCat});
      console.log({match});
-     console.log("filterRecipes fired");
 
+     const filteredItems= recipes.filter(item =>
+          item.category.every(cat =>
+            paramsCatArray.includes(cat)));
+     console.log({filteredItems});
+
+     this.setState({filteredList : filteredItems});
    }
 
+   componentDidUpdate(prevProps, prevState){
+     const { match, recipes } = this.props;
+     const { filteredList } = this.state;
+     const paramsCat = match.params.categoryId;
+     const paramsCatArray = paramsCat.toLowerCase().split(" ");
 
+     console.log({paramsCatArray});
+     console.log({paramsCat});
+     console.log({match});
+
+     const filteredItems= recipes.filter(item =>
+          item.category.every(cat =>
+            paramsCatArray.includes(cat)));
+     console.log({filteredItems});
+
+    if (prevState.data !== this.state.data) {
+     this.setState({filteredList : filteredItems});
+
+      }
+   }
+
+   // componentWillMount() {
+   //    const { filteredList } = this.state;
+   //    this.setState({filteredList : filteredItems});
+   // }
 
 
    render() {
      const {recipes, match, filterRecipes } = this.props;
      const {filteredList} = this.state;
      console.log({filteredList});
-     const paramsCat = match.params.categoryId;
-     console.log({paramsCat});
 
      return(
        <React.Fragment>
