@@ -18,15 +18,20 @@ class Nav extends Component {
    // this.clickhandler = this.clickHandler.bind(this);
  }
 
- componentDidUpdate() {
+ componentDidUpdate(prevProps, prevState) {
    const allCategories = this.props.allCategories;
+   if (this.state.categories !== prevState.categories){
+     
    const catArray =Object.entries(allCategories).map((item) =>
       item.name);
-   // this.setState({
-   //   categories: catArray
-   // });
+
+   this.setState({
+     categories: catArray
+   });
    console.log(catArray);
    console.log({allCategories});
+ }
+
  }
 
   // clickHandler = (event) => {
