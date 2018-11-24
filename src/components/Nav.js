@@ -7,21 +7,26 @@ import {  NavLink } from "react-router-dom";
 class Nav extends Component {
   static propTypes = {
     // onNavigate: PropTypes.func.isRequired,
-    allCategories: PropTypes.object.isRequired
+    allCategories: PropTypes.object.isRequired,
   }
 
   constructor(props) {
    super(props);
+   this.state = {
+     categories: []
+   }
    // this.clickhandler = this.clickHandler.bind(this);
  }
 
- componentDidMount() {
-   const {navbarItems} = this.props.navbarItems;
-   const navNames =Object.entries(navbarItems).map((item) =>
+ componentDidUpdate() {
+   const allCategories = this.props.allCategories;
+   const catArray =Object.entries(allCategories).map((item) =>
       item.name);
-   this.setState({
-     navbarItems: navNames
-   });
+   // this.setState({
+   //   categories: catArray
+   // });
+   console.log(catArray);
+   console.log({allCategories});
  }
 
   // clickHandler = (event) => {
@@ -33,8 +38,10 @@ class Nav extends Component {
 
   render(){
     const {allCategories} = this.props;
+    const {categories} = this.state;
     // if(catName.length>0){console.log(catName);}
-
+    console.log({allCategories});
+    console.log({categories});
     return(
       <React.Fragment>
       <nav className="home-view-nav">
