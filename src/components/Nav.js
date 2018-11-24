@@ -7,7 +7,7 @@ import {  NavLink } from "react-router-dom";
 class Nav extends Component {
   static propTypes = {
     // onNavigate: PropTypes.func.isRequired,
-    allCategories: PropTypes.array.isRequired
+    allCategories: PropTypes.object.isRequired
   }
 
   constructor(props) {
@@ -16,12 +16,12 @@ class Nav extends Component {
  }
 
  componentDidMount() {
- //   const {navbarItems} = this.props.navbarItems;
- //   const navNames = navbarItems.map((item) =>
- //      item.name);
- //   this.setState({
- //     navbarItems: navNames
- //   });
+   const {navbarItems} = this.props.navbarItems;
+   const navNames =Object.entries(navbarItems).map((item) =>
+      item.name);
+   this.setState({
+     navbarItems: navNames
+   });
  }
 
   // clickHandler = (event) => {
@@ -46,7 +46,7 @@ class Nav extends Component {
           </li>
           <li><span>Recipes</span>
             <ul>
-            {allCategories.map((item) =>(
+            {Object.keys(allCategories).map((item) =>(
               <li key={item.id}
                 className="category">
               <NavLink activeClassName="active-link" to ={`/${item.name}`}>{item.name} </NavLink>

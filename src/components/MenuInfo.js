@@ -5,15 +5,17 @@ function MenuInfo(props) {
   const {allCategories, match } = props;
   const paramsCat = match.params.categoryId;
 
-  // const item = allCategories.find((item) =>
-  //   item.name === paramsCat)
+  const item = Object.entries(allCategories).map((item) =>
+    item.id === paramsCat)
 
 const paramsCatArray = paramsCat.toLowerCase().split(" ");
 // console.log({paramsCatArray});
 
-const item = allCategories.find(item =>
-  item.category.some(cat =>
-    paramsCatArray.includes(cat)));
+// const item = allCategories.find(item =>
+//   item.category.some(cat =>
+//     paramsCatArray.includes(cat)));
+
+// const currentCat = allCategories.id.includes(paramsCat);
 
   console.log({item});
   // console.log({paramsCat});
@@ -23,14 +25,7 @@ const item = allCategories.find(item =>
   return(
     <React.Fragment>
      <article className="menu_info">
-       { item && (
-       <h2>{`${item.name} Recipes`}</h2>
-      )}
-      { item && (
-        <img className="food_image"
-             src={require(`../images/${item.src}`)}
-             alt={`${item.alt}`}/>
-      )}
+  
      </article>
   </React.Fragment>
  );

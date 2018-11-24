@@ -50,7 +50,7 @@ class RecipeFilter extends Component {
           item.category.every(cat =>
             paramsCatArray.includes(cat)));
       console.log(this.state);
-     if ( filteredItems.length !== filteredList.length ) {
+     if ( filteredItems && filteredItems.length !== filteredList  && filteredList.length) {
        this.setState({filteredList : filteredItems});
        console.log("state was set");
      }
