@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import {  NavLink } from "react-router-dom";
 
 
-
 class Nav extends Component {
   static propTypes = {
     // onNavigate: PropTypes.func.isRequired,
@@ -18,21 +17,39 @@ class Nav extends Component {
    // this.clickhandler = this.clickHandler.bind(this);
  }
 
- componentDidUpdate(prevProps, prevState) {
-   const allCategories = this.props.allCategories;
-   if (this.state.categories !== prevState.categories){
-     
-   const catArray =Object.entries(allCategories).map((item) =>
-      item.name);
+ // componentDidMount() {
+ //   const allCategories = this.props.allCategories;
+ //   // if (this.state.categories !== prevState.categories){
+ //
+ //   // const catArray =Object.entries(allCategories).map((item) =>
+ //   //    item.name);
+ //   // const catArray = {for (item in allCategories) {
+ //   //   <li key={item.id}
+ //   //     className="category">
+ //   //   <NavLink activeClassName="active-link" to ={`/${item.name}`}>{item.name} </NavLink>
+ //   //   </li>
+ //   //  }}
+ //
+ //
+ //     this.setState({
+ //       categories: catArray
+ //     });
+ //     console.log(catArray);
+ //     console.log({allCategories});
+ // }
+//
 
-   this.setState({
-     categories: catArray
-   });
-   console.log(catArray);
-   console.log({allCategories});
- }
 
- }
+
+
+// Map over an array of objects
+
+// Recipes2 is the array of objects
+// Recipe is the item in the array,
+// Index is the..postion?? <— works without this parameter
+
+
+
 
   // clickHandler = (event) => {
   // let navCat = event.target.innerText;
@@ -47,6 +64,17 @@ class Nav extends Component {
     // if(catName.length>0){console.log(catName);}
     console.log({allCategories});
     console.log({categories});
+
+    function CategoryLi(props) {
+     for (const item in allCategories) {
+       let Li = <li key={item.id}
+         className="category">
+       <NavLink activeClassName="active-link" to ={`/${item.name}`}>{item.name} </NavLink>
+       </li>
+     }
+   }
+
+
     return(
       <React.Fragment>
       <nav className="home-view-nav">
@@ -58,12 +86,9 @@ class Nav extends Component {
           </li>
           <li><span>Recipes</span>
             <ul>
-            {Object.keys(allCategories).map((item) =>(
-              <li key={item.id}
-                className="category">
-              <NavLink activeClassName="active-link" to ={`/${item.name}`}>{item.name} </NavLink>
-              </li>
-            ))}
+              <CategoryLi />
+
+
              <li>
              <NavLink activeClassName="active-link" to = "/Search">
                  Search All Recipes
