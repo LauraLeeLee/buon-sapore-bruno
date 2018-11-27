@@ -65,15 +65,16 @@ class Nav extends Component {
     console.log({allCategories});
     console.log({categories});
 
-    function CategoryLi(props) {
-     for (const item in allCategories) {
-       let Li = <li key={item.id}
+    let Li = []
+    for(const item in allCategories) {
+      Li.push(
+        <li key={item.id}
          className="category">
        <NavLink activeClassName="active-link" to ={`/${item.name}`}>{item.name} </NavLink>
        </li>
+      )
      }
-   }
-
+     console.log(Li);
 
     return(
       <React.Fragment>
@@ -86,9 +87,7 @@ class Nav extends Component {
           </li>
           <li><span>Recipes</span>
             <ul>
-              <CategoryLi />
-
-
+              {Li}
              <li>
              <NavLink activeClassName="active-link" to = "/Search">
                  Search All Recipes
