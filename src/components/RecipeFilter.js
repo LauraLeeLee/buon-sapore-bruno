@@ -42,9 +42,9 @@ class RecipeFilter extends Component {
      const paramsCat = match.params.categoryId;
      const paramsCatArray = paramsCat.toLowerCase().split(" ");
 
-     console.log({paramsCatArray});
-     console.log({paramsCat});
-     console.log({match});
+     // console.log({paramsCatArray});
+     // console.log({paramsCat});
+     // console.log({match});
 
      let filteredItems= recipes.filter(item =>
           item.category.every(cat =>
@@ -54,9 +54,9 @@ class RecipeFilter extends Component {
        this.setState({filteredList : filteredItems});
        console.log("state was set");
      }
-     console.log({filteredItems});
-     console.log({prevState});
-     console.log({prevProps});
+     // console.log({filteredItems});
+     // console.log({prevState});
+     // console.log({prevProps});
  }
 
    render() {
@@ -66,7 +66,6 @@ class RecipeFilter extends Component {
 
      return(
        <React.Fragment>
-
           <RecipeList filteredList={filteredList}
                       match={match}/>
        </React.Fragment>

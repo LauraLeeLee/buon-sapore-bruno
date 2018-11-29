@@ -18,7 +18,7 @@ class App extends Component {
     this.state = {
       view: 'home',
       recipes: [],
-      allCategories: [],
+      allCategories: {},
       navCat: '',
       navImg: ''
     }

@@ -5,76 +5,31 @@ import {  NavLink } from "react-router-dom";
 
 class Nav extends Component {
   static propTypes = {
-    // onNavigate: PropTypes.func.isRequired,
     allCategories: PropTypes.object.isRequired,
   }
 
   constructor(props) {
    super(props);
-   this.state = {
-     categories: []
-   }
-   // this.clickhandler = this.clickHandler.bind(this);
  }
-
- // componentDidMount() {
- //   const allCategories = this.props.allCategories;
- //   // if (this.state.categories !== prevState.categories){
- //
- //   // const catArray =Object.entries(allCategories).map((item) =>
- //   //    item.name);
- //   // const catArray = {for (item in allCategories) {
- //   //   <li key={item.id}
- //   //     className="category">
- //   //   <NavLink activeClassName="active-link" to ={`/${item.name}`}>{item.name} </NavLink>
- //   //   </li>
- //   //  }}
- //
- //
- //     this.setState({
- //       categories: catArray
- //     });
- //     console.log(catArray);
- //     console.log({allCategories});
- // }
-//
-
-
-
-
-// Map over an array of objects
-
-// Recipes2 is the array of objects
-// Recipe is the item in the array,
-// Index is the..postion?? <— works without this parameter
-
-
-
-
-  // clickHandler = (event) => {
-  // let navCat = event.target.innerText;
-  //   this.props.onNavigate(navCat);
-  //   console.log("nav item selected");
-  //   console.log({navCat});
-  // }
 
   render(){
     const {allCategories} = this.props;
-    const {categories} = this.state;
-    // if(catName.length>0){console.log(catName);}
     console.log({allCategories});
+
+    const categories = Object.keys(allCategories);
     console.log({categories});
 
     let Li = []
-    for(const item in allCategories) {
+    for( const cat of categories) {
+      const item = allCategories[cat];
+      console.log({item});
       Li.push(
         <li key={item.id}
          className="category">
-       <NavLink activeClassName="active-link" to ={`/${item.name}`}>{item.name} </NavLink>
+       <NavLink activeClassName="active-link" to ={`/${item.id}`}>{item.name} </NavLink>
        </li>
       )
      }
-     console.log(Li);
 
     return(
       <React.Fragment>
