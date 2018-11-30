@@ -14,15 +14,11 @@ class Nav extends Component {
 
   render(){
     const {allCategories} = this.props;
-    console.log({allCategories});
-
     const categories = Object.keys(allCategories);
-    console.log({categories});
 
     let Li = []
     for( const cat of categories) {
       const item = allCategories[cat];
-      console.log({item});
       Li.push(
         <li key={item.id}
          className="category">

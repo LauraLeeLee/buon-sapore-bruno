@@ -19,50 +19,49 @@ class RecipeFilter extends Component {
    }
 
    componentDidMount(){
-     const { match, recipes } = this.props;
+     const { match, recipes, allCategories } = this.props;
      const { filteredList } = this.state;
-     const paramsCat = match.params.categoryId;
-     const paramsCatArray = paramsCat.toLowerCase().split(" ");
+     const currentCat = match.params.categoryId;
+     const currentCatArray = currentCat.toLowerCase().split("-");
+     console.log({currentCatArray});
+     console.log({currentCat});
+     console.log({match});
 
-     console.log({paramsCatArray});
-     console.log({paramsCat});
+    const filteredItems= recipes.filter(item =>
+          item.category.every(cat =>
+            currentCatArray.includes(cat)));
+     console.log({filteredItems});
+
+    this.setState({filteredList : filteredItems});
+   }
+
+   componentDidUpdate(prevProps, prevState){
+     const { match, recipes, allCategories } = this.props;
+     const { filteredList } = this.state;
+     const currentCat = match.params.categoryId;
+     const currentCatArray = currentCat.toLowerCase().split("-");
+     console.log({currentCatArray});
+     console.log({currentCat});
      console.log({match});
 
      const filteredItems= recipes.filter(item =>
           item.category.every(cat =>
-            paramsCatArray.includes(cat)));
-     console.log({filteredItems});
+            currentCatArray.includes(cat)));
 
-     this.setState({filteredList : filteredItems});
-   }
+            console.log({filteredItems});
 
-   componentDidUpdate(prevProps, prevState){
-     const { match, recipes } = this.props;
-     const { filteredList } = this.state;
-     const paramsCat = match.params.categoryId;
-     const paramsCatArray = paramsCat.toLowerCase().split(" ");
-
-     // console.log({paramsCatArray});
-     // console.log({paramsCat});
-     // console.log({match});
-
-     let filteredItems= recipes.filter(item =>
-          item.category.every(cat =>
-            paramsCatArray.includes(cat)));
-      console.log(this.state);
-     if ( filteredItems && filteredItems.length !== filteredList  && filteredList.length) {
+     if ( filteredItems && filteredItems.length !== filteredList && filteredList.length) {
        this.setState({filteredList : filteredItems});
        console.log("state was set");
+     } else {
+       console.log("state not set");
      }
-     // console.log({filteredItems});
-     // console.log({prevState});
-     // console.log({prevProps});
  }
 
    render() {
-     const {recipes, match, filterRecipes } = this.props;
+     const {recipes, match } = this.props;
      const {filteredList} = this.state;
-     console.log({filteredList});
+     // console.log({filteredList});
 
      return(
        <React.Fragment>

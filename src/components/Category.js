@@ -13,7 +13,8 @@ function Category (props) {
        <MenuInfo  allCategories={allCategories}
                     match={match}/>
        <RecipeFilter match={match}
-                   recipes={recipes}/>
+                   recipes={recipes}
+                   allCategories={allCategories}/>
      </section>
    </React.Fragment>
   );

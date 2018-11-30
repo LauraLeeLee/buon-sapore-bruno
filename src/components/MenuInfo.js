@@ -4,11 +4,10 @@ import PropTypes from 'prop-types';
 function MenuInfo(props) {
   const {allCategories, match } = props;
   const currentCat = match.params.categoryId;
-
   // const paramsCatArray = currentCat.toLowerCase().split(" ");
-
   const categories = Object.keys(allCategories);
   console.log({categories});
+
   let currentItem = {}
   for( const cat of categories) {
       const item = allCategories[cat];
@@ -16,7 +15,6 @@ function MenuInfo(props) {
         currentItem = item;
       }
   }
-
   console.log({currentItem});
   console.log({currentCat});
 
@@ -24,14 +22,13 @@ function MenuInfo(props) {
     <React.Fragment>
      <article className="menu_info">
      {currentItem &&
-      (
-        <React.Fragment>
+      (<React.Fragment>
           <h2>{`${currentItem.name} Recipes`}</h2>
           <img className="food_image"
                src={require(`../images/${currentItem.src}`)}
                alt={`${currentItem.alt}`} />
         </React.Fragment>)
-    }
+      }
      </article>
   </React.Fragment>
  );
