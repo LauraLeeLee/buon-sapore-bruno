@@ -21,9 +21,9 @@ class RecipeFilter extends Component {
      const { filteredList } = this.state;
      const currentCat = match.params.categoryId;
      const currentCatArray = currentCat.toLowerCase().split("-");
-    console.log("%ccomponentDidMount", "font-size: 12px; background-color: yellow; color:red;");
-     console.log({currentCatArray});
+     console.log("%ccomponentDidMount", "font-size: 12px; background-color: yellow; color:red;");
      console.log({currentCat});
+     console.log({currentCatArray});
      console.log({match});
 
     const filteredItems= recipes.filter(item =>
@@ -43,8 +43,8 @@ class RecipeFilter extends Component {
      const currentCat = match.params.categoryId;
      const currentCatArray = currentCat.toLowerCase().split("-");
      console.log("%ccomponentDidUpdate", "font-size: 12px; background-color: yellow; color:red;");
-     console.log({currentCatArray});
      console.log({currentCat});
+     console.log({currentCatArray});
      console.log({match});
 
      const filteredItems= recipes.filter(item =>
@@ -55,9 +55,9 @@ class RecipeFilter extends Component {
 
      if ( filteredItems && filteredItems.length !== filteredList && filteredList.length) {
        this.setState({filteredList : filteredItems});
-       console.log("state was set");
+       console.log("%cstate was set", "font-size: 12px; color: white; background-color: green; padding: 5px;");
      } else {
-       console.log("state not set");
+       console.log("%cstate not set", "font-size: 12px; color: white; background-color: red; padding: 5px;");
      }
      console.log({filteredList});
  }
