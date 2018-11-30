@@ -11,11 +11,9 @@ class RecipeFilter extends Component {
     constructor(props) {
      super(props);
      let match = props.match;
-
      this.state = {
        filteredList: [],
      }
-     // this.filterRecipes = this.filterRecipes.bind(this);
    }
 
    componentDidMount(){
@@ -23,6 +21,7 @@ class RecipeFilter extends Component {
      const { filteredList } = this.state;
      const currentCat = match.params.categoryId;
      const currentCatArray = currentCat.toLowerCase().split("-");
+    console.log("%ccomponentDidMount", "font-size: 12px; background-color: yellow; color:red;");
      console.log({currentCatArray});
      console.log({currentCat});
      console.log({match});
@@ -32,14 +31,18 @@ class RecipeFilter extends Component {
             currentCatArray.includes(cat)));
      console.log({filteredItems});
 
+     if(filteredItems){
     this.setState({filteredList : filteredItems});
    }
+
+ }
 
    componentDidUpdate(prevProps, prevState){
      const { match, recipes, allCategories } = this.props;
      const { filteredList } = this.state;
      const currentCat = match.params.categoryId;
      const currentCatArray = currentCat.toLowerCase().split("-");
+     console.log("%ccomponentDidUpdate", "font-size: 12px; background-color: yellow; color:red;");
      console.log({currentCatArray});
      console.log({currentCat});
      console.log({match});
@@ -56,12 +59,13 @@ class RecipeFilter extends Component {
      } else {
        console.log("state not set");
      }
+     console.log({filteredList});
  }
 
    render() {
      const {recipes, match } = this.props;
      const {filteredList} = this.state;
-     // console.log({filteredList});
+     console.log({filteredList});
 
      return(
        <React.Fragment>
