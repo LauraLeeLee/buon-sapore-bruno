@@ -16,7 +16,7 @@ class RecipeFilter extends Component {
      }
    }
 
-   componentDidMount(){
+   componentWillMount(){
      const { match, recipes, allCategories } = this.props;
      const { filteredList } = this.state;
      const currentCat = match.params.categoryId;

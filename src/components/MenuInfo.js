@@ -21,11 +21,11 @@ function MenuInfo(props) {
   return(
     <React.Fragment>
      <article className="menu_info">
-     {currentItem &&
+     {currentItem && currentItem.src &&
       (<React.Fragment>
           <h2>{`${currentItem.name} Recipes`}</h2>
           <img className="food_image"
-               // src={require(`../images/${currentItem.src}`)}
+               src={require(`../images/${currentItem.src}`)}
                alt={`${currentItem.alt}`} />
        </React.Fragment>)
       }
