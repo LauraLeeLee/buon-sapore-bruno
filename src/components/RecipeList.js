@@ -5,13 +5,14 @@ import {  Link } from "react-router-dom";
 function RecipeList (props) {
   const {recipes, match, filteredList } = props;
   console.log({filteredList});
+  console.log({match});
 
   const Li = <ul className="recipe_list_ul">
-        {  filteredList.length>0 &&
+        {  (filteredList && filteredList.length>0 )&&
           filteredList.map((item) => (
            <li key={item.id}
                className="recipe_list_li">
-               <Link to={`${match.url}/${item.id}`}>{item.name}</Link>
+               <Link to={`${item.category}/${item.id}`}>{item.name}</Link>
            </li>
            ))}
          </ul>
