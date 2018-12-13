@@ -23,14 +23,15 @@ class Search extends Component {
      const {recipesFound} = this.state;
 
      const query = event.target.value.toLowerCase();
-
-//
+    //
      const filteredRecipes = recipes.filter(recipe => {
-        return recipe.name.toLowerCase().search(query) > -1 ||
-        recipe.ingredients.filter(ingredient => {
-            return ingredient.toLowerCase().search(query) > -1;
-        });
+        return (recipe.name.toLowerCase().search(query) > -1 ||
+         recipe.ingredients.filter(ingredient => {
+          return ingredient.toLowerCase().search(query) > -1;
+        }).length > 0
+      );  // return recipe.ingredients.indexOf(query)  > -1;
      });
+
      console.log({filteredRecipes});
     this.setState(
       {filteredList: filteredRecipes}

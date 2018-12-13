@@ -10,10 +10,9 @@ function SearchResult (props) {
 
     return(
       <React.Fragment>
-      <article className="search-results">
-      <p>Search Results</p>
+      <section className="search_results">
         <RecipeList filteredList={filteredList}/>
-      </article>
+      </section>
       </React.Fragment>
     );
 }

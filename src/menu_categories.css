@@ -21,7 +21,7 @@
   margin: 0;
 } */
 
-.category_section {
+.category_section, .search_results {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
