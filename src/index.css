@@ -17,7 +17,7 @@ body {
   font-family: sans-serif;
   background: url(./images/papertexture.jpg) no-repeat center center fixed;
   background-size: cover;
-  height: 100%;
+  min-height: 100%;
   /* overflow: hidden; */
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
@@ -26,8 +26,12 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  /* padding-bottom: 100px; /* height of your footer */
+  /* padding-bottom:60px; */
   /* justify-items: center; */
 }
 
@@ -59,14 +63,14 @@ nav ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font: 20px, Palatino, serif;
+  font: 20px Palatino, serif;
   /* color: black; */
 }
 /* Each list item inside horizontal menu bar */
 nav ul li {
-  width: 33.72%;
+  width: 33.33%;
   display: inline-block;
-  margin-right: -4.5px;
+  /* margin-right: -6px; */
 }
 
 /* Text and links across navbar */
@@ -81,7 +85,7 @@ nav a, nav span {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  padding: 2px, 2px, 2px, 2px;
+  padding: 2px 2px 2px 2px;
 }
 
 /* Unvisited/visited links in horizontal bar */
@@ -124,9 +128,10 @@ nav ul li ul li {
   correct way to do it*/
   float: none;
   left: -.25px;
-  height: 44px;
+  height: 35px;
   line-height: 44px;
   border-top: solid 1.25px grey;
+  font-size: 18px;
 }
 /* Links in drop-down menus */
 nav ul li ul li a,
@@ -147,6 +152,15 @@ nav ul li ul li a:hover,
 nav ul li ul li a:active {
   background: white;
   color: green;
+}
+
+.home-page {
+  grid-row: 2 / 3;
+}
+
+.about_page {
+  display: grid;
+  grid-row: 2 / 3;
 }
 
 .index_section {
@@ -201,8 +215,16 @@ nav ul li ul li a:active {
 
 
 /* search styling */
+.search_results {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+}
+
 input {
-  margin-top: -130px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   width: 40%;
   height: 30px;
   font-style: italic;
@@ -210,7 +232,7 @@ input {
 }
 
 .footer {
-  grid-row: 4 / 5;
+  grid-row: 3 / 4;
   height: 30px;
   background-color: #006600;
 }
@@ -231,8 +253,16 @@ input {
     width: 40%;
     right: 30.5%;
   }
+
   nav ul li ul li {
     font-size: 0.8em;
+  }
+
+  .footer {
+    /* position:absolute;
+    left:0;
+    bottom:0;
+    right:0; */
   }
 
 }

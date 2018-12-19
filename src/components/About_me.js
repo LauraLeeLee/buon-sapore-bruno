@@ -5,12 +5,12 @@ import AboutText from './AboutText.js';
 
 const AboutMe = props => {
   return(
-    <React.Fragment>
+    <div className="about_page">
       <AboutHeader />
       <main className="about_main">
         <AboutText />
       </main>
-   </React.Fragment>
+   </div>
   );
 }
 

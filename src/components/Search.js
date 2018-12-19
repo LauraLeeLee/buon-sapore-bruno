@@ -47,42 +47,39 @@ class Search extends Component {
 
       return(
         <div>
-        <div>
-        <Debounce time="600" handler="onChange">
-          <input type="text"
-                 placeholder="Seach category or ingredient"
-                 ref={input => this.search = input }
-                 onChange= {this.searchRecipes}
-          />
+          <Debounce time="600" handler="onChange">
+            <input type="text"
+                   placeholder="Seach category or ingredient"
+                   ref={input => this.search = input }
+                   onChange= {this.searchRecipes}
+            />
           </Debounce>
+
+          <SearchResult recipes={recipes}
+                        match={match}
+                        filteredList={filteredList}/>
+
+          <div className="no-search-results">
+          { noResults && (
+            <div>
+              <p className="no-results">Sorry, no results found <br/>
+                                        Please try your search again.</p>
+            </div>
+          )}
           </div>
-          <div>
-            <SearchResult recipes={recipes}
-                          match={match}
-                          filteredList={filteredList}/>
-          </div>
-        <div className="no-search-results">
-        { noResults && (
-          <div>
-            <p className="no-results">Sorry, no results found <br/>
-                                      Please try your search again.</p>
-          </div>
-        )}
         </div>
-        </div>
-      )
+        )
+
   }
 }
 
 export default Search
 
 
-   // handleInput(query) {
-   //   this.setState({query: this.search.value.toLowerCase()});
-   //   if(this.state.query && this.state.query.length) {
-   //     this.searchRecipes(query);
-   //   } else {
-   //     this.setState({recipesFound: [], noResults: false});
-   //   }
-   //   console.log(this.state);
-   // }
+  //another option to filter
+  //const filteredRecipes = recipes.filter(recipe => {
+//   if (recipe.name.toLowerCase().search(query) > -1) return true;
+//   for (let r = 0; r < recipe.ingredients.length; r++) {
+//     if (recipe.ingredients[r].toLowerCase().search(query) > -1) return true;
+//   }
+// });

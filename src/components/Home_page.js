@@ -5,10 +5,10 @@ import HomeSection from './Home_section.js';
 class HomePage extends Component {
   render(){
     return(
-      <React.Fragment>
+      <div className = "home-page">
         <Header />
         <HomeSection />
-     </React.Fragment>
+     </div>
     );
   }
 }
