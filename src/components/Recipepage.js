@@ -18,10 +18,8 @@ function Recipe (props) {
     recipe.id === paramsRecipeId);
   if(recipe) {console.log({recipe});}
 
- //  if(recipe) {const ingredients = recipe.ingredients;}
- // if(ingredients) {console.log({ingredients});}
- //
- //  if(recipe) {console.log(recipe.ingredients);}
+
+
 
   return (
     <div className="recipe_container">
@@ -29,6 +27,11 @@ function Recipe (props) {
     <article className="recipecard">
       { recipe && recipe.name && (
         <h3>{`${recipe.name}`}</h3>
+      )}
+      { recipe && recipe.img && (
+        <img className="food_image"
+             src={require(`../images/${recipe.img}`)}
+             alt={`${recipe.alt}`} />
       )}
       { recipe && recipe.description && (
         <p>{`${recipe.description}`}</p>
@@ -41,7 +44,7 @@ function Recipe (props) {
                    {ingredient}
                </li>
            ))
-           }
+          }
         </ul>
         <h4>Directions</h4>
         <ul className="recipe_ul">

@@ -3,6 +3,7 @@
     "name": "Baccala alla Pizzaiola",
     "id": "baccala-pizzaiola",
     "img": "baccala-pizzaiola.jpg",
+    "alt": "baccala pizzaiola",
     "ingredients": [
       "2 lb baccala ( salt cod )",
       "6 Tbsps olive oil",
@@ -37,6 +38,7 @@
     "name": "Basic Tomato Sauce/ Sugo di Pomodoro alla Napoletana",
     "id": "basic-sauce",
     "img": "basic_tomato_sauce.jpg",
+    "alt": "basic tomato sauce",
     "ingredients": [
       "4 Tbsps olive oil",
       "1 medium onion, very finely chopped",
@@ -62,6 +64,7 @@
     "name": "Bistecca Pizzaiola",
     "id": "bistecca-pizzaiola",
     "img": "bisteccapizzaiola.jpg",
+    "alt": "bisteca pizzaiola",
     "ingredients": [
       "2 Tbsp olive oil",
       "4 small tender steaks",
@@ -88,6 +91,7 @@
     "name": "Braciole",
     "id": "braciole",
     "img": "braciole.jpg",
+    "alt": "braciole",
     "ingredients": [
       "4 thin slices boneless beef round (about 1 lb",
       "1 garlic clove, finely chopped",
@@ -124,6 +128,7 @@
     "name": "Bruschetta",
     "id": "bruschetta",
     "img": "bruschetta.jpg",
+    "alt": "bruschetta",
     "ingredients": [
       "4 large slices of bread, such as ciabatta, baguettes",
       "1 garlic clove",
@@ -141,6 +146,7 @@
     "name": "Cannoli",
     "id": "cannoli",
     "img": "",
+    "alt": "cannoli",
     "ingredients": [
       "For the Ricotta Cream",
       "2 lb. whole or part skim milk ricotta",
@@ -218,6 +224,7 @@
     "name": "Gelato Alla Panna",
     "id": "gelato-panna",
     "img": "gelato-alla-panna.jpg",
+    "alt": "gelato alla panna",
     "ingredients": [
       "6 eggs",
       "2 cups whole milk",
@@ -251,6 +258,7 @@
     "name": "Grilled Eggplant,Tomatoes,Provolone and Pesto Sandwiches",
     "id": "grilled-eggplant",
     "img": "eggplant-sandwich.jpg",
+    "alt": "eggplant sandwich",
     "ingredients": [
       "4 Large slices eggplant",
       "Salt and Pepper to taste",
@@ -277,6 +285,7 @@
     "name": "Insalata di Mare/Seafood Salad",
     "id": "insalata-di-mare",
     "img": "insalata-mare.jpg",
+    "alt": "insalata di mare",
     "ingredients": [
       "2 lbs  mussels",
       "Salt to taste",
@@ -318,6 +327,7 @@
     "name": "Marinara Sauce",
     "id": "marinara-sauce",
     "img": "marinara-sauce.jpg",
+    "alt": "marinara sauce",
     "ingredients": [
       "2 large garlic cloves, lightly smashed",
       "1/4  cup olive oil",
@@ -339,6 +349,7 @@
     "name": "Meatballs/Polpette",
     "id": "meatballs",
     "img": "meatballs.jpg",
+    "alt": "meatballs",
     "ingredients": [
       "2 lbs ground beef",
       "2 eggs",
@@ -365,6 +376,7 @@
     "name": "Minestrone",
     "id": "minestrone",
     "img": "minestrone.jpg",
+    "alt": "minestrone",
     "ingredients": [
       "1 Tbsp olive oil",
       "2 onions,chopped",
@@ -396,6 +408,7 @@
     "name": "Osso Buco",
     "id": "osso-buco",
     "img": "osso-buco.jpg",
+    "alt": "osso buco",
     "ingredients": [
       "1/4 cup all purpose flour",
       "4 meaty slices veal shank, about  1 1/2 inch thik",
@@ -431,6 +444,7 @@
     "name": "Panzanella Insalata",
     "id": "panzanella-insalata",
     "img": "panzanella.jpg",
+    "alt": "panzanella",
     "ingredients": [
       "3 1/2 cups stale bread white or brow or rolls",
       "1 clove garlic, peeled and mince",
@@ -461,6 +475,7 @@
     "name": "Pasta e Fagioli",
     "id": "pasta-fagioli",
     "img": "pasta-e-fagioli.jpg",
+    "alt": "pasta e fagioli",
     "ingredients": [
       "1 cup dried cannellini or Great Northern beans or 3 cups canned beans, rinsed and drained",
       "1 celery rib, chopped",
@@ -493,37 +508,10 @@
     "category": ["soup"]
   },
   {
-    "name": "Pasta Arrabbiata",
-    "id": "pasta-arrabbiata",
-    "img": "pasta-arrabbiata.jpg",
-    "ingredients": [
-      "1 lb chopped tomatoes",
-      "2 garlic cloves, crushed",
-      "2/3 cup dry white wine",
-      "1 Tbsp tomato puree’",
-      "1 pinch crushed red hot pepper",
-      "11 oz penne or rigatoni",
-      "1 tbsp fresh chopped parsley",
-      "salt and pepper to taste",
-      "Pecorino cheese to serve"
-    ],
-    "directions": [
-      "Put the tomatoes, garlic, wine,tomato puree and hot pepper",
-      "in a saucepan and bring to the boil.",
-      "Cover and simmer gently. Add parsley.",
-      "Taste for seasoning.",
-      "If you prefer a hotter taste, add more crush hot pepper.",
-      "Drain the pasta and tip into a large bowl.",
-      "Pour the sauce over the pasta and toss to mix.",
-      "Serve at once, sprinkled with grated Pecorino and the remaining parsley."
-    ],
-    "description":"",
-    "category": ["pasta"]
-  },
-  {
     "name": "Pasta di Mare",
     "id": "pasta-di-mare",
-    "img": "",
+    "img": "pasta-mare.jpg",
+    "alt": "pasta di mare",
     "ingredients": [
       "1 lb spaghetti # 4",
       "1 6 oz Tomato Paste",
@@ -556,6 +544,7 @@
     "name": "Pizza Dough",
     "id": "pizza-dough",
     "img": "pizza_dough.jpg",
+    "alt": "pizza dough",
     "ingredients": [
       "5 cups unbleached flour",
       "2 packets active dry yeast",
@@ -592,6 +581,7 @@
     "name": "Polenta",
     "id": "polenta",
     "img": "polenta.jpg",
+    "alt": "polenta",
     "ingredients": [
       "6 cups water",
       "1 tbsp salt",
@@ -616,6 +606,7 @@
     "name": "Polpetti in Salsa di Pomodoro",
     "id": "polpetti-salsa-pomodoro",
     "img": "polpetti.jpg",
+    "alt": "polpetti",
     "ingredients": [
       "2 lb baby octopus",
       "2 cups peeled, seeded, and chopped fresh tomatoes or chopped canned Italian peeled tomatoes",
@@ -645,6 +636,7 @@
     "name": "Potato Gnocchi",
     "id": "potato-gnocchi",
     "img": "potatognocchi.jpg",
+    "alt": "potato gnocchi",
     "ingredients": [
       " 2 lb potatoes, scrubbed ",
       "salt and pepper to taste",
@@ -676,6 +668,7 @@
     "name": "Ricotta Cheesecake",
     "id": "ricotta-cheesecake",
     "img": "ricottacheesecake.jpg",
+    "alt": "ricotta cheesecake",
     "ingredients": [
       "2 cups low fat ricotta cheese",
       "1/2 cup double cream",
@@ -718,6 +711,7 @@
     "name": "Roasted Pepper Salad",
     "id": "roasted-pepper-salad",
     "img": "peppersalad.jpg",
+    "alt": "roasated red pepper salad",
     "ingredients": [
       "8 large red, yellow, and green bell peppers",
       "1/3 cup extra virgin olive oil",
@@ -741,6 +735,7 @@
     "name": "Roast Lamb with Rosemary / Agnello al Rosmarino",
     "id": "roast-lamb-rosemary",
     "img": "rosemary_agnello1.jpg",
+    "alt": "roast lamb with rosemary",
     "ingredients": [
       "1/2 leg of lamb",
       "2 to 3 garlic cloves, cut lengthways into thin slivers",
@@ -767,6 +762,7 @@
     "name": "Sauce/Sugo",
     "id": "sauce",
     "img": "sauce.jpg",
+    "alt": "sauce",
     "ingredients": [
       "1 1/2 Tbsps olive oil",
       "1 onion,chopped very finely",
@@ -791,6 +787,7 @@
     "name": "Spaghetti con aglio e olio/ Garlic Spaghetti",
     "id": "spaghetti-aglio-oglio",
     "img": "spaghetti-aglio-oglio.jpg",
+    "alt": "garlic spaghetti",
     "ingredients": [
         "14 oz spaghetti",
         "6 Tbsp extra virgin olive oil",
@@ -818,6 +815,7 @@
     "name": "Spaghetti alle Vongole",
     "id": "spaghetti-vongole",
     "img": "spaghetti-vongole.jpg",
+    "alt": "spaghetti alle vongole",
     "ingredients": [
       "2 Tbsp  Olive Oil",
       "3 Cloves garlic, crushed",
@@ -856,6 +854,7 @@
     "name": "Spaghetti with Tuna Sauce",
     "id": "spaghetti-tuna-sauce",
     "img": "spaghetti-tunasauce.jpg",
+    "alt": "spaghetti with tuna sauce",
     "ingredients": [
       "8 oz spaghetti",
       "1 garlic clove,crushed",
@@ -880,6 +879,7 @@
     "name": "Spaghetti alla Puttanesca",
     "id": "spaghetti-puttanesa",
     "img": "spaghetti-alla-puttanesca.jpg",
+    "alt": "spaghetti alla puttanesca",
     "ingredients": [
       "4 Tbsps olive oil",
       "2 cloves garlic,finely chopped",
@@ -914,6 +914,7 @@
     "name": "Fried Rice Balls/Suppli",
     "id": "suppli",
     "img": "suppli.jpg",
+    "alt": "Suppli fried rice balls",
     "ingredients": [
       "1 recipe Risotto with Parmigiano cheese",
       "3 eggs",
@@ -944,7 +945,8 @@
   {
     "name": "Tiramisu",
     "id": "tiramisu",
-    "img": "",
+    "img": "tiramisu_1.jpg",
+    "alt": "tiramisu",
     "ingredients": [
       "1 pound mascarpone",
       "¼ cup sugar",
@@ -958,7 +960,6 @@
       "In a large bowl, whisk together the mascarpone, sugar and amaretto until smooth.",
       "In a chilled bowl with chilled beaters whip the cream until soft.",
       "Fold the cream into the mascarpone mixture.",
-      "Lightly dip half of savoiardi in the espresso and arrange in a single layer in the bottom of an 8 inch square pan.",
       "Lightly dip half of savoiardi in the espresso and arrange in a single layer in the bottom of an 8 inch square pan.",
       "Sprinkle with half the chocolate.",
       "Dip the remaining savoiardi in the espresso. ",
@@ -974,6 +975,7 @@
     "name": "Tomato and Basil Bruschetta",
     "id": "tomato-basil-bruschetta",
     "img": "tomatobruschetta.jpg",
+    "alt": "tomato and basil bruschetta",
     "ingredients": [
       "4 ripe tomatoes",
       "1 Tbsp shredded basil",
@@ -994,6 +996,7 @@
     "name": "Tortellini in Brodo",
     "id": "tortellini-brodo",
     "img": "tortellini-in-brodo.jpg",
+    "alt": "tornellini in brodo",
     "ingredients": [
       "For Filling:",
       "2 Tbsp butter",
@@ -1054,6 +1057,7 @@
     "name": "Tuna and Bean Salad/ Tonno e Fagioli",
     "id": "tuna-bean-salad",
     "img": "tunaandbeansalad.jpg",
+    "alt": "tuna and bean salad",
     "ingredients": [
       "2- 14 oz cans Cannellini or Bordoli beans",
       "2- 7 oz cans tuna fish, drained",
@@ -1080,6 +1084,7 @@
     "name": "Vermicelli with Puttanesca Sauce",
     "id": "vermicelli-puttanesca",
     "img": "",
+    "alt": "",
     "ingredients": [
       "2 lb. ripe tomatoes",
       "4 cloves garlic, finely chopped",
@@ -1108,6 +1113,7 @@
     "name": "Zuppa di Cozze/Mussels in Spicy Sauce",
     "id": "zuppa-cozze",
     "img": "mussels-spicy-sauce.jpg",
+    "alt": "mussels in spicy sauce",
     "ingredients": [
       "4 lbs mussels",
       "4 garlic, very finely chopped, plus 1 whole garlic clove",
@@ -1137,9 +1143,10 @@
     "category": ["seafood"]
   },
   {
-    "name": "Zuppa du Baccala",
+    "name": "Zuppa di Baccala",
     "id": "zuppa-baccala",
     "img": "zuppadibaccala.jpg",
+    "alt": "zuppa di baccala",
     "ingredients": [
       "2 Tbsps olive oil",
       "2 medium onion, chopped",
@@ -1162,5 +1169,163 @@
     ],
     "description": "",
     "category": ["seafood", "soup"]
+  },
+  {
+    "name": "Easter Bread / Pigna",
+    "id": "easter-bread",
+    "img": "easter-bread.jpg",
+    "alt": "easter bread",
+    "ingredients": [
+      "8 eggs",
+      "1 cup olive oil",
+      "2 cups sugar",
+      "1 Tsp salt",
+      "3- 3/4 oz yeast",
+      "zest of 2 lemons",
+      "4 tsps of vanilla",
+      "flour as you need"
+    ],
+    "directions": [
+      "After you mix all the ingredients let the dough rise well",
+      "Make  the desired shape and let rice again",
+      "Before you put the pigna in the owen take 2 eggs and whisk and brush them over the bread",
+      "Oven on 350f"
+    ],
+    "description": "",
+    "category": ["dessert"]
+  },
+  {
+    "name": "Wine Cookies / Scruccietto",
+    "id": "wine-cookies",
+    "img": "wine-cookies.jpg",
+    "alt": "wine cookies",
+    "ingredients": [
+      "1 cup sugar",
+      "1 cup white wine",
+      "1 cup olive olio",
+      "1 teaspoon of anise seed",
+      "Flour"
+    ],
+    "directions": [
+      "On a board put flour",
+      "Open the middle,make a hole and put all the ingredients in",
+      "Incorporate the flour with all the ingredients and add more flour as you need",
+      "Make the dough a little hard,let rest for 5 minutes",
+      "Role the dough in a long strand like you would do gnocchi",
+      "Break off sections,roll in a circle and dredge one side in sugar",
+      "Turn the Oven at 375f",
+      "And cook for 25 to 30 minutes until golden brown"
+    ],
+    "description": "",
+    "category": ["dessert"]
+  },
+  {
+    "name": "Mezzi Rigatoni with Porcini sauce",
+    "id": "rigatoni-porcini",
+    "img": "rigatoni-porcini.jpg",
+    "alt": "rigatoni with procini sauce",
+    "ingredients": [
+      "1 lb  Mezzi Rigatoni ( you can use different pasta if you like)",
+      "1 1/2 cup   Dried Porcini",
+      "2 1/2Tbsp Olive oil",
+      "1 cup  sweet grape tomatoes",
+      "1/2 teaspoon dry sweet basil",
+      "1/2 clove garlic chopped",
+      "salt and pepper  to taste"
+    ],
+    "directions": [
+      "In a bowl add warm water and add the dry mushrooms, change the water as they get soft.",
+      "Squeeze the mushroom before adding them to the frying pan.",
+      "Bring a pot of salted water to boil for the pasta",
+      "Meanwhile, in a preheated pan, add the olive oil with the garlic, then add the mushrooms and tomatoes",
+      "Saute’ them over high heat for a few minutes, add the dry basil,until well browned.",
+      "Cook the Mezzi Rigatoni in the pot of boiling water al dente",
+      "Drain. Transfer the pasta to the pan with the mushrooms and tomato and toss for a few seconds"
+    ],
+    "description": "",
+    "category": ["pasta"]
+  },
+  {
+    "name": "Stuffed Tomatoes",
+    "id": "stuffed-tomatoes",
+    "img": "stuffed-tomatoes.jpg",
+    "alt": "stuffed tomatoes",
+    "ingredients": [
+      "1 cup minute rice",
+      "1/2 cup Italian bread crumbs",
+      "1/2 cup groudbeef cooked and drained",
+      "4 tablespoons olive oil",
+      "1/2 teaspoon salt",
+      "1/4 teaspoon ground pepper",
+      "1/4 cup freshly chopped basil leaves"
+    ],
+    "directions": [
+      "Preheat the Owen 350F",
+      "Salt the insides of the tomatoes",
+      "Mix together bread crumbs,rice,basil,pepper,and olive oil",
+      "Stuff tomatoes with the filling",
+      "Bake until tomatoes are cooked through and top are golden brown"
+    ],
+    "description": "",
+    "category": ["antipasti"]
+  },
+  {
+    "name": "Gelato alla Vaniglia / Vanilla Ice Cream",
+    "id": "vanilla-icecream",
+    "img": "vanilla-icecream.jpg",
+    "alt": "vanilla ice cream",
+    "ingredients": [
+      "6 eggs",
+      "2 cups whole milk",
+      "2 cups heavy cream",
+      "1 cup sugar",
+      "1 tspn vanilla extract"
+    ],
+    "directions": [
+      "Beat eggs yolks until foamy",
+      "Combine milk, cream, and sugar in top of a double boiler",
+      "heat until small bubbles form around sides of the pan",
+      "Add small amount of cream mixture to eggs yolks",
+      "then stir yolks into cream mixture in top of double boiler",
+      "Cook over simmering water, stirring constantly, until mixture thickens enough to lightly coat a metal spoon",
+      "Add vanilla. Strain, cool thoroughly",
+      "Pour into two deep metal freezer trays, cover wit foil",
+      "Freeze until firm but not hard",
+      "Chill bowl and beater",
+      "Beat with electric mixer on high speed until double in volume",
+      "Return to tray, freeze until firm but not hard",
+      "Break up, beat again, freeze until firm but not hard",
+      "Repeat, freeze until firm for 2 hours"
+    ],
+    "description": "",
+    "category": ["dessert"]
+  },{
+    "name": "Pasta all'arrabbiata",
+    "id": "pasta-arrabbiata",
+    "img": "pasta-arrabbiata.jpg",
+    "alt": "pasta arrabbiata",
+    "ingredients": [
+      "1 lb chopped tomatoes",
+      "2 garlic cloves, crushed",
+      "2/3 cup dry white wine",
+      "1 Tbsp tomato puree",
+      "1 pinch crushed red hot pepper",
+      "11 oz penne or rigatoni",
+      "1 tbsp fresh chopped parsley",
+      "salt and pepper to taste",
+      "Pecorino cheese to serve"
+    ],
+    "directions": [
+      "Put the tomatoes, garlic, wine, tomato puree’ and hot pepper in a saucepan and bring to the boil",
+      "Cover and simmer gently",
+      "Add parsley",
+      "Taste for seasoning",
+      "If you prefer a hotter taste, add more crush hot pepper",
+      "Drain the pasta and tip into a large bowl",
+      "Pour the sauce over the pasta and toss to mix",
+      "Serve at once, sprinkled with grated Pecorino and the remaining parsley"
+    ],
+    "description": "",
+    "category": ["pasta"]
   }
 ]
