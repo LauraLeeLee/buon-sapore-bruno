@@ -1,5 +1,5 @@
 
-## View project live here [Thats nice Bruno](https://magnificent-sisters.surge.sh)
+## View project live here [Thats nice Bruno](https://daily-bucket.surge.sh)
 
 ### Description
 This is a project I chose to do for fun and to continue to practice with React.
