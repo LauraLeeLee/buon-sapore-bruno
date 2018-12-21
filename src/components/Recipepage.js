@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Print from './Print.js';
 
 
@@ -29,7 +29,7 @@ function Recipe (props) {
         <h3>{`${recipe.name}`}</h3>
       )}
       { recipe && recipe.img && (
-        <img className="food_image"
+        <img className="recipe_image"
              src={require(`../images/${recipe.img}`)}
              alt={`${recipe.alt}`} />
       )}

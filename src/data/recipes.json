@@ -140,7 +140,7 @@
       "Drizzle a little olive oil over each brad slice."
     ],
     "description":"",
-    "category": ["bread"]
+    "category": ["antipasti"]
   },
   {
     "name": "Cannoli",
@@ -248,7 +248,7 @@
 		  "Beat with electric mixer on high speed until double in volume.",
 		  "Return to tray, freeze until firm but not hard.",
 		  "Break up, beat again.",
-		  "Freeze until firm but not hard.",
+		  "Freeze again until firm but not hard.",
 		  "Repeat, freeze until firm for 2 hours."
     ],
     "description":"",
@@ -279,7 +279,7 @@
       "Serve with a glass of red Italian wine."
     ],
     "description":"",
-    "category": ["Veggie"]
+    "category": ["sandwich"]
   },
   {
     "name": "Insalata di Mare/Seafood Salad",
@@ -630,7 +630,7 @@
       "Sprinkle with the renaming parsley and serve."
     ],
     "description":"",
-    "category": ["beef"]
+    "category": ["seafood"]
   },
   {
     "name": "Potato Gnocchi",
@@ -940,7 +940,7 @@
       "Serve hot "
     ],
     "description": "",
-    "category": ["pasta"]
+    "category": ["pasta", "anitpasti"]
   },
   {
     "name": "Tiramisu",
@@ -1140,7 +1140,7 @@
       "Serve the mussels."
     ],
     "description": "",
-    "category": ["seafood"]
+    "category": ["seafood", "soup"]
   },
   {
     "name": "Zuppa di Baccala",

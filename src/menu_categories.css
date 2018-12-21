@@ -47,14 +47,15 @@ h2 {
   border-style: inset;
   border-width: 10px;
   border-color: #F7C914;
-  margin: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .recipebox {
   align-self: center;
   width: 350px;
-  /* margin: 0 auto 100px; */
-  padding-bottom: 20px;
+  margin: 0 auto 50px;
+  /* padding-bottom: 20px; */
   text-align: center;
   background: #990000;
   /* position: relative;
@@ -94,5 +95,9 @@ h2 {
   }
   .food_image {
     margin: 2px;
+  }
+
+  .recipebox {
+    margin-top: 20px;
   }
 }

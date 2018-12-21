@@ -34,11 +34,11 @@
         "category": ["antipasti"],
         "alt": "antipasto"
     },
-    "salad-soup": {
-        "name": "Salad & Soup",
-        "id": "salad-soup",
+    "salad-soup-sandwich": {
+        "name": "Salad, Soup & Sandwich",
+        "id": "salad-soup-sandwich",
         "src": "soups.jpg",
-        "category": ["salad", "soup"],
+        "category": ["salad", "soup", "sandwich"],
         "alt": "soup"
     },
     "dessert": {

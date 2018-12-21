@@ -8,10 +8,6 @@ class Nav extends Component {
     allCategories: PropTypes.object.isRequired,
   }
 
-  constructor(props) {
-   super(props);
- }
-
   render(){
     const {allCategories} = this.props;
     const categories = Object.keys(allCategories);

@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import {  Link } from "react-router-dom";
+import React from 'react';
 import RecipeList from './RecipeList.js';
-import PropTypes from 'prop-types';
 
 function SearchResult (props) {
-  const {recipes, match, filteredList } = props;
+  const { match, filteredList } = props;
   console.log({filteredList});
   console.log({match});
 

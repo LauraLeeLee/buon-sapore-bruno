@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import RecipeFilter from './RecipeFilter.js';
 import MenuInfo from './MenuInfo.js';
 

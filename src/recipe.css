@@ -8,8 +8,8 @@
   align-self: center;
   width: 70%;
   /* height: 100vh; */
-  /* margin: 0 auto 100px; */
-  padding-bottom: 20px;
+  margin: 50px auto 50px;
+  /* padding-bottom: 20px; */
   text-align: center;
   background: #990000;
   /* position: relative;
@@ -25,13 +25,18 @@
   margin-top: 20px;
 }
 
-.recipecard h4:first-of-type{
-  margin-top: 80px;
-}
-
 .recipecard p {
   font-style: italic;
   margin: 5px 10px 0 10px;
+}
+
+.recipe_image {
+  width: 55%;
+  border-style: inset;
+  border-width: 10px;
+  border-color: #F7C914;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .recipe_ul {
@@ -68,6 +73,8 @@
 @media (max-width: 800px) {
   .recipecard {
     width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .recipecard h3 {

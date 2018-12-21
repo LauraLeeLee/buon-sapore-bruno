@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
 function MenuInfo(props) {
   const {allCategories, match } = props;

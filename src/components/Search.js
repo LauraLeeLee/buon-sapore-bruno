@@ -10,9 +10,7 @@ class Search extends Component {
 
     constructor(props) {
      super(props);
-     let match = props.match;
      this.state = {
-       recipesFound: [],
        noResults: false
      }
      this.searchRecipes = this.searchRecipes.bind(this);
@@ -20,7 +18,6 @@ class Search extends Component {
 
    searchRecipes = (event) => {
      const {recipes} = this.props;
-     const {recipesFound} = this.state;
 
      const query = event.target.value.toLowerCase();
     //
@@ -40,7 +37,7 @@ class Search extends Component {
    }
 
     render() {
-      const { filteredList, noResults, query } = this.state;
+      const { filteredList, noResults } = this.state;
       const { recipes, match } = this.props;
       console.log({recipes});
       console.log({filteredList});

@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import {  Link } from "react-router-dom";
 
 function RecipeList (props) {
-  const {recipes, match, filteredList } = props;
+  const { match, filteredList } = props;
   console.log({filteredList});
   console.log({match});
 

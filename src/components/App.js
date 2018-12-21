@@ -73,7 +73,7 @@ class App extends Component {
   // }
 
   render() {
-    const { view, recipes, allCategories, navCat, navImg } = this.state;
+    const { view, recipes, allCategories, navCat } = this.state;
     console.log({view});
     console.log({navCat});
 

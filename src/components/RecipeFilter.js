@@ -8,13 +8,8 @@ class RecipeFilter extends Component {
     recipes: PropTypes.array.isRequired
   }
 
-  constructor(props) {
-   super(props);
-   let match = props.match;
-  }
-
  render() {
-   const {recipes, match, allCategories } = this.props;
+   const {recipes, match} = this.props;
    const currentCat = match.params.categoryId;
    const currentCatArray = currentCat.toLowerCase().split('-');
 
