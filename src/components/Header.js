@@ -5,7 +5,8 @@ class Header extends Component {
     return(
       <React.Fragment>
         <header className="main_header">
-          <h1 className="page_title">Buon Sapore Bruno! Good Tastes Bruno!</h1>
+          <h1 className="page_title">Buon Sapore Bruno! <br />
+          Good Tastes Bruno!</h1>
         </header>
       </React.Fragment>
     );

@@ -61,10 +61,10 @@
     "category": ["sauce"]
   },
   {
-    "name": "Bistecca Pizzaiola",
+    "name": "Bistecca alla pizzaiola",
     "id": "bistecca-pizzaiola",
     "img": "bisteccapizzaiola.jpg",
-    "alt": "bisteca pizzaiola",
+    "alt": "bisteca alla pizzaiola",
     "ingredients": [
       "2 Tbsp olive oil",
       "4 small tender steaks",
