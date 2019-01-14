@@ -75,8 +75,8 @@ h2 {
 /* remove underline and style font of recipes link text */
 .recipe_list_li a {
   /* text-decoration: none; */
-  font-family: Palatino,serif;
-  font-size: 20px;
+  font: 1.5em 'Mirza', cursive;
+  font-weight: 400;
   /* line-height: 150%; */
   color: #fff;
 }
