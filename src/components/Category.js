@@ -3,7 +3,7 @@ import RecipeFilter from './RecipeFilter.js';
 import MenuInfo from './MenuInfo.js';
 
 function Category (props) {
-  const {allCategories, recipes, match} = props;
+  const {allCategories, fbRecipes, match} = props;
   console.log({allCategories});
 
   return(
@@ -12,8 +12,8 @@ function Category (props) {
        <MenuInfo  allCategories={allCategories}
                     match={match}/>
        <RecipeFilter match={match}
-                   recipes={recipes}
-                   allCategories={allCategories}/>
+                     fbRecipes={fbRecipes}
+                     allCategories={allCategories}/>
      </section>
    </React.Fragment>
   );

@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import RecipeList from './RecipeList.js';
 
-
 class RecipeFilter extends Component {
   static propTypes = {
-    recipes: PropTypes.array.isRequired
+    fbRecipes: PropTypes.array.isRequired
   }
 
  render() {
-   const {recipes, match} = this.props;
+   const {fbRecipes, match} = this.props;
    const currentCat = match.params.categoryId;
    const currentCatArray = currentCat.toLowerCase().split('-');
 
-   const filteredItems = recipes.filter(item =>
+   const filteredItems = fbRecipes.filter(item =>
        item.category.every(cat =>
          currentCatArray.includes(cat))
        );

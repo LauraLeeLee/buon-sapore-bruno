@@ -3,10 +3,10 @@ import Print from './Print.js';
 
 
 function Recipe (props) {
-  const {recipes, match } = props;
+  const { match, fbRecipes } = props;
   const paramsRecipeId = match.params.recipeId;
 
-  const recipesId = recipes.map(recipe => recipe.id);
+  const recipesId = fbRecipes.map(recipe => recipe.id);
 
   console.log({recipesId});
   console.log({paramsRecipeId});
@@ -14,7 +14,7 @@ function Recipe (props) {
   const selectedId = recipesId === paramsRecipeId;
   console.log({selectedId});
 
-  const recipe = recipes.find( recipe =>
+  const recipe = fbRecipes.find( recipe =>
     recipe.id === paramsRecipeId);
   if(recipe) {console.log({recipe});}
 

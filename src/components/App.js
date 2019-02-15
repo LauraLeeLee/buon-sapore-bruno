@@ -9,7 +9,8 @@ import Nav from './Nav.js';
 import Footer from './Footer.js';
 import Search from './Search.js';
 import allCategories from '../data/allCategories.json';
-import Recipes from '../data/recipes.json';
+// import Recipes from '../data/recipes.json';
+import firebase from './Firebase/firebase.js';
 
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
     super(props);
     this.state = {
       view: 'home',
-      recipes: [],
+      fbRecipes: [],
       allCategories: {},
       navCat: '',
       navImg: ''
@@ -27,53 +28,22 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({
-      recipes: Recipes,
       allCategories: allCategories
+    });
+
+    const db = firebase.database();
+    const dbRef = db.ref();
+
+    let dbRecipes = [];
+    dbRef.on('value', snapshot => {
+      console.log(snapshot.val());
+      dbRecipes = snapshot.val();
+      this.setState({fbRecipes: dbRecipes});
     });
   }
 
-  // onNavigate = (navCat) => {
-  //   console.log(navCat);
-  //   this.setState({
-  //     navCat: navCat
-  //   });
-  //   switch(navCat) {
-  //     case 'Home':
-  //       this.setState({view: 'home'});
-  //       break;
-  //     case 'About Me':
-  //       this.setState({view: 'About Me'});
-  //       break;
-  //     case 'Recipes':
-  //       this.setState({view: 'Recipes'});
-  //       break;
-  //     case 'Beef':
-  //       this.setState({view: 'beef'});
-  //       break;
-  //     case 'Chicken':
-  //       this.setState({view: 'Chicken'});
-  //       break;
-  //     case 'Pasta Pizza & Sauce':
-  //       this.setState({view: 'Pasta Pizza & Sauce'});
-  //       break;
-  //     case 'Seafood':
-  //       this.setState({view: 'Seafood'});
-  //       break;
-  //     case 'Salad & Soup':
-  //       this.setState({view: 'Salad & Soup'});
-  //       break;
-  //     case 'Dessert':
-  //       this.setState({view: 'Dessert'});
-  //       break;
-  //       case 'Antipasti':
-  //         this.setState({view: 'Antipasti'});
-  //         break;
-  //     default: this.setState({view: 'home'});
-  //   }
-  // }
-
   render() {
-    const { view, recipes, allCategories, navCat } = this.state;
+    const { view, fbRecipes, allCategories, navCat } = this.state;
     console.log({view});
     console.log({navCat});
 
@@ -87,13 +57,13 @@ class App extends Component {
             <Route exact path="/" component={HomePage}/>
             <Route path="/About Me" component={AboutMe}/>
             <Route path="/Search" render={props => <Search {...props}
-                                                       recipes={recipes}
+                                                       fbRecipes={fbRecipes}
                                                        />} />
             <Route path="/:category/:recipeId"
-                  render={props => <Recipe {...props} recipes={recipes}/>}
+                  render={props => <Recipe {...props} fbRecipes={fbRecipes}/>}
             />
             <Route path="/:categoryId" render={props => <Category {...props}
-                                                       recipes={recipes}
+                                                       fbRecipes={fbRecipes}
                                                        allCategories={allCategories} />} />
 
           {/* for a 404 page  */}
