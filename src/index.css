@@ -294,4 +294,8 @@ input {
   .print {
     display: none;
   }
+
+  .recipe_container {
+    display: block;
+  }
 }
