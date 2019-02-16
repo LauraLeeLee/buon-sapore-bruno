@@ -1,12 +1,14 @@
 import firebase from 'firebase';
+import { ApiKey, AuthDomain, DatabaseURL, ProjectId,
+         StorageBucket, MessagingSenderId } from '../../data/credentials.js';
 
 const config = {
-  apiKey: "AIzaSyC5wDGuZ5SLv6RHt-YIHLZIm9ZCOkaZvTo",
-  authDomain: "buon-sapore-bruno.firebaseapp.com",
-  databaseURL: "https://buon-sapore-bruno.firebaseio.com",
-  projectId: "buon-sapore-bruno",
-  storageBucket: "buon-sapore-bruno.appspot.com",
-  messagingSenderId: "388222118182"
+  apiKey: ApiKey,
+  authDomain: AuthDomain,
+  databaseURL: DatabaseURL,
+  projectId: ProjectId,
+  storageBucket: StorageBucket,
+  messagingSenderId: MessagingSenderId
   }
 
   firebase.initializeApp(config);
