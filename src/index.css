@@ -270,9 +270,15 @@ input {
   }
 }
 
-
-
 @media print {
+
+  @page {
+    size: auto;
+    margin-bottom: 0.75cm;
+    orphans:4;
+    widows:2;
+  }
+
   header, nav, footer {
     display: none;
   }
@@ -283,5 +289,9 @@ input {
 
   body {
     background: none;
+  }
+
+  .print {
+    display: none;
   }
 }
