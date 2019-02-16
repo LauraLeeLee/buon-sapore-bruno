@@ -295,6 +295,10 @@ input {
     display: none;
   }
 
+  .container {
+    display: block;
+  }
+
   .recipe_container {
     display: block;
   }
