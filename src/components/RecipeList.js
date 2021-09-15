@@ -7,14 +7,13 @@ function RecipeList (props) {
   console.log({match});
 
   const Li = <ul className="recipe_list_ul">
-        {  (filteredList && filteredList.length>0 )&&
-          filteredList.map((item) => (
-           <li key={item.id}
-               className="recipe_list_li">
-               <Link to={`${item.category}/${item.id}`}>{item.name}</Link>
-           </li>
-           ))}
-         </ul>
+            { (filteredList && filteredList.length>0 )&&
+              filteredList.map((item) => (
+                <li key={item.id}
+                className="recipe_list_li">
+                  <Link to={`${item.category}/${item.id}`}>{item.name}</Link>
+                </li>
+            </ul>
   const NoRecipes = (<p>No recipes yet! Check back soon!</p>)
 
   return(
