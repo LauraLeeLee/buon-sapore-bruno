@@ -7,23 +7,23 @@ class RecipeFilter extends Component {
     fbRecipes: PropTypes.array.isRequired
   }
 
- render() {
-   const {fbRecipes, match} = this.props;
-   const currentCat = match.params.categoryId;
-   const currentCatArray = currentCat.toLowerCase().split('-');
+  render() {
+    const {fbRecipes, match} = this.props;
+    const currentCat = match.params.categoryId;
+    const currentCatArray = currentCat.toLowerCase().split('-');
 
-   const filteredItems = fbRecipes.filter(item =>
-       item.category.every(cat =>
-         currentCatArray.includes(cat))
-       );
+    const filteredItems = fbRecipes.filter(item =>
+      item.category.every(cat =>
+        currentCatArray.includes(cat))
+    );
 
-   return(
-     <React.Fragment>
+  return(
+    <React.Fragment>
         <RecipeList filteredList={filteredItems}
                     match={match}/>
-     </React.Fragment>
-   );
- }
+    </React.Fragment>
+  );
+  }
 }
 
 export default RecipeFilter
