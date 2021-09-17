@@ -1,6 +1,6 @@
 import firebase from 'firebase';
 import { ApiKey, AuthDomain, DatabaseURL, ProjectId,
-         StorageBucket, MessagingSenderId } from '../../data/credentials.js';
+        StorageBucket, MessagingSenderId } from '../../data/credentials.js';
 
 const config = {
   apiKey: ApiKey,
